@@ -1,0 +1,38 @@
+package wks.wolfkidsounds.wildplants.config;
+
+import net.minecraftforge.common.ForgeConfigSpec;
+import wks.wolfkidsounds.wildplants.Wildplants;
+
+public final class WildplantsConfig {
+    public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
+    public static final ForgeConfigSpec SPEC;
+
+    public static ForgeConfigSpec.ConfigValue<Integer> GLOBAL_FREQUENCY;
+    public static ForgeConfigSpec.ConfigValue<Integer> GLOBAL_PATCH_SIZE;
+    //public static ForgeConfigSpec.ConfigValue<Integer> GLOBAL_CHANCE;
+
+    static {
+
+        Wildplants.LOGGER.debug("init-configuration");
+
+        BUILDER.push("General");
+        BUILDER.push("Global Modifier");
+        //GLOBAL_CHANCE = BUILDER.comment("Global rarity modifier (higher is less) [Default: 10]").define("Rarity", 10);
+        GLOBAL_FREQUENCY = BUILDER
+                .comment("Global generation frequency modifier (higher is more) [Default: 5]")
+                .define("Frequency", 5);
+        GLOBAL_PATCH_SIZE = BUILDER
+                .comment("Global generation patch size modifier (higher is more) [Default: 5]")
+                .define("Size", 2);
+        BUILDER.pop();
+        BUILDER.push("Compat");
+        CompatConfig.initMinecraft(BUILDER);
+        CompatConfig.initImmersiveEngineering(BUILDER);
+        CompatConfig.initHarvestcraft(BUILDER);
+        CompatConfig.initFarmersDelight(BUILDER);
+        BUILDER.pop();
+        BUILDER.pop();
+
+        SPEC = BUILDER.build();
+    }
+}
