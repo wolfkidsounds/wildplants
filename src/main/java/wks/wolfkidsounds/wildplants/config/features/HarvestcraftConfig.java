@@ -1,4 +1,5 @@
 package wks.wolfkidsounds.wildplants.config.features;
+//TODO DEFAULT BIOMES
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import wks.wolfkidsounds.wildplants.Wildplants;
@@ -399,23 +400,12 @@ public class HarvestcraftConfig {
     public static void init(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-harvestcraft-feature-config");
 
-        BUILDER.comment(
-                "Valid Biome Types:\n" +
-                        "Temperature: [HOT, COLD] \n" +
-                        "Vegetation: [SPARSE, DENSE] \n" +
-                        "Humidity: [WET, DRY] \n" +
-                        "Tree Types: [SAVANNA, CONIFEROUS, JUNGLE] \n" +
-                        "Attributes: [SPOOKY, DEAD, LUSH, MUSHROOM, MAGICAL, RARE, PLATEAU, MODIFIED, OCEAN, RIVER, WATER] \n" +
-                        "Generic Types: [MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID]");
-
-        BUILDER.push("Pams Harvestcraft 2");
-
         BUILDER.push("WILD AGAVE");
         AGAVE_ENABLED = BUILDER
                 .define("Enabled:", true);
         AGAVE_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [MESA]")
+                .define("Biome Type:", "MESA");
         AGAVE_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -428,8 +418,8 @@ public class HarvestcraftConfig {
         AMARANTH_ENABLED = BUILDER
                 .define("Enabled:", true);
         AMARANTH_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [HOT]")
+                .define("Biome Type:", "HOT");
         AMARANTH_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -442,8 +432,8 @@ public class HarvestcraftConfig {
         ARROWROOT_ENABLED = BUILDER
                 .define("Enabled:", true);
         ARROWROOT_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [DENSE]")
+                .define("Biome Type:", "DENSE");
         ARROWROOT_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -456,8 +446,8 @@ public class HarvestcraftConfig {
         ARTICHOKE_ENABLED = BUILDER
                 .define("Enabled:", true);
         ARTICHOKE_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [DRY]")
+                .define("Biome Type:", "DRY");
         ARTICHOKE_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -470,8 +460,8 @@ public class HarvestcraftConfig {
         ASPARAGUS_ENABLED = BUILDER
                 .define("Enabled:", true);
         ASPARAGUS_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [RIVER]")
+                .define("Biome Type:", "RIVER");
         ASPARAGUS_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -484,7 +474,7 @@ public class HarvestcraftConfig {
         BARLEY_ENABLED = BUILDER
                 .define("Enabled:", true);
         BARLEY_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
+                .comment("Default: [PLAINS]")
                 .define("Biome Type:", "PLAINS");
         BARLEY_FREQUENCY = BUILDER
                 .comment("Default [1]")
@@ -498,8 +488,8 @@ public class HarvestcraftConfig {
         BEAN_ENABLED = BUILDER
                 .define("Enabled:", true);
         BEAN_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         BEAN_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -512,7 +502,7 @@ public class HarvestcraftConfig {
         BELLPEPPER_ENABLED = BUILDER
                 .define("Enabled:", true);
         BELLPEPPER_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
+                .comment("Default: [PLAINS]")
                 .define("Biome Type:", "PLAINS");
         BELLPEPPER_FREQUENCY = BUILDER
                 .comment("Default [1]")
@@ -526,8 +516,8 @@ public class HarvestcraftConfig {
         BLACKBERRY_ENABLED = BUILDER
                 .define("Enabled:", true);
         BLACKBERRY_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         BLACKBERRY_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -540,8 +530,8 @@ public class HarvestcraftConfig {
         BLUEBERRY_ENABLED = BUILDER
                 .define("Enabled:", true);
         BLUEBERRY_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [RIVER]")
+                .define("Biome Type:", "RIVER");
         BLUEBERRY_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -554,8 +544,8 @@ public class HarvestcraftConfig {
         BROCCOLI_ENABLED = BUILDER
                 .define("Enabled:", true);
         BROCCOLI_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [COLD]")
+                .define("Biome Type:", "COLD");
         BROCCOLI_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -568,8 +558,8 @@ public class HarvestcraftConfig {
         BRUSSELSPROUT_ENABLED = BUILDER
                 .define("Enabled:", true);
         BRUSSELSPROUT_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SWAMP]")
+                .define("Biome Type:", "SWAMP");
         BRUSSELSPROUT_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -582,8 +572,8 @@ public class HarvestcraftConfig {
         CABBAGE_ENABLED = BUILDER
                 .define("Enabled:", true);
         CABBAGE_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [COLD]")
+                .define("Biome Type:", "COLD");
         CABBAGE_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -596,8 +586,8 @@ public class HarvestcraftConfig {
         CACTUSFRUIT_ENABLED = BUILDER
                 .define("Enabled:", true);
         CACTUSFRUIT_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SANDY]")
+                .define("Biome Type:", "SANDY");
         CACTUSFRUIT_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -610,7 +600,7 @@ public class HarvestcraftConfig {
         CANDLEBERRY_ENABLED = BUILDER
                 .define("Enabled:", true);
         CANDLEBERRY_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
+                .comment("Default: [PLAINS]")
                 .define("Biome Type:", "PLAINS");
         CANDLEBERRY_FREQUENCY = BUILDER
                 .comment("Default [1]")
@@ -624,8 +614,8 @@ public class HarvestcraftConfig {
         CANTALOUPE_ENABLED = BUILDER
                 .define("Enabled:", true);
         CANTALOUPE_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [OCEAN]")
+                .define("Biome Type:", "OCEAN");
         CANTALOUPE_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -638,8 +628,8 @@ public class HarvestcraftConfig {
         CASSAVA_ENABLED = BUILDER
                 .define("Enabled:", true);
         CASSAVA_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SANDY]")
+                .define("Biome Type:", "SANDY");
         CASSAVA_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -652,8 +642,8 @@ public class HarvestcraftConfig {
         CAULIFLOWER_ENABLED = BUILDER
                 .define("Enabled:", true);
         CAULIFLOWER_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [COLD]")
+                .define("Biome Type:", "COLD");
         CAULIFLOWER_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -666,8 +656,8 @@ public class HarvestcraftConfig {
         CELERY_ENABLED = BUILDER
                 .define("Enabled:", true);
         CELERY_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [COLD]")
+                .define("Biome Type:", "COLD");
         CELERY_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -680,8 +670,8 @@ public class HarvestcraftConfig {
         CHICKPEA_ENABLED = BUILDER
                 .define("Enabled:", true);
         CHICKPEA_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SANDY]")
+                .define("Biome Type:", "SANDY");
         CHICKPEA_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -694,8 +684,8 @@ public class HarvestcraftConfig {
         CHILIPEPPER_ENABLED = BUILDER
                 .define("Enabled:", true);
         CHILIPEPPER_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SAVANNA]")
+                .define("Biome Type:", "SAVANNA");
         CHILIPEPPER_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -708,8 +698,8 @@ public class HarvestcraftConfig {
         COFFEEBEAN_ENABLED = BUILDER
                 .define("Enabled:", true);
         COFFEEBEAN_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [BEACH]")
+                .define("Biome Type:", "BEACH");
         COFFEEBEAN_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -722,8 +712,8 @@ public class HarvestcraftConfig {
         CORN_ENABLED = BUILDER
                 .define("Enabled:", true);
         CORN_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SAVANNA]")
+                .define("Biome Type:", "SAVANNA");
         CORN_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -736,8 +726,8 @@ public class HarvestcraftConfig {
         COTTON_ENABLED = BUILDER
                 .define("Enabled:", true);
         COTTON_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [MOUNTAIN]")
+                .define("Biome Type:", "MOUNTAIN");
         COTTON_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -750,8 +740,8 @@ public class HarvestcraftConfig {
         CRANBERRY_ENABLED = BUILDER
                 .define("Enabled:", true);
         CRANBERRY_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [RIVER]")
+                .define("Biome Type:", "RIVER");
         CRANBERRY_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -764,7 +754,7 @@ public class HarvestcraftConfig {
         CUCUMBER_ENABLED = BUILDER
                 .define("Enabled:", true);
         CUCUMBER_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
+                .comment("Default: [PLAINS]")
                 .define("Biome Type:", "PLAINS");
         CUCUMBER_FREQUENCY = BUILDER
                 .comment("Default [1]")
@@ -778,8 +768,8 @@ public class HarvestcraftConfig {
         EGGPLANT_ENABLED = BUILDER
                 .define("Enabled:", true);
         EGGPLANT_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [OCEAN]")
+                .define("Biome Type:", "OCEAN");
         EGGPLANT_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -792,7 +782,7 @@ public class HarvestcraftConfig {
         ELDERBERRY_ENABLED = BUILDER
                 .define("Enabled:", true);
         ELDERBERRY_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
+                .comment("Default: [PLAINS]")
                 .define("Biome Type:", "PLAINS");
         ELDERBERRY_FREQUENCY = BUILDER
                 .comment("Default [1]")
@@ -806,8 +796,8 @@ public class HarvestcraftConfig {
         FLAX_ENABLED = BUILDER
                 .define("Enabled:", true);
         FLAX_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SAVANNA]")
+                .define("Biome Type:", "SAVANNA");
         FLAX_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -820,8 +810,8 @@ public class HarvestcraftConfig {
         GARLIC_ENABLED = BUILDER
                 .define("Enabled:", true);
         GARLIC_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         GARLIC_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -834,8 +824,8 @@ public class HarvestcraftConfig {
         GINGER_ENABLED = BUILDER
                 .define("Enabled:", true);
         GINGER_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [OCEAN]")
+                .define("Biome Type:", "OCEAN");
         GINGER_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -848,8 +838,8 @@ public class HarvestcraftConfig {
         GRAPE_ENABLED = BUILDER
                 .define("Enabled:", true);
         GRAPE_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [BEACH]")
+                .define("Biome Type:", "BEACH");
         GRAPE_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -862,7 +852,7 @@ public class HarvestcraftConfig {
         GREENGRAPE_ENABLED = BUILDER
                 .define("Enabled:", true);
         GREENGRAPE_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
+                .comment("Default: [PLAINS]")
                 .define("Biome Type:", "PLAINS");
         GREENGRAPE_FREQUENCY = BUILDER
                 .comment("Default [1]")
@@ -876,8 +866,8 @@ public class HarvestcraftConfig {
         HUCKLEBERRY_ENABLED = BUILDER
                 .define("Enabled:", true);
         HUCKLEBERRY_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [MOUNTAIN]")
+                .define("Biome Type:", "MOUNTAIN");
         HUCKLEBERRY_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -890,8 +880,8 @@ public class HarvestcraftConfig {
         JICAMA_ENABLED = BUILDER
                 .define("Enabled:", true);
         JICAMA_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SWAMP]")
+                .define("Biome Type:", "SWAMP");
         JICAMA_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -904,7 +894,7 @@ public class HarvestcraftConfig {
         JUNIPERBERRY_ENABLED = BUILDER
                 .define("Enabled:", true);
         JUNIPERBERRY_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
+                .comment("Default: [PLAINS]")
                 .define("Biome Type:", "PLAINS");
         JUNIPERBERRY_FREQUENCY = BUILDER
                 .comment("Default [1]")
@@ -918,8 +908,8 @@ public class HarvestcraftConfig {
             JUTE_ENABLED = BUILDER
                 .define("Enabled:", true);
         JUTE_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         JUTE_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -932,8 +922,8 @@ public class HarvestcraftConfig {
         KALE_ENABLED = BUILDER
                 .define("Enabled:", true);
         KALE_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SWAMP]")
+                .define("Biome Type:", "SWAMP");
         KALE_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -946,8 +936,8 @@ public class HarvestcraftConfig {
         KENAF_ENABLED = BUILDER
                 .define("Enabled:", true);
         KENAF_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [BEACH]")
+                .define("Biome Type:", "BEACH");
         KENAF_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -960,8 +950,8 @@ public class HarvestcraftConfig {
         KIWI_ENABLED = BUILDER
                 .define("Enabled:", true);
         KIWI_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [BEACH]")
+                .define("Biome Type:", "BEACH");
         KIWI_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -974,8 +964,8 @@ public class HarvestcraftConfig {
         KOHLRABI_ENABLED = BUILDER
                 .define("Enabled:", true);
         KOHLRABI_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [COLD]")
+                .define("Biome Type:", "COLD");
         KOHLRABI_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -988,8 +978,8 @@ public class HarvestcraftConfig {
         LEEK_ENABLED = BUILDER
                 .define("Enabled:", true);
         LEEK_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         LEEK_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1002,8 +992,8 @@ public class HarvestcraftConfig {
         LENTIL_ENABLED = BUILDER
                 .define("Enabled:", true);
         LENTIL_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [MESA]")
+                .define("Biome Type:", "MESA");
         LENTIL_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1016,8 +1006,8 @@ public class HarvestcraftConfig {
         LETTUCE_ENABLED = BUILDER
                 .define("Enabled:", true);
         LETTUCE_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SAVANNA]")
+                .define("Biome Type:", "SAVANNA");
         LETTUCE_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1030,8 +1020,8 @@ public class HarvestcraftConfig {
         MILLET_ENABLED = BUILDER
                 .define("Enabled:", true);
         MILLET_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SWAMP]")
+                .define("Biome Type:", "SWAMP");
         MILLET_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1044,8 +1034,8 @@ public class HarvestcraftConfig {
         MULBERRY_ENABLED = BUILDER
                 .define("Enabled:", true);
         MULBERRY_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [RIVER]")
+                .define("Biome Type:", "RIVER");
         MULBERRY_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1058,7 +1048,7 @@ public class HarvestcraftConfig {
         MUSTARDSEEDS_ENABLED = BUILDER
                 .define("Enabled:", true);
         MUSTARDSEEDS_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
+                .comment("Default: [PLAINS]")
                 .define("Biome Type:", "PLAINS");
         MUSTARDSEEDS_FREQUENCY = BUILDER
                 .comment("Default [1]")
@@ -1072,8 +1062,8 @@ public class HarvestcraftConfig {
         OATS_ENABLED = BUILDER
                 .define("Enabled:", true);
         OATS_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [HILLS]")
+                .define("Biome Type:", "HILLS");
         OATS_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1086,8 +1076,8 @@ public class HarvestcraftConfig {
         OKRA_ENABLED = BUILDER
                 .define("Enabled:", true);
         OKRA_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SWAMP]")
+                .define("Biome Type:", "SWAMP");
         OKRA_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1100,8 +1090,8 @@ public class HarvestcraftConfig {
         ONION_ENABLED = BUILDER
                 .define("Enabled:", true);
         ONION_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [PLAINS]")
+                .define("Biome Type:", "HOT");
         ONION_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1114,8 +1104,8 @@ public class HarvestcraftConfig {
         PARSNIP_ENABLED = BUILDER
                 .define("Enabled:", true);
         PARSNIP_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [DRY]")
+                .define("Biome Type:", "DRY");
         PARSNIP_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1128,8 +1118,8 @@ public class HarvestcraftConfig {
         PEANUT_ENABLED = BUILDER
                 .define("Enabled:", true);
         PEANUT_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SANDY]")
+                .define("Biome Type:", "SANDY");
         PEANUT_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1142,8 +1132,8 @@ public class HarvestcraftConfig {
         PEAS_ENABLED = BUILDER
                 .define("Enabled:", true);
         PEAS_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [MOUNTAIN]")
+                .define("Biome Type:", "MOUNTAIN");
         PEAS_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1156,8 +1146,8 @@ public class HarvestcraftConfig {
         PINEAPPLE_ENABLED = BUILDER
                 .define("Enabled:", true);
         PINEAPPLE_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [BEACH]")
+                .define("Biome Type:", "BEACH");
         PINEAPPLE_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1170,8 +1160,8 @@ public class HarvestcraftConfig {
         QUINOA_ENABLED = BUILDER
                 .define("Enabled:", true);
         QUINOA_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [COLD]")
+                .define("Biome Type:", "COLD");
         QUINOA_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1184,8 +1174,8 @@ public class HarvestcraftConfig {
         RADISH_ENABLED = BUILDER
                 .define("Enabled:", true);
         RADISH_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         RADISH_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1198,8 +1188,8 @@ public class HarvestcraftConfig {
         RASPBERRY_ENABLED = BUILDER
                 .define("Enabled:", true);
         RASPBERRY_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [MOUNTAIN]")
+                .define("Biome Type:", "MOUNTAIN");
         RASPBERRY_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1212,8 +1202,8 @@ public class HarvestcraftConfig {
         RHUBARB_ENABLED = BUILDER
                 .define("Enabled:", true);
         RHUBARB_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         RHUBARB_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1226,8 +1216,8 @@ public class HarvestcraftConfig {
         RICE_ENABLED = BUILDER
                 .define("Enabled:", true);
         RICE_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SWAMP]")
+                .define("Biome Type:", "SWAMP");
         RICE_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1240,8 +1230,8 @@ public class HarvestcraftConfig {
         RUTABAGA_ENABLED = BUILDER
                 .define("Enabled:", true);
         RUTABAGA_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [COLD]")
+                .define("Biome Type:", "COLD");
         RUTABAGA_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1254,8 +1244,8 @@ public class HarvestcraftConfig {
         RYE_ENABLED = BUILDER
                 .define("Enabled:", true);
         RYE_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [HILLS]")
+                .define("Biome Type:", "HILLS");
         RYE_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1268,8 +1258,8 @@ public class HarvestcraftConfig {
         SCALLION_ENABLED = BUILDER
                 .define("Enabled:", true);
         SCALLION_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         SCALLION_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1282,8 +1272,8 @@ public class HarvestcraftConfig {
         SESAMESEEDS_ENABLED = BUILDER
                 .define("Enabled:", true);
         SESAMESEEDS_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SAVANNA]")
+                .define("Biome Type:", "SAVANNA");
         SESAMESEEDS_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1296,8 +1286,8 @@ public class HarvestcraftConfig {
         SISAL_ENABLED = BUILDER
                 .define("Enabled:", true);
         SISAL_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [SANDY]")
+                .define("Biome Type:", "SANDY");
         SISAL_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1310,8 +1300,8 @@ public class HarvestcraftConfig {
         SOYBEAN_ENABLED = BUILDER
                 .define("Enabled:", true);
         SOYBEAN_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [OCEAN]")
+                .define("Biome Type:", "OCEAN");
         SOYBEAN_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1324,8 +1314,8 @@ public class HarvestcraftConfig {
         SPICELEAF_ENABLED = BUILDER
                 .define("Enabled:", true);
         SPICELEAF_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         SPICELEAF_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1338,8 +1328,8 @@ public class HarvestcraftConfig {
         SPINACH_ENABLED = BUILDER
                 .define("Enabled:", true);
         SPINACH_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [COLD]")
+                .define("Biome Type:", "COLD");
         SPINACH_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1352,7 +1342,7 @@ public class HarvestcraftConfig {
         STRAWBERRY_ENABLED = BUILDER
                 .define("Enabled:", true);
         STRAWBERRY_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
+                .comment("Default: [PLAINS]")
                 .define("Biome Type:", "PLAINS");
         STRAWBERRY_FREQUENCY = BUILDER
                 .comment("Default [1]")
@@ -1366,8 +1356,8 @@ public class HarvestcraftConfig {
         SWEETPOTATO_ENABLED = BUILDER
                 .define("Enabled:", true);
         SWEETPOTATO_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         SWEETPOTATO_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1380,8 +1370,8 @@ public class HarvestcraftConfig {
         TARO_ENABLED = BUILDER
                 .define("Enabled:", true);
         TARO_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [BEACH]")
+                .define("Biome Type:", "BEACH");
         TARO_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1394,8 +1384,8 @@ public class HarvestcraftConfig {
         TEALEAF_ENABLED = BUILDER
                 .define("Enabled:", true);
         TEALEAF_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         TEALEAF_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1408,8 +1398,8 @@ public class HarvestcraftConfig {
         TOMATILLO_ENABLED = BUILDER
                 .define("Enabled:", true);
         TOMATILLO_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         TOMATILLO_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1422,8 +1412,8 @@ public class HarvestcraftConfig {
         TOMATO_ENABLED = BUILDER
                 .define("Enabled:", true);
         TOMATO_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [DESERT]")
+                .define("Biome Type:", "DESERT");
         TOMATO_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1436,8 +1426,8 @@ public class HarvestcraftConfig {
         TURNIP_ENABLED = BUILDER
                 .define("Enabled:", true);
         TURNIP_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         TURNIP_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1450,8 +1440,8 @@ public class HarvestcraftConfig {
         WATERCHESTNUT_ENABLED = BUILDER
                 .define("Enabled:", true);
         WATERCHESTNUT_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [RIVER]")
+                .define("Biome Type:", "RIVER");
         WATERCHESTNUT_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1464,8 +1454,8 @@ public class HarvestcraftConfig {
         WHITEMUSHROOM_ENABLED = BUILDER
                 .define("Enabled:", true);
         WHITEMUSHROOM_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         WHITEMUSHROOM_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
@@ -1478,7 +1468,7 @@ public class HarvestcraftConfig {
         WINTERSQUASH_ENABLED = BUILDER
                 .define("Enabled:", true);
         WINTERSQUASH_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
+                .comment("Default: [PLAINS]")
                 .define("Biome Type:", "PLAINS");
         WINTERSQUASH_FREQUENCY = BUILDER
                 .comment("Default [1]")
@@ -1492,8 +1482,8 @@ public class HarvestcraftConfig {
         ZUCCHINI_ENABLED = BUILDER
                 .define("Enabled:", true);
         ZUCCHINI_BIOME_TYPE = BUILDER
-                .comment("[Default: PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [FOREST]")
+                .define("Biome Type:", "FOREST");
         ZUCCHINI_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);

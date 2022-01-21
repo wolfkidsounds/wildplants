@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "immersiveengineering:hemp_fiber",
+          "name": "pamhc2crops:riceitem",
           "weight": 1,
           "functions": [
             {
@@ -20,7 +20,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "immersiveengineering:seed",
+          "name": "pamhc2crops:riceseeditem",
           "weight": 1,
           "functions": [
             {
