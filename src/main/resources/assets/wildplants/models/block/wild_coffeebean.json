@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "pamhc2crops:block/coffeebean_stage_3",
+    "particle": "pamhc2crops:block/coffeebean_stage_3"
+  }
+}

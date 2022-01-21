@@ -2,8 +2,6 @@ package wks.wolfkidsounds.wildplants;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -22,12 +20,14 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import wks.wolfkidsounds.wildplants.block.HarvestcraftModBlocks;
 import wks.wolfkidsounds.wildplants.block.ImmersiveEngineeringModBlocks;
 import wks.wolfkidsounds.wildplants.block.MinecraftModBlocks;
 import wks.wolfkidsounds.wildplants.config.CompatConfig;
 import wks.wolfkidsounds.wildplants.config.WildplantsConfig;
 import wks.wolfkidsounds.wildplants.config.features.WildplantsFeaturesConfig;
 import wks.wolfkidsounds.wildplants.items.ModItems;
+import wks.wolfkidsounds.wildplants.render.ModRenderers;
 
 import java.util.stream.Collectors;
 
@@ -64,6 +64,10 @@ public class Wildplants {
             ImmersiveEngineeringModBlocks.register(eventBus);
         }
 
+        if ((Boolean)CompatConfig.LOADED_HARVESTCRAFT && (Boolean)CompatConfig.ENABLE_HARVESTCRAFT.get()) {
+            HarvestcraftModBlocks.register(eventBus);
+        }
+
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -79,46 +83,34 @@ public class Wildplants {
 
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        //LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        //LOGGER.info("HELLO FROM PREINIT");
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
 
-        if ((Boolean)CompatConfig.ENABLE_MINECRAFT.get()) {
-            RenderTypeLookup.setRenderLayer(MinecraftModBlocks.WILD_WHEAT.get(), RenderType.getCutout());
-            RenderTypeLookup.setRenderLayer(MinecraftModBlocks.WILD_CARROTS.get(), RenderType.getCutout());
-            RenderTypeLookup.setRenderLayer(MinecraftModBlocks.WILD_POTATOES.get(), RenderType.getCutout());
-            RenderTypeLookup.setRenderLayer(MinecraftModBlocks.WILD_BEETROOTS.get(), RenderType.getCutout());
-        }
-
-        if ((Boolean)CompatConfig.LOADED_IMMERSIVEENGINEERING && (Boolean)CompatConfig.ENABLE_IMMERSIVEENGINEERING.get()) {
-            RenderTypeLookup.setRenderLayer(ImmersiveEngineeringModBlocks.WILD_HEMP.get(), RenderType.getCutout());
-        }
+        ModRenderers.registerBlocks();
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {
         // some example code to dispatch IMC to another mod
         InterModComms.sendTo("wildplants", "helloworld", () -> {
-            LOGGER.info("Hello world from the MDK");
+            //LOGGER.info("Hello world from the MDK");
             return "Hello world";
         });
     }
 
     private void processIMC(final InterModProcessEvent event) {
         // some example code to receive and process InterModComms from other mods
-        LOGGER.info("Got IMC {}", event.getIMCStream().
-                map(m -> m.getMessageSupplier().get()).
-                collect(Collectors.toList()));
+        //LOGGER.info("Got IMC {}", event.getIMCStream().map(m -> m.getMessageSupplier().get()).collect(Collectors.toList()));
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {
         // do something when the server starts
-        LOGGER.info("HELLO from server starting");
+        //LOGGER.info("HELLO from server starting");
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
@@ -128,7 +120,7 @@ public class Wildplants {
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
             // register a new block here
-            LOGGER.info("HELLO from Register Block");
+            //LOGGER.info("HELLO from Register Block");
         }
     }
 }

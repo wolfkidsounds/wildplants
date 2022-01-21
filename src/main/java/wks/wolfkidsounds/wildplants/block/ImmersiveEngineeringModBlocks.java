@@ -32,7 +32,7 @@ public class ImmersiveEngineeringModBlocks {
 
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        if ((Boolean)CompatConfig.ENABLE_MINECRAFT.get()) {
+        if ((Boolean) CompatConfig.LOADED_IMMERSIVEENGINEERING && (Boolean)CompatConfig.ENABLE_IMMERSIVEENGINEERING.get()) {
             ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().group(Wildplants.ITEM_GROUP)));
         }
     }
