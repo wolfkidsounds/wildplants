@@ -19,8 +19,8 @@ public final class WildplantsConfig {
         BUILDER.push("Global_Modifier");
         //GLOBAL_CHANCE = BUILDER.comment("Global rarity modifier (higher is less) [Default: 10]").define("Rarity", 10);
         GLOBAL_FREQUENCY = BUILDER
-                .comment("Global generation frequency modifier (higher is more) [Default: 5]")
-                .define("Frequency", 5);
+                .comment("Global generation frequency modifier (higher is more) [Default: 1]")
+                .define("Frequency", 1);
         GLOBAL_PATCH_SIZE = BUILDER
                 .comment("Global generation patch size modifier (higher is more) [Default: 5]")
                 .define("Size", 2);

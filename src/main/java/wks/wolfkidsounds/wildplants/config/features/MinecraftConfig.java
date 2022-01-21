@@ -34,8 +34,8 @@ public class MinecraftConfig {
             WHEAT_ENABLED = BUILDER
                     .define("Enabled:", true);
             WHEAT_BIOME_TYPE = BUILDER
-                    .comment("Default: [PLAINS]")
-                    .define("Biome Type:", "PLAINS");
+                    .comment("Default: [SAVANNA]")
+                    .define("Biome Type:", "SAVANNA");
             WHEAT_FREQUENCY = BUILDER
                     .comment("Default [1]")
                     .define("Frequency:", 1);

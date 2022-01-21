@@ -201,7 +201,6 @@ public class HarvestcraftModBlocks {
     public static final RegistryObject<Block> WILD_RHUBARB = registerBlock("wild_rhubarb",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    //TODO isblock, texture
     public static final RegistryObject<Block> WILD_RICE = registerBlock("wild_rice",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
@@ -244,7 +243,6 @@ public class HarvestcraftModBlocks {
     public static final RegistryObject<Block> WILD_TOMATILLO = registerBlock("wild_tomatillo",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    //TODO isblock, texture
     public static final RegistryObject<Block> WILD_TOMATO = registerBlock("wild_tomato",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
@@ -254,7 +252,6 @@ public class HarvestcraftModBlocks {
     public static final RegistryObject<Block> WILD_WATERCHESTNUT = registerBlock("wild_waterchestnut",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    //TODO isblock, texture
     public static final RegistryObject<Block> WILD_WHITEMUSHROOM = registerBlock("wild_whitemushroom",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 

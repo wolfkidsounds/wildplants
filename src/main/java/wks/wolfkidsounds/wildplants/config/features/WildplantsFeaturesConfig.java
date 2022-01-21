@@ -22,7 +22,8 @@ public final class WildplantsFeaturesConfig {
                         "Humidity: [WET, DRY] \n" +
                         "Tree Types: [SAVANNA, CONIFEROUS, JUNGLE] \n" +
                         "Attributes: [SPOOKY, DEAD, LUSH, MUSHROOM, MAGICAL, RARE, PLATEAU, MODIFIED, OCEAN, RIVER, WATER] \n" +
-                        "Generic Types: [MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID]");
+                        "Generic Types: [MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID] \n" +
+                        "Use: [NONE] to generate in all biomes");
 
         if ((Boolean) CompatConfig.ENABLE_MINECRAFT.get()) {
             BUILDER.push("Minecraft");

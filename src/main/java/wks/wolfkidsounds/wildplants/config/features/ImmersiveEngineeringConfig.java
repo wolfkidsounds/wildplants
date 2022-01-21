@@ -19,8 +19,8 @@ public class ImmersiveEngineeringConfig {
         HEMP_ENABLED = BUILDER
                 .define("Enabled:", true);
         HEMP_BIOME_TYPE = BUILDER
-                .comment("Default: [PLAINS]")
-                .define("Biome Type:", "PLAINS");
+                .comment("Default: [NONE]")
+                .define("Biome Type:", "NONE");
         HEMP_FREQUENCY = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);
