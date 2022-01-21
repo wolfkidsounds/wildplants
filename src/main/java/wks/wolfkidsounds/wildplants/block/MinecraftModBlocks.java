@@ -30,15 +30,12 @@ public class MinecraftModBlocks {
     public static final RegistryObject<Block> WILD_WHEAT = registerBlock("wild_wheat",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    //TODO - lang file
     public static final RegistryObject<Block> WILD_CARROTS = registerBlock("wild_carrots",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    //TODO - lang file
     public static final RegistryObject<Block> WILD_POTATOES = registerBlock("wild_potatoes",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    //TODO - lang file
     public static final RegistryObject<Block> WILD_BEETROOTS = registerBlock("wild_beetroots",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
