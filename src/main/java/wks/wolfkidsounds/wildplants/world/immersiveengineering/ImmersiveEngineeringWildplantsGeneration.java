@@ -7,6 +7,7 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
+import wks.wolfkidsounds.wildplants.config.features.ImmersiveEngineeringConfig;
 import wks.wolfkidsounds.wildplants.config.features.MinecraftConfig;
 
 import java.util.List;
@@ -19,7 +20,7 @@ public class ImmersiveEngineeringWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.WHEAT_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(ImmersiveEngineeringConfig.HEMP_BIOME_TYPE.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
             base.add(() -> ImmersiveEngineeringConfiguredFeatures.WILD_HEMP_CONFIG);
