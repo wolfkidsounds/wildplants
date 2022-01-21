@@ -18,28 +18,26 @@ public class CompatConfig {
 
     public static void initMinecraft(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-compat-minecraft-configuration");
-        BUILDER.comment("A config file will be generated when the mod is loaded while the feature is enabled. \n" +
-                "If you disable a feature the config file and block registration/generation will be disabled");
         ENABLE_MINECRAFT = BUILDER
-                .define("Minecraft ", true);
+                .define("Minecraft", true);
     }
 
     public static void initImmersiveEngineering(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-compat-immersiveengineering-configuration");
         ENABLE_IMMERSIVEENGINEERING = BUILDER
-                .define("Immersive Engineering", true);
+                .define("Immersive_Engineering", true);
     }
 
     public static void initHarvestcraft(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-compat-harvestcraft-configuration");
         ENABLE_HARVESTCRAFT = BUILDER
-                .define("Pams Harvestcraft", true);
+                .define("Pams_Harvestcraft", true);
     }
 
     public static void initFarmersDelight(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-compat-farmersdelight-configuration");
-        ENABLE_HARVESTCRAFT = BUILDER
-                .define("Farmers Delight", true);
+        ENABLE_FARMERSDELIGHT = BUILDER
+                .define("Farmers_Delight", true);
     }
 
 

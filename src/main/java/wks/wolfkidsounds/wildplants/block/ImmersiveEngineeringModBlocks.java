@@ -1,4 +1,5 @@
 package wks.wolfkidsounds.wildplants.block;
+//TODO BLOCK-DROPS
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -27,6 +28,7 @@ public class ImmersiveEngineeringModBlocks {
         return toReturn;
     }
 
+    //TODO is not displayed correctly (no texture)
     public static final RegistryObject<Block> WILD_HEMP = registerBlock("wild_hemp",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
