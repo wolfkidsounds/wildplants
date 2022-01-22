@@ -12,20 +12,34 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import wks.wolfkidsounds.wildplants.Wildplants;
-import wks.wolfkidsounds.wildplants.config.CompatConfig;
 import wks.wolfkidsounds.wildplants.items.ModItems;
 
 import java.util.function.Supplier;
 
-public class HarvestcraftModBlocks {
+public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, Wildplants.MOD_ID);
 
-    private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+    public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
+
+    public static final RegistryObject<Block> MINECRAFT_WILD_WHEAT = registerBlock("minecraft_wild_wheat",
+            () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> MINECRAFT_WILD_CARROTS = registerBlock("minecraft_wild_carrots",
+            () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> MINECRAFT_WILD_POTATOES = registerBlock("minecraft_wild_potatoes",
+            () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> MINECRAFT_WILD_BEETROOTS = registerBlock("minecraft_wild_beetroots",
+            () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> IMMERSIVEENGINEERING_WILD_HEMP = registerBlock("immersiveenineering_wild_hemp",
+            () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
     public static final RegistryObject<Block> HARVESTCRAFT_WILD_AGAVE = registerBlock("harvestcraft_wild_agave",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
@@ -261,11 +275,8 @@ public class HarvestcraftModBlocks {
     public static final RegistryObject<Block> HARVESTCRAFT_WILD_ZUCCHINI = registerBlock("harvestcraft_wild_zucchini",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        if ((Boolean)CompatConfig.LOADED_HARVESTCRAFT && (Boolean)CompatConfig.ENABLE_HARVESTCRAFT.get()) {
-            ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().group(Wildplants.ITEM_GROUP)));
-        }
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().group(Wildplants.ITEM_GROUP)));
     }
 
     public static void register(IEventBus eventBus) {

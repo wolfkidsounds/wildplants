@@ -13,10 +13,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import wks.wolfkidsounds.wildplants.block.HarvestcraftModBlocks;
-import wks.wolfkidsounds.wildplants.block.ImmersiveEngineeringModBlocks;
-import wks.wolfkidsounds.wildplants.block.MinecraftModBlocks;
-import wks.wolfkidsounds.wildplants.config.CompatConfig;
+import wks.wolfkidsounds.wildplants.block.ModBlocks;
 import wks.wolfkidsounds.wildplants.config.WildplantsConfig;
 import wks.wolfkidsounds.wildplants.config.features.WildplantsFeaturesConfig;
 import wks.wolfkidsounds.wildplants.items.ModItems;
@@ -36,7 +33,6 @@ public class Wildplants {
     };
 
     public Wildplants() {
-        // Register the setup method for modloading
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON,
@@ -45,43 +41,20 @@ public class Wildplants {
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON,
                 WildplantsFeaturesConfig.SPEC, "./wildplants/wildplants-features-common.toml");
 
+        ModBlocks.register(eventBus);
         ModItems.register(eventBus);
 
-        if ((Boolean)CompatConfig.ENABLE_MINECRAFT.get()) {
-            MinecraftModBlocks.register(eventBus);
-        }
-
-        if ((Boolean)CompatConfig.LOADED_IMMERSIVEENGINEERING && (Boolean)CompatConfig.ENABLE_IMMERSIVEENGINEERING.get()) {
-            ImmersiveEngineeringModBlocks.register(eventBus);
-        }
-
-        if ((Boolean)CompatConfig.LOADED_HARVESTCRAFT && (Boolean)CompatConfig.ENABLE_HARVESTCRAFT.get()) {
-            HarvestcraftModBlocks.register(eventBus);
-        }
-
-        // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        // Register the enqueueIMC method for modloading
-        //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
-        // Register the processIMC method for modloading
-        //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
-        // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-        // some preinit code
-        //LOGGER.info("HELLO FROM PREINIT");
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-        // do something that can only be done on the client
-        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
-
-        ModRenderers.registerBlocks();
+        ModRenderers.registerBlockCutout();
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD

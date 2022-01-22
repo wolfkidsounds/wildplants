@@ -8,7 +8,6 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import wks.wolfkidsounds.wildplants.config.features.ImmersiveEngineeringConfig;
-import wks.wolfkidsounds.wildplants.config.features.MinecraftConfig;
 
 import java.util.List;
 import java.util.Set;
