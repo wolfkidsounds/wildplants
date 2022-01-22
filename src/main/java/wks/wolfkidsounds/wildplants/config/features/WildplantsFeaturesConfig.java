@@ -12,9 +12,6 @@ public final class WildplantsFeaturesConfig {
 
     static {
         Wildplants.LOGGER.debug("init-feature-config");
-
-        BUILDER.push("Features");
-
         BUILDER.comment(
                 "Valid Biome Types:\n" +
                         "Temperature: [HOT, COLD] \n" +
@@ -42,15 +39,6 @@ public final class WildplantsFeaturesConfig {
             HarvestcraftConfig.init(BUILDER);
             BUILDER.pop();
         }
-
-        if ((Boolean)CompatConfig.LOADED_FARMERSDELIGHT && (Boolean)CompatConfig.ENABLE_FARMERSDELIGHT.get()) {
-            BUILDER.push("Farmers_Delight");
-            FarmersDelightConfig.init(BUILDER);
-            BUILDER.pop();
-        }
-
-        BUILDER.pop();
-
         SPEC = BUILDER.build();
     }
 }

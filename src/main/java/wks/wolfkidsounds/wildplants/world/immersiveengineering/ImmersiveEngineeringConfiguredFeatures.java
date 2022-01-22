@@ -3,7 +3,7 @@ package wks.wolfkidsounds.wildplants.world.immersiveengineering;
 import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.feature.*;
-import wks.wolfkidsounds.wildplants.block.ImmersiveEngineeringModBlocks;
+import wks.wolfkidsounds.wildplants.block.ModBlocks;
 import wks.wolfkidsounds.wildplants.config.WildplantsConfig;
 import wks.wolfkidsounds.wildplants.config.features.ImmersiveEngineeringConfig;
 
@@ -17,9 +17,8 @@ public class ImmersiveEngineeringConfiguredFeatures {
 
 
     public static final ConfiguredFeature<?, ?> IMMERSIVEENGINEERING_WILD_HEMP_CONFIG = Feature.FLOWER.withConfiguration((
-            new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ImmersiveEngineeringModBlocks.IMMERSIVEENGINEERING_WILD_HEMP.get().getDefaultState()),
-                    SimpleBlockPlacer.PLACER)).tries(HEMP_PATCH_SIZE_IMMERSIVEENINEERING).zSpread(3).xSpread(3).build())
-            .withPlacement(Features.Placements.PATCH_PLACEMENT)
-            .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT.square())
+            new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.IMMERSIVEENGINEERING_WILD_HEMP.get().getDefaultState()),
+                    SimpleBlockPlacer.PLACER)).tries(HEMP_PATCH_SIZE_IMMERSIVEENINEERING).zSpread(2).xSpread(2).build())
+            .withPlacement(Features.Placements.HEIGHTMAP_SPREAD_DOUBLE_PLACEMENT.square())
             .withPlacement(Features.Placements.VEGETATION_PLACEMENT).count(HEMP_FREQUENCY_IMMERSIVEENINEERING);
 }
