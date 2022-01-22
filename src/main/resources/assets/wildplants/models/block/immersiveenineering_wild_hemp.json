@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "immersiveengineering:block/hemp/bottom3",
+    "particle": "immersiveengineering:block/hemp/bottom3"
+  }
+}

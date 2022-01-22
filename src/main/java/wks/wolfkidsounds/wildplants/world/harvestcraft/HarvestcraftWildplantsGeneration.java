@@ -19,10 +19,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.AGAVE_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.AGAVE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_AGAVE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_AGAVE_CONFIG);
         }
     }
 
@@ -30,10 +30,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.AMARANTH_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.AMARANTH_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_AMARANTH_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_AMARANTH_CONFIG);
         }
     }
 
@@ -41,10 +41,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ARROWROOT_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ARROWROOT_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_ARROWROOT_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ARROWROOT_CONFIG);
         }
     }
 
@@ -52,10 +52,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ARTICHOKE_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ARTICHOKE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_ARTICHOKE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ARTICHOKE_CONFIG);
         }
     }
 
@@ -63,10 +63,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ASPARAGUS_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ASPARAGUS_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_ASPARAGUS_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ASPARAGUS_CONFIG);
         }
     }
 
@@ -74,10 +74,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BARLEY_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BARLEY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_BARLEY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BARLEY_CONFIG);
         }
     }
 
@@ -85,10 +85,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BEAN_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BEAN_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_BEAN_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BEAN_CONFIG);
         }
     }
 
@@ -96,10 +96,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BELLPEPPER_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BELLPEPPER_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_BELLPEPPER_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BELLPEPPER_CONFIG);
         }
     }
 
@@ -107,10 +107,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BLACKBERRY_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BLACKBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_BLACKBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BLACKBERRY_CONFIG);
         }
     }
 
@@ -118,10 +118,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BLUEBERRY_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BLUEBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_BLUEBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BLUEBERRY_CONFIG);
         }
     }
 
@@ -129,10 +129,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BROCCOLI_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BROCCOLI_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_BROCCOLI_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BROCCOLI_CONFIG);
         }
     }
 
@@ -140,10 +140,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BRUSSELSPROUT_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BRUSSELSPROUT_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_BRUSSELSPROUT_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BRUSSELSPROUT_CONFIG);
         }
     }
 
@@ -151,10 +151,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CABBAGE_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CABBAGE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_CABBAGE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CABBAGE_CONFIG);
         }
     }
 
@@ -162,10 +162,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CACTUSFRUIT_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CACTUSFRUIT_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_CACTUSFRUIT_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CACTUSFRUIT_CONFIG);
         }
     }
 
@@ -173,10 +173,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CANDLEBERRY_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CANDLEBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_CANDLEBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CANDLEBERRY_CONFIG);
         }
     }
 
@@ -184,10 +184,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CANTALOUPE_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CANTALOUPE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_CANTALOUPE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CANTALOUPE_CONFIG);
         }
     }
 
@@ -195,10 +195,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CASSAVA_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CASSAVA_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_CASSAVA_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CASSAVA_CONFIG);
         }
     }
 
@@ -206,10 +206,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CAULIFLOWER_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CAULIFLOWER_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_CAULIFLOWER_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CAULIFLOWER_CONFIG);
         }
     }
 
@@ -217,10 +217,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CELERY_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CELERY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_CELERY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CELERY_CONFIG);
         }
     }
 
@@ -228,10 +228,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CHICKPEA_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CHICKPEA_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_CHICKPEA_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CHICKPEA_CONFIG);
         }
     }
 
@@ -239,10 +239,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CHILIPEPPER_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CHILIPEPPER_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_CHILIPEPPER_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CHILIPEPPER_CONFIG);
         }
     }
 
@@ -250,10 +250,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.COFFEEBEAN_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.COFFEEBEAN_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_COFFEEBEAN_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_COFFEEBEAN_CONFIG);
         }
     }
 
@@ -261,10 +261,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CORN_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CORN_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_CORN_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CORN_CONFIG);
         }
     }
 
@@ -272,10 +272,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.COTTON_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.COTTON_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_COTTON_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_COTTON_CONFIG);
         }
     }
 
@@ -283,10 +283,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CRANBERRY_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CRANBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_CRANBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CRANBERRY_CONFIG);
         }
     }
 
@@ -294,10 +294,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CUCUMBER_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CUCUMBER_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_CUCUMBER_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CUCUMBER_CONFIG);
         }
     }
 
@@ -305,10 +305,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.EGGPLANT_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.EGGPLANT_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_EGGPLANT_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_EGGPLANT_CONFIG);
         }
     }
 
@@ -316,10 +316,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ELDERBERRY_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ELDERBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_ELDERBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ELDERBERRY_CONFIG);
         }
     }
 
@@ -327,10 +327,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.FLAX_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.FLAX_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_FLAX_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_FLAX_CONFIG);
         }
     }
 
@@ -338,10 +338,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.GARLIC_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.GARLIC_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_GARLIC_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_GARLIC_CONFIG);
         }
     }
 
@@ -349,10 +349,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.GINGER_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.GINGER_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_GINGER_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_GINGER_CONFIG);
         }
     }
 
@@ -360,10 +360,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.GRAPE_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.GRAPE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_GRAPE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_GRAPE_CONFIG);
         }
     }
 
@@ -371,10 +371,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.GREENGRAPE_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.GREENGRAPE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_GREENGRAPE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_GREENGRAPE_CONFIG);
         }
     }
 
@@ -382,10 +382,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.HUCKLEBERRY_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.HUCKLEBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_HUCKLEBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_HUCKLEBERRY_CONFIG);
         }
     }
 
@@ -393,10 +393,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.JICAMA_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.JICAMA_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_JICAMA_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_JICAMA_CONFIG);
         }
     }
 
@@ -404,10 +404,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.JUNIPERBERRY_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.JUNIPERBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_JUNIPERBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_JUNIPERBERRY_CONFIG);
         }
     }
 
@@ -415,10 +415,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.JUTE_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.JUTE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_JUTE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_JUTE_CONFIG);
         }
     }
 
@@ -426,10 +426,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.KALE_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.KALE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_KALE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_KALE_CONFIG);
         }
     }
 
@@ -437,10 +437,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.KENAF_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.KENAF_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_KENAF_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_KENAF_CONFIG);
         }
     }
 
@@ -448,10 +448,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.KIWI_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.KIWI_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_KIWI_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_KIWI_CONFIG);
         }
     }
 
@@ -459,10 +459,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.KOHLRABI_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.KOHLRABI_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_KOHLRABI_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_KOHLRABI_CONFIG);
         }
     }
 
@@ -470,10 +470,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.LEEK_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.LEEK_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_LEEK_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_LEEK_CONFIG);
         }
     }
 
@@ -481,10 +481,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.LENTIL_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.LENTIL_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_LENTIL_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_LENTIL_CONFIG);
         }
     }
 
@@ -492,10 +492,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.LETTUCE_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.LETTUCE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_LETTUCE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_LETTUCE_CONFIG);
         }
     }
 
@@ -503,10 +503,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.MILLET_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.MILLET_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_MILLET_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_MILLET_CONFIG);
         }
     }
 
@@ -514,10 +514,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.MULBERRY_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.MULBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_MULBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_MULBERRY_CONFIG);
         }
     }
 
@@ -525,10 +525,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.MUSTARDSEEDS_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.MUSTARDSEEDS_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_MUSTARDSEEDS_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_MUSTARDSEEDS_CONFIG);
         }
     }
 
@@ -536,10 +536,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.OATS_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.OATS_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_OATS_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_OATS_CONFIG);
         }
     }
 
@@ -547,10 +547,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.OKRA_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.OKRA_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_OKRA_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_OKRA_CONFIG);
         }
     }
 
@@ -558,10 +558,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ONION_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ONION_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_ONION_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ONION_CONFIG);
         }
     }
 
@@ -569,10 +569,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.PARSNIP_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.PARSNIP_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_PARSNIP_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_PARSNIP_CONFIG);
         }
     }
 
@@ -580,10 +580,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.PEANUT_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.PEANUT_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_PEANUT_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_PEANUT_CONFIG);
         }
     }
 
@@ -591,10 +591,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.PEAS_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.PEAS_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_PEAS_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_PEAS_CONFIG);
         }
     }
 
@@ -602,10 +602,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.PINEAPPLE_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.PINEAPPLE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_PINEAPPLE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_PINEAPPLE_CONFIG);
         }
     }
 
@@ -613,10 +613,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.QUINOA_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.QUINOA_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_QUINOA_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_QUINOA_CONFIG);
         }
     }
 
@@ -624,10 +624,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RADISH_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RADISH_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_RADISH_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RADISH_CONFIG);
         }
     }
 
@@ -635,10 +635,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RASPBERRY_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RASPBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_RASPBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RASPBERRY_CONFIG);
         }
     }
 
@@ -646,10 +646,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RHUBARB_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RHUBARB_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_RHUBARB_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RHUBARB_CONFIG);
         }
     }
 
@@ -657,10 +657,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RICE_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RICE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_RICE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RICE_CONFIG);
         }
     }
 
@@ -668,10 +668,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RUTABAGA_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RUTABAGA_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_RUTABAGA_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RUTABAGA_CONFIG);
         }
     }
 
@@ -679,10 +679,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RYE_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RYE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_RYE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RYE_CONFIG);
         }
     }
 
@@ -690,10 +690,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SCALLION_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SCALLION_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_SCALLION_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SCALLION_CONFIG);
         }
     }
 
@@ -701,10 +701,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SESAMESEEDS_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SESAMESEEDS_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_SESAMESEEDS_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SESAMESEEDS_CONFIG);
         }
     }
 
@@ -712,10 +712,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SISAL_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SISAL_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_SISAL_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SISAL_CONFIG);
         }
     }
 
@@ -723,10 +723,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SOYBEAN_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SOYBEAN_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_SOYBEAN_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SOYBEAN_CONFIG);
         }
     }
 
@@ -734,10 +734,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SPINACH_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SPINACH_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_SPINACH_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SPINACH_CONFIG);
         }
     }
 
@@ -745,10 +745,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SPICELEAF_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SPICELEAF_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_SPICELEAF_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SPICELEAF_CONFIG);
         }
     }
 
@@ -756,10 +756,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.STRAWBERRY_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.STRAWBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_STRAWBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_STRAWBERRY_CONFIG);
         }
     }
 
@@ -767,10 +767,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SWEETPOTATO_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SWEETPOTATO_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_SWEETPOTATO_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SWEETPOTATO_CONFIG);
         }
     }
 
@@ -778,10 +778,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TARO_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TARO_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_TARO_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TARO_CONFIG);
         }
     }
 
@@ -789,10 +789,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TEALEAF_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TEALEAF_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_TEALEAF_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TEALEAF_CONFIG);
         }
     }
 
@@ -800,10 +800,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TOMATILLO_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TOMATILLO_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_TOMATILLO_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TOMATILLO_CONFIG);
         }
     }
 
@@ -811,10 +811,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TOMATO_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TOMATO_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_TOMATO_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TOMATO_CONFIG);
         }
     }
 
@@ -822,10 +822,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TURNIP_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TURNIP_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_TURNIP_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TURNIP_CONFIG);
         }
     }
 
@@ -833,10 +833,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.WATERCHESTNUT_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.WATERCHESTNUT_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_WATERCHESTNUT_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_WATERCHESTNUT_CONFIG);
         }
     }
 
@@ -844,10 +844,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.WHITEMUSHROOM_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.WHITEMUSHROOM_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_WHITEMUSHROOM_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_WHITEMUSHROOM_CONFIG);
         }
     }
 
@@ -855,10 +855,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.WINTERSQUASH_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.WINTERSQUASH_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_WINTERSQUASH_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_WINTERSQUASH_CONFIG);
         }
     }
 
@@ -866,10 +866,10 @@ public class HarvestcraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ZUCCHINI_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ZUCCHINI_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.WILD_ZUCCHINI_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ZUCCHINI_CONFIG);
         }
     }
 }

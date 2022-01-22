@@ -27,16 +27,16 @@ public class MinecraftModBlocks {
         return toReturn;
     }
 
-    public static final RegistryObject<Block> WILD_WHEAT = registerBlock("wild_wheat",
+    public static final RegistryObject<Block> MINECRAFT_WILD_WHEAT = registerBlock("minecraft_wild_wheat",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CARROTS = registerBlock("wild_carrots",
+    public static final RegistryObject<Block> MINECRAFT_WILD_CARROTS = registerBlock("minecraft_wild_carrots",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_POTATOES = registerBlock("wild_potatoes",
+    public static final RegistryObject<Block> MINECRAFT_WILD_POTATOES = registerBlock("minecraft_wild_potatoes",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_BEETROOTS = registerBlock("wild_beetroots",
+    public static final RegistryObject<Block> MINECRAFT_WILD_BEETROOTS = registerBlock("minecraft_wild_beetroots",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
 
