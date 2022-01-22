@@ -10,11 +10,9 @@ public class CompatConfig {
 
     public static ForgeConfigSpec.BooleanValue ENABLE_IMMERSIVEENGINEERING;
     public static ForgeConfigSpec.BooleanValue ENABLE_HARVESTCRAFT;
-    public static ForgeConfigSpec.BooleanValue ENABLE_FARMERSDELIGHT;
 
     public static Boolean LOADED_IMMERSIVEENGINEERING = ModList.get().isLoaded("immersiveengineering");
     public static Boolean LOADED_HARVESTCRAFT = ModList.get().isLoaded("pamhc2crops");
-    public static Boolean LOADED_FARMERSDELIGHT = ModList.get().isLoaded("farmersdelight");
 
     public static void initMinecraft(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-compat-minecraft-configuration");
@@ -25,20 +23,12 @@ public class CompatConfig {
     public static void initImmersiveEngineering(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-compat-immersiveengineering-configuration");
         ENABLE_IMMERSIVEENGINEERING = BUILDER
-                .define("Immersive_Engineering", false);
+                .define("Immersive_Engineering", true);
     }
 
     public static void initHarvestcraft(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-compat-harvestcraft-configuration");
         ENABLE_HARVESTCRAFT = BUILDER
-                .define("Pams_Harvestcraft", false);
+                .define("Pams_Harvestcraft", true);
     }
-
-    public static void initFarmersDelight(ForgeConfigSpec.Builder BUILDER) {
-        Wildplants.LOGGER.debug("init-compat-farmersdelight-configuration");
-        ENABLE_FARMERSDELIGHT = BUILDER
-                .define("Farmers_Delight", false);
-    }
-
-
 }
