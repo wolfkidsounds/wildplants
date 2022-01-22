@@ -19,9 +19,9 @@ public class MinecraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.WHEAT_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.WHEAT_BIOME_TYPE_MINECRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base = event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> MinecraftConfiguredFeatures.WILD_WHEAT_CONFIG);
+            base.add(() -> MinecraftConfiguredFeatures.MINECRAFT_WILD_WHEAT_CONFIG);
         }
     }
 
@@ -29,9 +29,9 @@ public class MinecraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.CARROTS_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.CARROTS_BIOME_TYPE_MINECRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base = event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> MinecraftConfiguredFeatures.WILD_CARROTS_CONFIG);
+            base.add(() -> MinecraftConfiguredFeatures.MINECRAFT_WILD_CARROTS_CONFIG);
         }
     }
 
@@ -39,10 +39,10 @@ public class MinecraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.POTATOES_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.POTATOES_BIOME_TYPE_MINECRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> MinecraftConfiguredFeatures.WILD_POTATOES_CONFIG);
+            base.add(() -> MinecraftConfiguredFeatures.MINECRAFT_WILD_POTATOES_CONFIG);
         }
     }
 
@@ -50,10 +50,10 @@ public class MinecraftWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.BEETROOTS_BIOME_TYPE.get()))) {
+        if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.BEETROOTS_BIOME_TYPE_MINECRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> MinecraftConfiguredFeatures.WILD_BEETROOTS_CONFIG);
+            base.add(() -> MinecraftConfiguredFeatures.MINECRAFT_WILD_BEETROOTS_CONFIG);
         }
     }
 }

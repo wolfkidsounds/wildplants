@@ -7,81 +7,81 @@ import wks.wolfkidsounds.wildplants.Wildplants;
 public class MinecraftConfig {
 
     //MINECRAFT
-    public static ForgeConfigSpec.ConfigValue<String> WHEAT_BIOME_TYPE;
-    public static ForgeConfigSpec.ConfigValue<Integer> WHEAT_FREQUENCY;
-    public static ForgeConfigSpec.ConfigValue<Integer> WHEAT_PATCH_SIZE;
-    public static ForgeConfigSpec.BooleanValue WHEAT_ENABLED;
+    public static ForgeConfigSpec.ConfigValue<String> WHEAT_BIOME_TYPE_MINECRAFT;
+    public static ForgeConfigSpec.ConfigValue<Integer> WHEAT_FREQUENCY_MINECRAFT;
+    public static ForgeConfigSpec.ConfigValue<Integer> WHEAT_PATCH_SIZE_MINECRAFT;
+    public static ForgeConfigSpec.BooleanValue WHEAT_ENABLED_MINECRAFT;
 
-    public static ForgeConfigSpec.ConfigValue<String> CARROTS_BIOME_TYPE;
-    public static ForgeConfigSpec.ConfigValue<Integer> CARROTS_FREQUENCY;
-    public static ForgeConfigSpec.ConfigValue<Integer> CARROTS_PATCH_SIZE;
-    public static ForgeConfigSpec.BooleanValue CARROTS_ENABLED;
+    public static ForgeConfigSpec.ConfigValue<String> CARROTS_BIOME_TYPE_MINECRAFT;
+    public static ForgeConfigSpec.ConfigValue<Integer> CARROTS_FREQUENCY_MINECRAFT;
+    public static ForgeConfigSpec.ConfigValue<Integer> CARROTS_PATCH_SIZE_MINECRAFT;
+    public static ForgeConfigSpec.BooleanValue CARROTS_ENABLED_MINECRAFT;
 
-    public static ForgeConfigSpec.ConfigValue<String> POTATOES_BIOME_TYPE;
-    public static ForgeConfigSpec.ConfigValue<Integer> POTATOES_FREQUENCY;
-    public static ForgeConfigSpec.ConfigValue<Integer> POTATOES_PATCH_SIZE;
-    public static ForgeConfigSpec.BooleanValue POTATOES_ENABLED;
+    public static ForgeConfigSpec.ConfigValue<String> POTATOES_BIOME_TYPE_MINECRAFT;
+    public static ForgeConfigSpec.ConfigValue<Integer> POTATOES_FREQUENCY_MINECRAFT;
+    public static ForgeConfigSpec.ConfigValue<Integer> POTATOES_PATCH_SIZE_MINECRAFT;
+    public static ForgeConfigSpec.BooleanValue POTATOES_ENABLED_MINECRAFT;
 
-    public static ForgeConfigSpec.ConfigValue<String> BEETROOTS_BIOME_TYPE;
-    public static ForgeConfigSpec.ConfigValue<Integer> BEETROOTS_FREQUENCY;
-    public static ForgeConfigSpec.ConfigValue<Integer> BEETROOTS_PATCH_SIZE;
-    public static ForgeConfigSpec.BooleanValue BEETROOTS_ENABLED;
+    public static ForgeConfigSpec.ConfigValue<String> BEETROOTS_BIOME_TYPE_MINECRAFT;
+    public static ForgeConfigSpec.ConfigValue<Integer> BEETROOTS_FREQUENCY_MINECRAFT;
+    public static ForgeConfigSpec.ConfigValue<Integer> BEETROOTS_PATCH_SIZE_MINECRAFT;
+    public static ForgeConfigSpec.BooleanValue BEETROOTS_ENABLED_MINECRAFT;
 
     public static void init(ForgeConfigSpec.Builder BUILDER) {
             Wildplants.LOGGER.debug("init-minecraft-feature-config");
 
-            BUILDER.push("WILD WHEAT");
-            WHEAT_ENABLED = BUILDER
+            BUILDER.push("MINECRAFT_WILD WHEAT");
+            WHEAT_ENABLED_MINECRAFT = BUILDER
                     .define("Enabled:", true);
-            WHEAT_BIOME_TYPE = BUILDER
+            WHEAT_BIOME_TYPE_MINECRAFT = BUILDER
                     .comment("Default: [SAVANNA]")
                     .define("Biome Type:", "SAVANNA");
-            WHEAT_FREQUENCY = BUILDER
+            WHEAT_FREQUENCY_MINECRAFT = BUILDER
                     .comment("Default [1]")
                     .define("Frequency:", 1);
-            WHEAT_PATCH_SIZE = BUILDER
+            WHEAT_PATCH_SIZE_MINECRAFT = BUILDER
                     .comment("Default [1]")
                     .define("Patch Size:", 1);
             BUILDER.pop();
 
-            BUILDER.push("WILD CARROTS");
-            CARROTS_ENABLED = BUILDER
+            BUILDER.push("MINECRAFT_WILD CARROTS");
+            CARROTS_ENABLED_MINECRAFT = BUILDER
                     .define("Enabled:", true);
-            CARROTS_BIOME_TYPE = BUILDER
+            CARROTS_BIOME_TYPE_MINECRAFT = BUILDER
                     .comment("Default: [PLAINS]")
                     .define("Biome Type:", "PLAINS");
-            CARROTS_FREQUENCY = BUILDER
+            CARROTS_FREQUENCY_MINECRAFT = BUILDER
                     .comment("Default [1]")
                     .define("Frequency: ", 1);
-            CARROTS_PATCH_SIZE = BUILDER
+            CARROTS_PATCH_SIZE_MINECRAFT = BUILDER
                     .comment("Default [1]")
                     .define("Patch Size: ", 1);
             BUILDER.pop();
 
-            BUILDER.push("WILD POTATOES");
-            POTATOES_ENABLED = BUILDER
+            BUILDER.push("MINECRAFT_WILD POTATOES");
+            POTATOES_ENABLED_MINECRAFT = BUILDER
                     .define("Enabled:", true);
-            POTATOES_BIOME_TYPE = BUILDER
+            POTATOES_BIOME_TYPE_MINECRAFT = BUILDER
                     .comment("Default: [PLAINS]")
                     .define("Biome Type:", "PLAINS");
-            POTATOES_FREQUENCY = BUILDER
+            POTATOES_FREQUENCY_MINECRAFT = BUILDER
                     .comment("Default [1]")
                     .define("Frequency:", 1);
-            POTATOES_PATCH_SIZE = BUILDER
+            POTATOES_PATCH_SIZE_MINECRAFT = BUILDER
                     .comment("Default [1]")
                     .define("Patch Size:", 1);
             BUILDER.pop();
 
-            BUILDER.push("WILD BEETROOTS");
-            BEETROOTS_ENABLED = BUILDER
+            BUILDER.push("MINECRAFT_WILD BEETROOTS");
+            BEETROOTS_ENABLED_MINECRAFT = BUILDER
                     .define("Enabled:", true);
-            BEETROOTS_BIOME_TYPE = BUILDER
+            BEETROOTS_BIOME_TYPE_MINECRAFT = BUILDER
                     .comment("Default: [PLAINS]")
                     .define("Biome Type:", "PLAINS");
-            BEETROOTS_FREQUENCY = BUILDER
+            BEETROOTS_FREQUENCY_MINECRAFT = BUILDER
                     .comment("Default [1]")
                     .define("Frequency:", 1);
-            BEETROOTS_PATCH_SIZE = BUILDER
+            BEETROOTS_PATCH_SIZE_MINECRAFT = BUILDER
                     .comment("Default [1]")
                     .define("Patch Size:", 1);
             BUILDER.pop();
