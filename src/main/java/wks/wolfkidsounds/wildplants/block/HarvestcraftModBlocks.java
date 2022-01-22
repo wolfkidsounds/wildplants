@@ -27,238 +27,238 @@ public class HarvestcraftModBlocks {
         return toReturn;
     }
 
-    public static final RegistryObject<Block> WILD_AGAVE = registerBlock("wild_agave",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_AGAVE = registerBlock("harvestcraft_wild_agave",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_AMARANTH = registerBlock("wild_amaranth",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_AMARANTH = registerBlock("harvestcraft_wild_amaranth",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_ARROWROOT = registerBlock("wild_arrowroot",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_ARROWROOT = registerBlock("harvestcraft_wild_arrowroot",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_ARTICHOKE = registerBlock("wild_artichoke",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_ARTICHOKE = registerBlock("harvestcraft_wild_artichoke",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_ASPARAGUS = registerBlock("wild_asparagus",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_ASPARAGUS = registerBlock("harvestcraft_wild_asparagus",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_BARLEY = registerBlock("wild_barley",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_BARLEY = registerBlock("harvestcraft_wild_barley",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_BEAN = registerBlock("wild_bean",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_BEAN = registerBlock("harvestcraft_wild_bean",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_BELLPEPPER = registerBlock("wild_bellpepper",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_BELLPEPPER = registerBlock("harvestcraft_wild_bellpepper",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_BLACKBERRY = registerBlock("wild_blackberry",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_BLACKBERRY = registerBlock("harvestcraft_wild_blackberry",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_BLUEBERRY = registerBlock("wild_blueberry",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_BLUEBERRY = registerBlock("harvestcraft_wild_blueberry",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_BROCCOLI = registerBlock("wild_broccoli",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_BROCCOLI = registerBlock("harvestcraft_wild_broccoli",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_BRUSSELSPROUT = registerBlock("wild_brusselsprout",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_BRUSSELSPROUT = registerBlock("harvestcraft_wild_brusselsprout",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CABBAGE = registerBlock("wild_cabbage",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_CABBAGE = registerBlock("harvestcraft_wild_cabbage",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CACTUSFRUIT = registerBlock("wild_cactusfruit",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_CACTUSFRUIT = registerBlock("harvestcraft_wild_cactusfruit",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CANDLEBERRY = registerBlock("wild_candleberry",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_CANDLEBERRY = registerBlock("harvestcraft_wild_candleberry",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CANTALOUPE = registerBlock("wild_cantaloupe",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_CANTALOUPE = registerBlock("harvestcraft_wild_cantaloupe",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CASSAVA = registerBlock("wild_cassava",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_CASSAVA = registerBlock("harvestcraft_wild_cassava",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CAULIFLOWER = registerBlock("wild_cauliflower",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_CAULIFLOWER = registerBlock("harvestcraft_wild_cauliflower",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CELERY = registerBlock("wild_celery",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_CELERY = registerBlock("harvestcraft_wild_celery",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CHICKPEA = registerBlock("wild_chickpea",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_CHICKPEA = registerBlock("harvestcraft_wild_chickpea",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CHILIPEPPER = registerBlock("wild_chilipepper",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_CHILIPEPPER = registerBlock("harvestcraft_wild_chilipepper",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_COFFEEBEAN = registerBlock("wild_coffeebean",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_COFFEEBEAN = registerBlock("harvestcraft_wild_coffeebean",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CORN = registerBlock("wild_corn",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_CORN = registerBlock("harvestcraft_wild_corn",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_COTTON = registerBlock("wild_cotton",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_COTTON = registerBlock("harvestcraft_wild_cotton",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CRANBERRY = registerBlock("wild_cranberry",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_CRANBERRY = registerBlock("harvestcraft_wild_cranberry",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_CUCUMBER = registerBlock("wild_cucumber",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_CUCUMBER = registerBlock("harvestcraft_wild_cucumber",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_EGGPLANT = registerBlock("wild_eggplant",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_EGGPLANT = registerBlock("harvestcraft_wild_eggplant",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_ELDERBERRY = registerBlock("wild_elderberry",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_ELDERBERRY = registerBlock("harvestcraft_wild_elderberry",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_FLAX = registerBlock("wild_flax",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_FLAX = registerBlock("harvestcraft_wild_flax",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_GARLIC = registerBlock("wild_garlic",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_GARLIC = registerBlock("harvestcraft_wild_garlic",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_GINGER = registerBlock("wild_ginger",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_GINGER = registerBlock("harvestcraft_wild_ginger",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_GRAPE = registerBlock("wild_grape",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_GRAPE = registerBlock("harvestcraft_wild_grape",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_GREENGRAPE = registerBlock("wild_greengrape",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_GREENGRAPE = registerBlock("harvestcraft_wild_greengrape",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_HUCKLEBERRY = registerBlock("wild_huckleberry",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_HUCKLEBERRY = registerBlock("harvestcraft_wild_huckleberry",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_JICAMA = registerBlock("wild_jicama",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_JICAMA = registerBlock("harvestcraft_wild_jicama",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_JUNIPERBERRY = registerBlock("wild_juniperberry",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_JUNIPERBERRY = registerBlock("harvestcraft_wild_juniperberry",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_JUTE = registerBlock("wild_jute",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_JUTE = registerBlock("harvestcraft_wild_jute",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_KALE = registerBlock("wild_kale",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_KALE = registerBlock("harvestcraft_wild_kale",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_KENAF = registerBlock("wild_kenaf",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_KENAF = registerBlock("harvestcraft_wild_kenaf",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_KIWI = registerBlock("wild_kiwi",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_KIWI = registerBlock("harvestcraft_wild_kiwi",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_KOHLRABI = registerBlock("wild_kohlrabi",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_KOHLRABI = registerBlock("harvestcraft_wild_kohlrabi",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_LEEK = registerBlock("wild_leek",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_LEEK = registerBlock("harvestcraft_wild_leek",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_LENTIL = registerBlock("wild_lentil",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_LENTIL = registerBlock("harvestcraft_wild_lentil",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_LETTUCE = registerBlock("wild_lettuce",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_LETTUCE = registerBlock("harvestcraft_wild_lettuce",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_MILLET = registerBlock("wild_millet",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_MILLET = registerBlock("harvestcraft_wild_millet",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_MULBERRY = registerBlock("wild_mulberry",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_MULBERRY = registerBlock("harvestcraft_wild_mulberry",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_MUSTARDSEEDS = registerBlock("wild_mustardseeds",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_MUSTARDSEEDS = registerBlock("harvestcraft_wild_mustardseeds",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_OATS = registerBlock("wild_oats",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_OATS = registerBlock("harvestcraft_wild_oats",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_OKRA = registerBlock("wild_okra",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_OKRA = registerBlock("harvestcraft_wild_okra",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_ONION = registerBlock("wild_onion",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_ONION = registerBlock("harvestcraft_wild_onion",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_PARSNIP = registerBlock("wild_parsnip",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_PARSNIP = registerBlock("harvestcraft_wild_parsnip",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_PEANUT = registerBlock("wild_peanut",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_PEANUT = registerBlock("harvestcraft_wild_peanut",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_PEAS = registerBlock("wild_peas",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_PEAS = registerBlock("harvestcraft_wild_peas",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_PINEAPPLE = registerBlock("wild_pineapple",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_PINEAPPLE = registerBlock("harvestcraft_wild_pineapple",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_QUINOA = registerBlock("wild_quinoa",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_QUINOA = registerBlock("harvestcraft_wild_quinoa",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_RADISH = registerBlock("wild_radish",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_RADISH = registerBlock("harvestcraft_wild_radish",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_RASPBERRY = registerBlock("wild_raspberry",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_RASPBERRY = registerBlock("harvestcraft_wild_raspberry",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_RHUBARB = registerBlock("wild_rhubarb",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_RHUBARB = registerBlock("harvestcraft_wild_rhubarb",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_RICE = registerBlock("wild_rice",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_RICE = registerBlock("harvestcraft_wild_rice",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_RUTABAGA = registerBlock("wild_rutabaga",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_RUTABAGA = registerBlock("harvestcraft_wild_rutabaga",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_RYE = registerBlock("wild_rye",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_RYE = registerBlock("harvestcraft_wild_rye",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_SCALLION = registerBlock("wild_scallion",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_SCALLION = registerBlock("harvestcraft_wild_scallion",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_SESAMESEEDS = registerBlock("wild_sesameseeds",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_SESAMESEEDS = registerBlock("harvestcraft_wild_sesameseeds",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_SISAL = registerBlock("wild_sisal",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_SISAL = registerBlock("harvestcraft_wild_sisal",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_SOYBEAN = registerBlock("wild_soybean",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_SOYBEAN = registerBlock("harvestcraft_wild_soybean",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_SPINACH = registerBlock("wild_spinach",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_SPINACH = registerBlock("harvestcraft_wild_spinach",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_SPICELEAF = registerBlock("wild_spiceleaf",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_SPICELEAF = registerBlock("harvestcraft_wild_spiceleaf",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_STRAWBERRY = registerBlock("wild_strawberry",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_STRAWBERRY = registerBlock("harvestcraft_wild_strawberry",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_SWEETPOTATO = registerBlock("wild_sweetpotato",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_SWEETPOTATO = registerBlock("harvestcraft_wild_sweetpotato",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_TARO = registerBlock("wild_taro",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_TARO = registerBlock("harvestcraft_wild_taro",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_TEALEAF = registerBlock("wild_tealeaf",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_TEALEAF = registerBlock("harvestcraft_wild_tealeaf",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_TOMATILLO = registerBlock("wild_tomatillo",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_TOMATILLO = registerBlock("harvestcraft_wild_tomatillo",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_TOMATO = registerBlock("wild_tomato",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_TOMATO = registerBlock("harvestcraft_wild_tomato",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_TURNIP = registerBlock("wild_turnip",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_TURNIP = registerBlock("harvestcraft_wild_turnip",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_WATERCHESTNUT = registerBlock("wild_waterchestnut",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_WATERCHESTNUT = registerBlock("harvestcraft_wild_waterchestnut",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_WHITEMUSHROOM = registerBlock("wild_whitemushroom",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_WHITEMUSHROOM = registerBlock("harvestcraft_wild_whitemushroom",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_WINTERSQUASH = registerBlock("wild_wintersquash",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_WINTERSQUASH = registerBlock("harvestcraft_wild_wintersquash",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> WILD_ZUCCHINI = registerBlock("wild_zucchini",
+    public static final RegistryObject<Block> HARVESTCRAFT_WILD_ZUCCHINI = registerBlock("harvestcraft_wild_zucchini",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
 

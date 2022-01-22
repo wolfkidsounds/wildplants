@@ -27,7 +27,7 @@ public class ImmersiveEngineeringModBlocks {
         return toReturn;
     }
 
-    public static final RegistryObject<Block> WILD_HEMP = registerBlock("wild_hemp",
+    public static final RegistryObject<Block> IMMERSIVEENGINEERING_WILD_HEMP = registerBlock("immersiveenineering_wild_hemp",
             () -> new FlowerBlock(Effects.HASTE, 1, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
 

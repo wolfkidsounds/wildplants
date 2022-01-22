@@ -25,19 +25,19 @@ public class CompatConfig {
     public static void initImmersiveEngineering(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-compat-immersiveengineering-configuration");
         ENABLE_IMMERSIVEENGINEERING = BUILDER
-                .define("Immersive_Engineering", true);
+                .define("Immersive_Engineering", false);
     }
 
     public static void initHarvestcraft(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-compat-harvestcraft-configuration");
         ENABLE_HARVESTCRAFT = BUILDER
-                .define("Pams_Harvestcraft", true);
+                .define("Pams_Harvestcraft", false);
     }
 
     public static void initFarmersDelight(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-compat-farmersdelight-configuration");
         ENABLE_FARMERSDELIGHT = BUILDER
-                .define("Farmers_Delight", true);
+                .define("Farmers_Delight", false);
     }
 
 
