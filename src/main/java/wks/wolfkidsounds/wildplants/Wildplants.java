@@ -18,6 +18,7 @@ import wks.wolfkidsounds.wildplants.config.WildplantsConfig;
 import wks.wolfkidsounds.wildplants.config.features.WildplantsFeaturesConfig;
 import wks.wolfkidsounds.wildplants.items.ModItems;
 import wks.wolfkidsounds.wildplants.render.ModRenderers;
+import wks.wolfkidsounds.wildplants.utils.FileUtils;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("wildplants")
@@ -35,11 +36,9 @@ public class Wildplants {
     public Wildplants() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON,
-                WildplantsConfig.SPEC, "./wildplants/wildplants-common.toml");
-
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON,
-                WildplantsFeaturesConfig.SPEC, "./wildplants/wildplants-features-common.toml");
+        FileUtils.createFolders();
+        ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, WildplantsConfig.SPEC, "wildplants/wildplants-common.toml");
+        ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.CLIENT, WildplantsFeaturesConfig.SPEC, "wildplants/settings-common.toml");
 
         ModBlocks.register(eventBus);
         ModItems.register(eventBus);

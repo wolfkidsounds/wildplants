@@ -4,7 +4,7 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="wildplants"
-version="${file.jarVersion}"
+version="1.16.5_2.1.5_forge"
 displayName="Wildplants"
 credits="WOLFKIDSOUNDS"
 displayURL="https://wolfkidsounds.com"
