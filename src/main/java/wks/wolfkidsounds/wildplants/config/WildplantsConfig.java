@@ -27,8 +27,8 @@ public final class WildplantsConfig {
         BUILDER.comment("A config file will be generated when the mod is loaded while the feature is enabled. \n" +
                 "If you disable a feature the config file and block registration/generation will be disabled");
         CompatConfig.initMinecraft(BUILDER);
-        CompatConfig.initImmersiveEngineering(BUILDER);
-        CompatConfig.initHarvestcraft(BUILDER);
+        //CompatConfig.initImmersiveEngineering(BUILDER);
+        //CompatConfig.initHarvestcraft(BUILDER);
         BUILDER.pop();
         BUILDER.pop();
 

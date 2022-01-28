@@ -31,7 +31,7 @@ public class MinecraftConfiguredFeatures {
     public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_WHEAT_CONFIG = Feature.FLOWER.configured((
             new RandomPatchConfiguration.GrassConfigurationBuilder(new SimpleStateProvider(ModBlocks.MINECRAFT_WILD_WHEAT.get().defaultBlockState()),
                     SimpleBlockPlacer.INSTANCE)).tries(WHEAT_PATCH_SIZE_MINECRAFT).zspread(2).xspread(2).build())
-            .decorated(Features.Decorators.HEIGHTMAP_DOUBLE_SQUARE)
+            .decorated(Features.Decorators.HEIGHTMAP_DOUBLE)
             .decorated(Features.Decorators.ADD_32).count(WHEAT_FREQUENCY_MINECRAFT);
 
     public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_CARROTS_CONFIG = Feature.FLOWER.configured((

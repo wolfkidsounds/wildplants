@@ -28,17 +28,6 @@ public final class WildplantsFeaturesConfig {
             BUILDER.pop();
         }
 
-        if (CompatConfig.LOADED_IMMERSIVEENGINEERING && CompatConfig.ENABLE_IMMERSIVEENGINEERING.get()) {
-            BUILDER.push("Immersive_Engineering");
-            ImmersiveEngineeringConfig.init(BUILDER);
-            BUILDER.pop();
-        }
-
-        if (CompatConfig.LOADED_HARVESTCRAFT && CompatConfig.ENABLE_HARVESTCRAFT.get()) {
-            BUILDER.push("Harvestcraft");
-            HarvestcraftConfig.init(BUILDER);
-            BUILDER.pop();
-        }
         SPEC = BUILDER.build();
     }
 }
