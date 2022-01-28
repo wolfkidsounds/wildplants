@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "minecraft:block/beetroots_stage3",
-    "particle": "minecraft:block/beetroots_stage3"
-  }
-}
