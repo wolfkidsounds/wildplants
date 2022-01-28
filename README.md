@@ -2,26 +2,55 @@
 
 This mod adds wild plants (crops) similar to the farmers delight or croptopia world generation.
 
-**Current Feature Set**
+**Current Feature Sets**
+
+*1.18.1*
+  
+- [x] Minecraft Crops
+- [x] Immersive Engineering Hemp
+- [x] Global Patch Size and Frequency Control
+- [x] Turn on/off features individually
+- [x] Biome Category, Patch Size and Frequency can be controlled for each plant individually
+- [x] Drops can be configured using datapacks (simple loot tables)
+- [x] Textures can be configured using resourcepacks
+  
+---
+
+*1.17.1*
+
+- [x] Minecraft Crops
+- [x] Global Patch Size and Frequency Control
+- [x] Turn on/off features individually
+- [x] Biome Category, Patch Size and Frequency can be controlled for each plant individually
+- [x] Drops can be configured using datapacks (simple loot tables)
+- [x] Textures can be configured using resourcepacks
+
+---
+
+*1.16.5*
 
 - [x] Minecraft Crops
 - [x] Pams Harvestcraft 2 Crops
 - [x] Immersive Engineering Hemp
 - [x] Global Patch Size and Frequency Control
-- [x] Each feature and compat can be turned off globally and individually
+- [x] Turn on/off features individually
 - [x] Biome Category, Patch Size and Frequency can be controlled for each plant individually
 - [x] Drops can be configured using datapacks (simple loot tables)
 - [x] Textures can be configured using resourcepacks
+
+---
 
 
 **Planned Features**
 
 - Fix Log Spamming...
+- Compat: The Veggie Way
 
 
 **Know Issues**
 
 - Log files are spammed when optional mods are missing (still don't know how to fix right now)
+- World Generation does not work as intended on 1.18.1
 
 ---
 
