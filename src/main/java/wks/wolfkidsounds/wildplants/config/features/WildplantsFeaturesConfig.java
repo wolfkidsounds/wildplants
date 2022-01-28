@@ -33,12 +33,6 @@ public final class WildplantsFeaturesConfig {
             ImmersiveEngineeringConfig.init(BUILDER);
             BUILDER.pop();
         }
-
-        if (CompatConfig.LOADED_HARVESTCRAFT && CompatConfig.ENABLE_HARVESTCRAFT.get()) {
-            BUILDER.push("Harvestcraft");
-            HarvestcraftConfig.init(BUILDER);
-            BUILDER.pop();
-        }
         SPEC = BUILDER.build();
     }
 }

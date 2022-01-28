@@ -25,10 +25,4 @@ public class CompatConfig {
         ENABLE_IMMERSIVEENGINEERING = BUILDER
                 .define("Immersive_Engineering", true);
     }
-
-    public static void initHarvestcraft(ForgeConfigSpec.Builder BUILDER) {
-        Wildplants.LOGGER.debug("init-compat-harvestcraft-configuration");
-        ENABLE_HARVESTCRAFT = BUILDER
-                .define("Pams_Harvestcraft", true);
-    }
 }

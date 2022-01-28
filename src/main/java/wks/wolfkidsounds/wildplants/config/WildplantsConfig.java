@@ -28,7 +28,7 @@ public final class WildplantsConfig {
                 "If you disable a feature the config file and block registration/generation will be disabled");
         CompatConfig.initMinecraft(BUILDER);
         CompatConfig.initImmersiveEngineering(BUILDER);
-        CompatConfig.initHarvestcraft(BUILDER);
+        //CompatConfig.initHarvestcraft(BUILDER);
         BUILDER.pop();
         BUILDER.pop();
 

@@ -1,10 +1,10 @@
 modLoader="javafml"
-loaderVersion="[37,)"
+loaderVersion="[39,)"
 license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="wildplants"
-version="1.17.1_2.1.5_forge"
+version="1.18.1_2.1.5_forge"
 displayName="Wildplants"
 credits="WOLFKIDSOUNDS"
 displayURL="https://wolfkidsounds.com"
@@ -16,6 +16,6 @@ Adds wild plant generation mainly used for crops that should generate in the wil
 [[dependencies.wildplants]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.17.1]"
+versionRange="[1.18.1]"
 ordering="NONE"
 side="BOTH"
