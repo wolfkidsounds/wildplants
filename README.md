@@ -1,29 +1,25 @@
-# Wildplants
+# Wildplants 2
 
 This mod adds wild plants (crops) similar to the farmers delight or croptopia world generation.
 
 **Current Feature Sets**
 
+- Global Patch Size and Frequency Control
+- Turn on/off features individually
+- Biome Category, Patch Size and Frequency can be controlled for each plant individually
+- Drops can be configured using datapacks (simple loot tables)
+- Textures can be configured using resourcepacks
+
 *1.18.1*
-  
+
 - [x] Minecraft Crops
 - [x] Immersive Engineering Hemp
-- [x] Global Patch Size and Frequency Control
-- [x] Turn on/off features individually
-- [x] Biome Category, Patch Size and Frequency can be controlled for each plant individually
-- [x] Drops can be configured using datapacks (simple loot tables)
-- [x] Textures can be configured using resourcepacks
   
 ---
 
 *1.17.1*
 
 - [x] Minecraft Crops
-- [x] Global Patch Size and Frequency Control
-- [x] Turn on/off features individually
-- [x] Biome Category, Patch Size and Frequency can be controlled for each plant individually
-- [x] Drops can be configured using datapacks (simple loot tables)
-- [x] Textures can be configured using resourcepacks
 
 ---
 
@@ -32,11 +28,6 @@ This mod adds wild plants (crops) similar to the farmers delight or croptopia wo
 - [x] Minecraft Crops
 - [x] Pams Harvestcraft 2 Crops
 - [x] Immersive Engineering Hemp
-- [x] Global Patch Size and Frequency Control
-- [x] Turn on/off features individually
-- [x] Biome Category, Patch Size and Frequency can be controlled for each plant individually
-- [x] Drops can be configured using datapacks (simple loot tables)
-- [x] Textures can be configured using resourcepacks
 
 ---
 
