@@ -85,5 +85,10 @@
   "block.wildplants.harvestcraft_wild_waterchestnut": "Wild Waterchestnut",
   "block.wildplants.harvestcraft_wild_whitemushroom": "Wild White Mushroom",
   "block.wildplants.harvestcraft_wild_wintersquash": "Wild Wintersquash",
-  "block.wildplants.harvestcraft_wild_zucchini": "Wild Zucchini"
+  "block.wildplants.harvestcraft_wild_zucchini": "Wild Zucchini",
+
+  "block.wildplants.veggieway_wild_corn": "Wild Corn",
+  "block.wildplants.veggieway_wild_lentil" : "Wild Lentil",
+  "block.wildplants.veggieway_wild_quinoa" : "Wild Quinoa",
+  "block.wildplants.veggieway_wild_soybean" : "Wild Soybean"
 }

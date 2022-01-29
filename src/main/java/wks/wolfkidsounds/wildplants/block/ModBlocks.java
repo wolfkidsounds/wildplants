@@ -269,6 +269,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> HARVESTCRAFT_WILD_ZUCCHINI = registerHarvestcraftBlock("harvestcraft_wild_zucchini",
             () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_CORN = registerVeggiewayBlock("veggieway_wild_corn",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_LENTIL = registerVeggiewayBlock("veggieway_wild_lentil",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_QUINOA = registerVeggiewayBlock("veggieway_wild_quinoa",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_SOYBEAN = registerVeggiewayBlock("veggieway_wild_soybean",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
     private static <T extends Block>RegistryObject<T> registerMinecraftBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         if (CompatConfig.ENABLE_MINECRAFT.get()) {registerBlockItem(name, toReturn);}
@@ -284,6 +296,12 @@ public class ModBlocks {
     private static <T extends Block>RegistryObject<T> registerHarvestcraftBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         if (CompatConfig.ENABLE_HARVESTCRAFT.get() && CompatConfig.LOADED_HARVESTCRAFT) {registerBlockItem(name, toReturn);}
+        return toReturn;
+    }
+
+    private static <T extends Block>RegistryObject<T> registerVeggiewayBlock(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        if (CompatConfig.ENABLE_VEGGIEWAY.get() && CompatConfig.LOADED_VEGGIEWAY) {registerBlockItem(name, toReturn);}
         return toReturn;
     }
 

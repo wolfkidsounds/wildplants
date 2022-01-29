@@ -23,8 +23,8 @@ public final class WildplantsConfig {
                 .comment("Global generation frequency modifier (higher is more) [Default: 1]")
                 .define("Frequency", 1);
         GLOBAL_PATCH_SIZE = BUILDER
-                .comment("Global generation patch size modifier (higher is more) [Default: 5]")
-                .define("Size", 2);
+                .comment("Global generation patch size modifier (higher is more) [Default: 4]")
+                .define("Size", 4);
         BUILDER.pop();
         BUILDER.push("Compat");
         BUILDER.comment("A config file will be generated when the mod is loaded while the feature is enabled. \n" +
@@ -32,6 +32,7 @@ public final class WildplantsConfig {
         CompatConfig.initMinecraft(BUILDER);
         CompatConfig.initImmersiveEngineering(BUILDER);
         CompatConfig.initHarvestcraft(BUILDER);
+        CompatConfig.initVeggieway(BUILDER);
         BUILDER.pop();
         BUILDER.pop();
 

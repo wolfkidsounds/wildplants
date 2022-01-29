@@ -104,6 +104,13 @@ public class ModRenderers {
             RenderTypeLookup.setRenderLayer(ModBlocks.HARVESTCRAFT_WILD_WINTERSQUASH.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.HARVESTCRAFT_WILD_ZUCCHINI.get(), RenderType.getCutout());
         }
+
+        if ((Boolean)CompatConfig.LOADED_VEGGIEWAY && (Boolean)CompatConfig.ENABLE_VEGGIEWAY.get()) {
+            RenderTypeLookup.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_CORN.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_LENTIL.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_QUINOA.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_SOYBEAN.get(), RenderType.getCutout());
+        }
     }
 
 

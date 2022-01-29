@@ -1,5 +1,4 @@
 package wks.wolfkidsounds.wildplants.config.features;
-//TODO DEFAULT BIOMES
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import wks.wolfkidsounds.wildplants.Wildplants;
