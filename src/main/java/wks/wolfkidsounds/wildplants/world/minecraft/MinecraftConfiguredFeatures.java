@@ -17,32 +17,33 @@ import java.util.List;
 public class MinecraftConfiguredFeatures {
 
     public static Integer PATCH_SIZE_GLOBAL = WildplantsConfig.GLOBAL_PATCH_SIZE.get();
+    public static Integer SPREAD_SIZE = WildplantsConfig.GLOBAL_SPREAD_SIZE.get();
     public static Integer WHEAT_PATCH_SIZE_MINECRAFT = MinecraftConfig.WHEAT_PATCH_SIZE_MINECRAFT.get() * PATCH_SIZE_GLOBAL;
     public static Integer CARROTS_PATCH_SIZE_MINECRAFT = MinecraftConfig.CARROTS_PATCH_SIZE_MINECRAFT.get() * PATCH_SIZE_GLOBAL;
     public static Integer POTATOES_PATCH_SIZE_MINECRAFT = MinecraftConfig.POTATOES_PATCH_SIZE_MINECRAFT.get() * PATCH_SIZE_GLOBAL;
     public static Integer BEETROOTS_PATCH_SIZE_MINECRAFT = MinecraftConfig.BEETROOTS_PATCH_SIZE_MINECRAFT.get() * PATCH_SIZE_GLOBAL;
 
     public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_WHEAT_CONFIG = FeatureUtils.register("minecraft_wild_wheat_config",
-            Feature.RANDOM_PATCH.configured(
-                    new RandomPatchConfiguration(WHEAT_PATCH_SIZE_MINECRAFT,2,2,
+            Feature.FLOWER.configured(
+                    new RandomPatchConfiguration(WHEAT_PATCH_SIZE_MINECRAFT,SPREAD_SIZE,SPREAD_SIZE,
                             () -> Feature.SIMPLE_BLOCK.configured(
                                     new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.MINECRAFT_WILD_WHEAT.get()))).onlyWhenEmpty())));
 
     public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_CARROTS_CONFIG = FeatureUtils.register("minecraft_wild_carrots_config",
-            Feature.RANDOM_PATCH.configured(
-                    new RandomPatchConfiguration(CARROTS_PATCH_SIZE_MINECRAFT,2,2,
+            Feature.FLOWER.configured(
+                    new RandomPatchConfiguration(CARROTS_PATCH_SIZE_MINECRAFT,SPREAD_SIZE,SPREAD_SIZE,
                             () -> Feature.SIMPLE_BLOCK.configured(
                                     new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.MINECRAFT_WILD_CARROTS.get()))).onlyWhenEmpty())));
 
     public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_POTATOES_CONFIG = FeatureUtils.register("minecraft_wild_potatoes_config",
-            Feature.RANDOM_PATCH.configured(
-                    new RandomPatchConfiguration(POTATOES_PATCH_SIZE_MINECRAFT,2,2,
+            Feature.FLOWER.configured(
+                    new RandomPatchConfiguration(POTATOES_PATCH_SIZE_MINECRAFT,SPREAD_SIZE,SPREAD_SIZE,
                             () -> Feature.SIMPLE_BLOCK.configured(
                                     new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.MINECRAFT_WILD_POTATOES.get()))).onlyWhenEmpty())));
 
     public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_BEETROOTS_CONFIG = FeatureUtils.register("minecraft_wild_beetroots_config",
-            Feature.RANDOM_PATCH.configured(
-                    new RandomPatchConfiguration(BEETROOTS_PATCH_SIZE_MINECRAFT,2,2,
+            Feature.FLOWER.configured(
+                    new RandomPatchConfiguration(BEETROOTS_PATCH_SIZE_MINECRAFT,SPREAD_SIZE,SPREAD_SIZE,
                             () -> Feature.SIMPLE_BLOCK.configured(
                                     new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.MINECRAFT_WILD_BEETROOTS.get()))).onlyWhenEmpty())));
 }

@@ -6,5 +6,10 @@
   "block.wildplants.minecraft_wild_potatoes": "Wild Potato",
   "block.wildplants.minecraft_wild_beetroots": "Wild Beetroot",
 
-  "block.wildplants.immersiveenineering_wild_hemp": "Wild Hemp"
+  "block.wildplants.immersiveenineering_wild_hemp": "Wild Hemp",
+
+  "block.wildplants.veggieway_wild_corn": "Wild Corn",
+  "block.wildplants.veggieway_wild_lentil" : "Wild Lentil",
+  "block.wildplants.veggieway_wild_quinoa" : "Wild Quinoa",
+  "block.wildplants.veggieway_wild_soybean" : "Wild Soybean"
 }

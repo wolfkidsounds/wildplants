@@ -1,5 +1,4 @@
 package wks.wolfkidsounds.wildplants.config.features;
-//TODO DEFAULT BIOMES
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import wks.wolfkidsounds.wildplants.Wildplants;
@@ -19,8 +18,8 @@ public class ImmersiveEngineeringConfig {
         HEMP_ENABLED_IMMERSIVEENINEERING = BUILDER
                 .define("Enabled:", true);
         HEMP_BIOME_TYPE_IMMERSIVEENINEERING = BUILDER
-                .comment("Default: [NONE]")
-                .define("Biome Type:", "NONE");
+                .comment("Default: [OVERWORLD]")
+                .define("Biome Type:", "OVERWORLD");
         HEMP_FREQUENCY_IMMERSIVEENINEERING = BUILDER
                 .comment("Default [1]")
                 .define("Frequency:", 1);

@@ -35,6 +35,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> IMMERSIVEENGINEERING_WILD_HEMP = registerImmersiveEngineeringBlock("immersiveenineering_wild_hemp",
             () -> new FlowerBlock(MobEffects.HEAL, 2, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_CORN = registerVeggiewayBlock("veggieway_wild_corn",
+            () -> new FlowerBlock(MobEffects.HEAL, 2, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_LENTIL = registerVeggiewayBlock("veggieway_wild_lentil",
+            () -> new FlowerBlock(MobEffects.HEAL, 2, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_QUINOA = registerVeggiewayBlock("veggieway_wild_quinoa",
+            () -> new FlowerBlock(MobEffects.HEAL, 2, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_SOYBEAN = registerVeggiewayBlock("veggieway_wild_soybean",
+            () -> new FlowerBlock(MobEffects.HEAL, 2, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
     //------------------------------------------------------------------------------------------------------------------------------
 
     private static <T extends Block>RegistryObject<T> registerMinecraftBlock(String name, Supplier<T> block) {
@@ -46,6 +58,12 @@ public class ModBlocks {
     private static <T extends Block>RegistryObject<T> registerImmersiveEngineeringBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         if (CompatConfig.ENABLE_IMMERSIVEENGINEERING.get() && CompatConfig.LOADED_IMMERSIVEENGINEERING) {registerBlockItem(name, toReturn);}
+        return toReturn;
+    }
+
+    private static <T extends Block>RegistryObject<T> registerVeggiewayBlock(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        if (CompatConfig.ENABLE_VEGGIEWAY.get() && CompatConfig.LOADED_VEGGIEWAY) {registerBlockItem(name, toReturn);}
         return toReturn;
     }
 
