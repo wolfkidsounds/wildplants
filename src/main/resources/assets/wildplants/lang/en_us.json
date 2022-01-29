@@ -4,5 +4,10 @@
   "block.wildplants.minecraft_wild_wheat": "Wild Wheat",
   "block.wildplants.minecraft_wild_carrots": "Wild Carrot",
   "block.wildplants.minecraft_wild_potatoes": "Wild Potato",
-  "block.wildplants.minecraft_wild_beetroots": "Wild Beetroot"
+  "block.wildplants.minecraft_wild_beetroots": "Wild Beetroot",
+
+  "block.wildplants.veggieway_wild_corn": "Wild Corn",
+  "block.wildplants.veggieway_wild_lentil" : "Wild Lentil",
+  "block.wildplants.veggieway_wild_quinoa" : "Wild Quinoa",
+  "block.wildplants.veggieway_wild_soybean" : "Wild Soybean"
 }

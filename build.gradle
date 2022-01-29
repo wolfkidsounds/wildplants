@@ -15,7 +15,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 group = 'wks.wolfkidsounds'
-version = '1.17.1_2.1.6_forge'
+version = '1.17.1_2.3.1_forge'
 
 java {
     archivesBaseName = 'wildplants'

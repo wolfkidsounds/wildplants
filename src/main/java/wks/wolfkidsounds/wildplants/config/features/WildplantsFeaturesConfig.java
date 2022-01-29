@@ -20,11 +20,17 @@ public final class WildplantsFeaturesConfig {
                         "Tree Types: [SAVANNA, CONIFEROUS, JUNGLE] \n" +
                         "Attributes: [SPOOKY, DEAD, LUSH, MUSHROOM, MAGICAL, RARE, PLATEAU, MODIFIED, OCEAN, RIVER, WATER] \n" +
                         "Generic Types: [MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID] \n" +
-                        "Use: [NONE] to generate in all biomes");
+                        "Use: [OVERWORLD] to generate in all biomes");
 
         if (CompatConfig.ENABLE_MINECRAFT.get()) {
             BUILDER.push("Minecraft");
             MinecraftConfig.init(BUILDER);
+            BUILDER.pop();
+        }
+
+        if (CompatConfig.LOADED_VEGGIEWAY && CompatConfig.ENABLE_VEGGIEWAY.get()) {
+            BUILDER.push("Veggie_Way");
+            VeggiewayConfig.init(BUILDER);
             BUILDER.pop();
         }
 

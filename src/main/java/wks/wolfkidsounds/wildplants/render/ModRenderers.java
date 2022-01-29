@@ -18,5 +18,12 @@ public class ModRenderers {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.MINECRAFT_WILD_POTATOES.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.MINECRAFT_WILD_BEETROOTS.get(), RenderType.cutout());
         }
+
+        if (CompatConfig.LOADED_VEGGIEWAY && CompatConfig.ENABLE_VEGGIEWAY.get()) {
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_CORN.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_LENTIL.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_QUINOA.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_SOYBEAN.get(), RenderType.cutout());
+        }
     }
 }
