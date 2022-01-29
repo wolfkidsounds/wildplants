@@ -13,18 +13,18 @@ public class ModRenderers {
     }
 
     public static void registerBlockCutout() {
-        if ((Boolean)CompatConfig.ENABLE_MINECRAFT.get()) {
+        if (CompatConfig.ENABLE_MINECRAFT.get()) {
             RenderTypeLookup.setRenderLayer(ModBlocks.MINECRAFT_WILD_WHEAT.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.MINECRAFT_WILD_CARROTS.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.MINECRAFT_WILD_POTATOES.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.MINECRAFT_WILD_BEETROOTS.get(), RenderType.getCutout());
         }
 
-        if ((Boolean)CompatConfig.LOADED_IMMERSIVEENGINEERING && (Boolean)CompatConfig.ENABLE_IMMERSIVEENGINEERING.get()) {
+        if (CompatConfig.LOADED_IMMERSIVEENGINEERING && CompatConfig.ENABLE_IMMERSIVEENGINEERING.get()) {
             RenderTypeLookup.setRenderLayer(ModBlocks.IMMERSIVEENGINEERING_WILD_HEMP.get(), RenderType.getCutout());
         }
 
-        if ((Boolean)CompatConfig.LOADED_HARVESTCRAFT && (Boolean)CompatConfig.ENABLE_HARVESTCRAFT.get()) {
+        if (CompatConfig.LOADED_HARVESTCRAFT && CompatConfig.ENABLE_HARVESTCRAFT.get()) {
             RenderTypeLookup.setRenderLayer(ModBlocks.HARVESTCRAFT_WILD_AGAVE.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.HARVESTCRAFT_WILD_AMARANTH.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.HARVESTCRAFT_WILD_ARROWROOT.get(), RenderType.getCutout());
@@ -105,7 +105,7 @@ public class ModRenderers {
             RenderTypeLookup.setRenderLayer(ModBlocks.HARVESTCRAFT_WILD_ZUCCHINI.get(), RenderType.getCutout());
         }
 
-        if ((Boolean)CompatConfig.LOADED_VEGGIEWAY && (Boolean)CompatConfig.ENABLE_VEGGIEWAY.get()) {
+        if (CompatConfig.LOADED_VEGGIEWAY && CompatConfig.ENABLE_VEGGIEWAY.get()) {
             RenderTypeLookup.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_CORN.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_LENTIL.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_QUINOA.get(), RenderType.getCutout());
