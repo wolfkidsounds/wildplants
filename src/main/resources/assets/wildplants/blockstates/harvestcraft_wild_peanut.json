@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_peanut"
+      "model": "pamhc2crops:block/peanut_stage_3"
     }
   }
 }

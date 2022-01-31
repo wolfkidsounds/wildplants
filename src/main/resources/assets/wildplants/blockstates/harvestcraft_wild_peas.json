@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_peas"
+      "model": "pamhc2crops:block/peas_stage_3"
     }
   }
 }

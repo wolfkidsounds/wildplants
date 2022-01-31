@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_raspberry"
+      "model": "pamhc2crops:block/raspberry_stage_3"
     }
   }
 }

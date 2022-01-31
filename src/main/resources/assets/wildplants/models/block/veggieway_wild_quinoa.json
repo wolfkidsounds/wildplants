@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "veggie_way:block/quinoa_plant_stage_7",
-    "particle": "veggie_way:block/quinoa_plant_stage_7"
-  }
-}

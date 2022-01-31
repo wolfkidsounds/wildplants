@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_zucchini"
+      "model": "pamhc2crops:block/zucchini_stage_3"
     }
   }
 }

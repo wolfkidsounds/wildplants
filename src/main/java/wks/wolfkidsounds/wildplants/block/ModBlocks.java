@@ -320,23 +320,6 @@ public class ModBlocks {
     //--------------------------------------------------------------------------------------------------
 
     //MYSTICAL_AGRICULTURE
-    //BASE
-    public static final RegistryObject<Block> MYSTICALAGRICULTURE_WILD_PROSPERITY_FLOWER = registerMysticalAgricultureBaseBlock("mysticalagriculture_wild_prosperity_flower",
-            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
-
-    public static final RegistryObject<Block> MYSTICALAGRICULTURE_WILD_SOULIUM_FLOWER = registerMysticalAgricultureBaseBlock("mysticalagriculture_wild_soulium_flower",
-            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
-
-    public static final RegistryObject<Block> MYSTICALAGRICULTURE_WILD_INFERIUM_FLOWER = registerMysticalAgricultureBaseBlock("mysticalagriculture_wild_inferium_flower",
-            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
-
-    private static <T extends Block>RegistryObject<T> registerMysticalAgricultureBaseBlock(String name, Supplier<T> block) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        if (MysticalAgricultureConfig.ENABLE_MYSTICALAGRICULTURE_BASE.get() && CompatConfig.ENABLE_MYSTICALAGRICULTURE.get() && CompatConfig.LOADED_MYSTICALAGRICULTURE) {registerBlockItem(name, toReturn);}
-        return toReturn;
-    }
-
-    //--------------------------------------------------------------------------------------------------
 
     //ELEMENTAL
     public static final RegistryObject<Block> MYSTICALAGRICULTURE_WILD_AIR_FLOWER = registerMysticalAgricultureElementalBlock("mysticalagriculture_wild_air_flower",

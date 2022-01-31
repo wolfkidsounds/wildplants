@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_radish"
+      "model": "pamhc2crops:block/radish_stage_3"
     }
   }
 }

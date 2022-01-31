@@ -13,9 +13,14 @@ public class FileUtils {
 
     public static void createFolders() {
         Path wildplantsConfigurationPath = Paths.get(FMLPaths.CONFIGDIR.get().toAbsolutePath().toString(), "wildplants");
+        Path wildplantsSettingsConfigurationPath = Paths.get(FMLPaths.CONFIGDIR.get().toAbsolutePath().toString(), "wildplants/features");
 
         try {Files.createDirectory(wildplantsConfigurationPath);}
         catch (FileAlreadyExistsException event) { Wildplants.LOGGER.debug("Configuration already exists. nice."); }//do nothing
         catch (IOException event) {Wildplants.LOGGER.error("The wildplants configuration directory could not be created", event);}
+
+        try {Files.createDirectory(wildplantsSettingsConfigurationPath);}
+        catch (FileAlreadyExistsException event) { Wildplants.LOGGER.debug("Settings Configuration already exists. nice."); }//do nothing
+        catch (IOException event) {Wildplants.LOGGER.error("The wildplants settings configuration directory could not be created", event);}
     }
 }

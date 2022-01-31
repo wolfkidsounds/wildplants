@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_parsnip"
+      "model": "pamhc2crops:block/parsnip_stage_3"
     }
   }
 }

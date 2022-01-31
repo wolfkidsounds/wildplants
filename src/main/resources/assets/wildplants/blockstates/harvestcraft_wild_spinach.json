@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_spinach"
+      "model": "pamhc2crops:block/spinach_stage_3"
     }
   }
 }

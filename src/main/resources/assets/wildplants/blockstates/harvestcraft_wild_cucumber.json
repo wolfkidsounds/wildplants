@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_cucumber"
+      "model": "pamhc2crops:block/cucumber_stage_3"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_jute"
+      "model": "pamhc2crops:block/jute_stage_3"
     }
   }
 }

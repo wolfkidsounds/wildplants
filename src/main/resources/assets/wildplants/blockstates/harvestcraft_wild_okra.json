@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_okra"
+      "model": "pamhc2crops:block/okra_stage_3"
     }
   }
 }

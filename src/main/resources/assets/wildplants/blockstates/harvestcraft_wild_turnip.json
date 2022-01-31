@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_turnip"
+      "model": "pamhc2crops:block/turnip_stage_3"
     }
   }
 }

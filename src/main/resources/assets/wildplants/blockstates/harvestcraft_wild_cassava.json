@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_cassava"
+      "model": "pamhc2crops:block/cassava_stage_3"
     }
   }
 }

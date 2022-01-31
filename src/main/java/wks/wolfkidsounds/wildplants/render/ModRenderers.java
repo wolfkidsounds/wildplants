@@ -1,11 +1,18 @@
 package wks.wolfkidsounds.wildplants.render;
 
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.FlowerBlock;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.potion.Effects;
+import net.minecraftforge.fml.RegistryObject;
 import wks.wolfkidsounds.wildplants.block.ModBlocks;
 import wks.wolfkidsounds.wildplants.block.ModBlocks;
 import wks.wolfkidsounds.wildplants.block.ModBlocks;
 import wks.wolfkidsounds.wildplants.config.CompatConfig;
+import wks.wolfkidsounds.wildplants.config.features.mysticalagriculture.MysticalAgricultureConfig;
 
 public class ModRenderers {
 
@@ -114,9 +121,13 @@ public class ModRenderers {
 
         if (CompatConfig.LOADED_MYSTICALAGRICULTURE && CompatConfig.ENABLE_MYSTICALAGRICULTURE.get()) {
 
-        }
-
-        if (CompatConfig.LOADED_INDUSTRIALAGRICULTURE && CompatConfig.ENABLE_INDUSTRIALAGRICULTURE.get()) {
+            //ELEMENTAL
+            if (MysticalAgricultureConfig.ENABLE_MYSTICALAGRICULTURE_ELEMENTAL.get()) {
+                RenderTypeLookup.setRenderLayer(ModBlocks.MYSTICALAGRICULTURE_WILD_AIR_FLOWER.get(), RenderType.getCutout());
+                RenderTypeLookup.setRenderLayer(ModBlocks.MYSTICALAGRICULTURE_WILD_EARTH_FLOWER.get(), RenderType.getCutout());
+                RenderTypeLookup.setRenderLayer(ModBlocks.MYSTICALAGRICULTURE_WILD_WATER_FLOWER.get(), RenderType.getCutout());
+                RenderTypeLookup.setRenderLayer(ModBlocks.MYSTICALAGRICULTURE_WILD_FIRE_FLOWER.get(), RenderType.getCutout());
+            }
 
         }
     }

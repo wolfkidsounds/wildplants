@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_amaranth"
+      "model": "pamhc2crops:block/amaranth_stage_3"
     }
   }
 }

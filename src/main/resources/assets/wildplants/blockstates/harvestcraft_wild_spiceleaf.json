@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_spiceleaf"
+      "model": "pamhc2crops:block/spiceleaf_stage_3"
     }
   }
 }

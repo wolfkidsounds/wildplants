@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_brusselsprout"
+      "model": "pamhc2crops:block/brusselsprout_stage_3"
     }
   }
 }

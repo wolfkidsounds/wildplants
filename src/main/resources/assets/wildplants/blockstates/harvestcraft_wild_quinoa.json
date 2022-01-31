@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_quinoa"
+      "model": "pamhc2crops:block/quinoa_stage_3"
     }
   }
 }

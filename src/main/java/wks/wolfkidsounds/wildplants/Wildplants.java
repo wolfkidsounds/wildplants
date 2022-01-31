@@ -17,6 +17,7 @@ import wks.wolfkidsounds.wildplants.config.WildplantsConfig;
 import wks.wolfkidsounds.wildplants.config.features.harvestcraft.HarvestcraftConfig;
 import wks.wolfkidsounds.wildplants.config.features.immersiveengineering.ImmersiveEngineeringConfig;
 import wks.wolfkidsounds.wildplants.config.features.minecraft.MinecraftConfig;
+import wks.wolfkidsounds.wildplants.config.features.mysticalagriculture.MysticalAgricultureConfig;
 import wks.wolfkidsounds.wildplants.config.features.veggieway.VeggiewayConfig;
 import wks.wolfkidsounds.wildplants.items.ModItems;
 import wks.wolfkidsounds.wildplants.render.ModRenderers;
@@ -44,6 +45,7 @@ public class Wildplants {
         ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, ImmersiveEngineeringConfig.SPEC, "wildplants/features/immersiveengineering-common.toml");
         ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, HarvestcraftConfig.SPEC, "wildplants/features/harvestcraft2-common.toml");
         ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, VeggiewayConfig.SPEC, "wildplants/features/veggieway-common.toml");
+        ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, MysticalAgricultureConfig.SPEC, "wildplants/features/mysticalagriculture-common.toml");
 
         ModBlocks.register(eventBus);
         ModItems.register(eventBus);

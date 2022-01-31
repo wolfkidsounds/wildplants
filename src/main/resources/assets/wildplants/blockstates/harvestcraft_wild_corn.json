@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_corn"
+      "model": "pamhc2crops:block/corn_stage_3"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_rhubarb"
+      "model": "pamhc2crops:block/rhubarb_stage_3"
     }
   }
 }

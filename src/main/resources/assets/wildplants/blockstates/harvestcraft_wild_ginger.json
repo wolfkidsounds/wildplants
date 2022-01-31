@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_ginger"
+      "model": "pamhc2crops:block/ginger_stage_3"
     }
   }
 }

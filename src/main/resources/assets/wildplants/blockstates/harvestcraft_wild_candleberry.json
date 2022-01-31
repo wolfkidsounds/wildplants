@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/harvestcraft_wild_candleberry"
+      "model": "pamhc2crops:block/candleberry_stage_3"
     }
   }
 }
