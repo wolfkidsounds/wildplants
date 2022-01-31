@@ -1,9 +1,11 @@
-package wks.wolfkidsounds.wildplants.config.features;
+package wks.wolfkidsounds.wildplants.config.features.veggieway;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import wks.wolfkidsounds.wildplants.Wildplants;
 
 public class VeggiewayConfig {
+    public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
+    public static final ForgeConfigSpec SPEC;
 
     //VEGGIEWAY
     public static ForgeConfigSpec.ConfigValue<String> CORN_BIOME_TYPE_VEGGIEWAY;
@@ -28,8 +30,17 @@ public class VeggiewayConfig {
 
     //--------------------------------------------------------------
 
-    public static void init(ForgeConfigSpec.Builder BUILDER) {
+    static {
         Wildplants.LOGGER.debug("init-minecraft-feature-config");
+        BUILDER.comment(
+                "Valid Biome Types:\n" +
+                        "Temperature: [HOT, COLD] \n" +
+                        "Vegetation: [SPARSE, DENSE] \n" +
+                        "Humidity: [WET, DRY] \n" +
+                        "Tree Types: [SAVANNA, CONIFEROUS, JUNGLE] \n" +
+                        "Attributes: [SPOOKY, DEAD, LUSH, MUSHROOM, MAGICAL, RARE, PLATEAU, MODIFIED, OCEAN, RIVER, WATER] \n" +
+                        "Generic Types: [MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID] \n" +
+                        "Use: [OVERWORLD] to generate in all biomes");
 
         BUILDER.push("WILD CORN");
         CORN_ENABLED_VEGGIEWAY = BUILDER
@@ -86,5 +97,7 @@ public class VeggiewayConfig {
                 .comment("Default [1]")
                 .define("Patch Size:", 1);
         BUILDER.pop();
+
+        SPEC = BUILDER.build();
     }
 }

@@ -1,9 +1,11 @@
-package wks.wolfkidsounds.wildplants.config.features;
+package wks.wolfkidsounds.wildplants.config.features.immersiveengineering;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import wks.wolfkidsounds.wildplants.Wildplants;
 
 public class ImmersiveEngineeringConfig {
+    public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
+    public static final ForgeConfigSpec SPEC;
 
     //IMMERSIVE ENGINEERING
     public static ForgeConfigSpec.ConfigValue<String> HEMP_BIOME_TYPE_IMMERSIVEENINEERING;
@@ -11,8 +13,17 @@ public class ImmersiveEngineeringConfig {
     public static ForgeConfigSpec.ConfigValue<Integer> HEMP_PATCH_SIZE_IMMERSIVEENINEERING;
     public static ForgeConfigSpec.BooleanValue HEMP_ENABLED_IMMERSIVEENINEERING;
 
-    public static void init(ForgeConfigSpec.Builder BUILDER) {
+    static {
         Wildplants.LOGGER.debug("init-immersiveengineering-feature-config");
+        BUILDER.comment(
+                "Valid Biome Types:\n" +
+                        "Temperature: [HOT, COLD] \n" +
+                        "Vegetation: [SPARSE, DENSE] \n" +
+                        "Humidity: [WET, DRY] \n" +
+                        "Tree Types: [SAVANNA, CONIFEROUS, JUNGLE] \n" +
+                        "Attributes: [SPOOKY, DEAD, LUSH, MUSHROOM, MAGICAL, RARE, PLATEAU, MODIFIED, OCEAN, RIVER, WATER] \n" +
+                        "Generic Types: [MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID] \n" +
+                        "Use: [OVERWORLD] to generate in all biomes");
 
         BUILDER.push("WILD HEMP");
         HEMP_ENABLED_IMMERSIVEENINEERING = BUILDER
@@ -27,5 +38,7 @@ public class ImmersiveEngineeringConfig {
                 .comment("Default [1]")
                 .define("Patch Size:", 1);
         BUILDER.pop();
+
+        SPEC = BUILDER.build();
     }
 }

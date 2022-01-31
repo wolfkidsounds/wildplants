@@ -12,10 +12,14 @@ public class CompatConfig {
     public static ForgeConfigSpec.BooleanValue ENABLE_IMMERSIVEENGINEERING;
     public static ForgeConfigSpec.BooleanValue ENABLE_HARVESTCRAFT;
     public static ForgeConfigSpec.BooleanValue ENABLE_VEGGIEWAY;
+    public static ForgeConfigSpec.BooleanValue ENABLE_MYSTICALAGRICULTURE;
+    public static ForgeConfigSpec.BooleanValue ENABLE_INDUSTRIALAGRICULTURE;
 
     public static Boolean LOADED_IMMERSIVEENGINEERING = ModList.get().isLoaded("immersiveengineering");
     public static Boolean LOADED_HARVESTCRAFT = ModList.get().isLoaded("pamhc2crops");
     public static Boolean LOADED_VEGGIEWAY = ModList.get().isLoaded("veggie_way");
+    public static Boolean LOADED_MYSTICALAGRICULTURE = ModList.get().isLoaded("mysticalagriculture");
+    public static Boolean LOADED_INDUSTRIALAGRICULTURE = ModList.get().isLoaded("industrialagriculture");
 
     public static void initMinecraft(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-compat-minecraft-configuration");
@@ -39,5 +43,17 @@ public class CompatConfig {
         Wildplants.LOGGER.debug("init-compat-veggieway-configuration");
         ENABLE_VEGGIEWAY = BUILDER
                 .define("Veggie_Way", true);
+    }
+
+    public static void initMysticalAgriculture(ForgeConfigSpec.Builder BUILDER) {
+        Wildplants.LOGGER.debug("init-compat-mysticalagriculture-configuration");
+        ENABLE_MYSTICALAGRICULTURE = BUILDER
+                .define("Mystical_Agriculture", true);
+    }
+
+    public static void initIndustrialAgriculture(ForgeConfigSpec.Builder BUILDER) {
+        Wildplants.LOGGER.debug("init-compat-industrialagriculture-configuration");
+        ENABLE_INDUSTRIALAGRICULTURE = BUILDER
+                .define("Industrial_Agriculture", true);
     }
 }

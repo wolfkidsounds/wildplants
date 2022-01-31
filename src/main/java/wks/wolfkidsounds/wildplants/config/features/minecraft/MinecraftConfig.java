@@ -1,9 +1,11 @@
-package wks.wolfkidsounds.wildplants.config.features;
+package wks.wolfkidsounds.wildplants.config.features.minecraft;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import wks.wolfkidsounds.wildplants.Wildplants;
 
 public class MinecraftConfig {
+    public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
+    public static final ForgeConfigSpec SPEC;
 
     //MINECRAFT
     public static ForgeConfigSpec.ConfigValue<String> WHEAT_BIOME_TYPE_MINECRAFT;
@@ -26,22 +28,31 @@ public class MinecraftConfig {
     public static ForgeConfigSpec.ConfigValue<Integer> BEETROOTS_PATCH_SIZE_MINECRAFT;
     public static ForgeConfigSpec.BooleanValue BEETROOTS_ENABLED_MINECRAFT;
 
-    public static void init(ForgeConfigSpec.Builder BUILDER) {
-            Wildplants.LOGGER.debug("init-minecraft-feature-config");
+    static {
+        Wildplants.LOGGER.debug("init-minecraft-feature-config");
+        BUILDER.comment(
+                "Valid Biome Types:\n" +
+                        "Temperature: [HOT, COLD] \n" +
+                        "Vegetation: [SPARSE, DENSE] \n" +
+                        "Humidity: [WET, DRY] \n" +
+                        "Tree Types: [SAVANNA, CONIFEROUS, JUNGLE] \n" +
+                        "Attributes: [SPOOKY, DEAD, LUSH, MUSHROOM, MAGICAL, RARE, PLATEAU, MODIFIED, OCEAN, RIVER, WATER] \n" +
+                        "Generic Types: [MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID] \n" +
+                        "Use: [OVERWORLD] to generate in all biomes");
 
-            BUILDER.push("MINECRAFT_WILD WHEAT");
-            WHEAT_ENABLED_MINECRAFT = BUILDER
-                    .define("Enabled:", true);
-            WHEAT_BIOME_TYPE_MINECRAFT = BUILDER
-                    .comment("Default: [SAVANNA]")
-                    .define("Biome Type:", "SAVANNA");
-            WHEAT_FREQUENCY_MINECRAFT = BUILDER
-                    .comment("Default [1]")
-                    .define("Frequency:", 1);
-            WHEAT_PATCH_SIZE_MINECRAFT = BUILDER
-                    .comment("Default [1]")
-                    .define("Patch Size:", 1);
-            BUILDER.pop();
+        BUILDER.push("MINECRAFT_WILD WHEAT");
+        WHEAT_ENABLED_MINECRAFT = BUILDER
+                .define("Enabled:", true);
+        WHEAT_BIOME_TYPE_MINECRAFT = BUILDER
+                .comment("Default: [SAVANNA]")
+                .define("Biome Type:", "SAVANNA");
+        WHEAT_FREQUENCY_MINECRAFT = BUILDER
+                .comment("Default [1]")
+                .define("Frequency:", 1);
+        WHEAT_PATCH_SIZE_MINECRAFT = BUILDER
+                .comment("Default [1]")
+                .define("Patch Size:", 1);
+        BUILDER.pop();
 
             BUILDER.push("MINECRAFT_WILD CARROTS");
             CARROTS_ENABLED_MINECRAFT = BUILDER
@@ -84,7 +95,8 @@ public class MinecraftConfig {
                     .comment("Default [1]")
                     .define("Patch Size:", 1);
             BUILDER.pop();
-    }
 
+        SPEC = BUILDER.build();
+    }
 
 }

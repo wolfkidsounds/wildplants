@@ -5,7 +5,7 @@ import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.feature.*;
 import wks.wolfkidsounds.wildplants.block.ModBlocks;
 import wks.wolfkidsounds.wildplants.config.WildplantsConfig;
-import wks.wolfkidsounds.wildplants.config.features.MinecraftConfig;
+import wks.wolfkidsounds.wildplants.config.features.minecraft.MinecraftConfig;
 
 public class MinecraftConfiguredFeatures {
 
@@ -25,28 +25,43 @@ public class MinecraftConfiguredFeatures {
     public static Integer BEETROOTS_FREQUENCY_MINECRAFT = MinecraftConfig.BEETROOTS_FREQUENCY_MINECRAFT.get() * FREQUENCY_GLOBAL;
     public static Integer BEETROOTS_PATCH_SIZE_MINECRAFT = MinecraftConfig.BEETROOTS_PATCH_SIZE_MINECRAFT.get() * PATCH_SIZE_GLOBAL;
 
+    //----------FEATURE---CONFIGS----------------
 
-    public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_WHEAT_CONFIG = Feature.FLOWER.withConfiguration((
-            new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.MINECRAFT_WILD_WHEAT.get().getDefaultState()),
-                    SimpleBlockPlacer.PLACER)).tries(WHEAT_PATCH_SIZE_MINECRAFT).zSpread(SPREAD_SIZE).xSpread(SPREAD_SIZE).build())
-            .withPlacement(Features.Placements.HEIGHTMAP_SPREAD_DOUBLE_PLACEMENT.square())
-            .withPlacement(Features.Placements.VEGETATION_PLACEMENT).count(WHEAT_FREQUENCY_MINECRAFT);
+    public static final BlockClusterFeatureConfig MINECRAFT_WILD_WHEAT_CONFIG = (
+            new BlockClusterFeatureConfig.Builder(
+                new SimpleBlockStateProvider(ModBlocks.MINECRAFT_WILD_WHEAT.get().getDefaultState()),
+                new SimpleBlockPlacer())).tries(WHEAT_PATCH_SIZE_MINECRAFT).xSpread(SPREAD_SIZE).zSpread(SPREAD_SIZE).build();
 
-    public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_CARROTS_CONFIG = Feature.FLOWER.withConfiguration((
-            new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.MINECRAFT_WILD_CARROTS.get().getDefaultState()),
-                    SimpleBlockPlacer.PLACER)).tries(CARROTS_PATCH_SIZE_MINECRAFT).zSpread(SPREAD_SIZE).xSpread(SPREAD_SIZE).build())
-            .withPlacement(Features.Placements.HEIGHTMAP_SPREAD_DOUBLE_PLACEMENT.square())
-            .withPlacement(Features.Placements.VEGETATION_PLACEMENT).count(CARROTS_FREQUENCY_MINECRAFT);
+    public static final BlockClusterFeatureConfig MINECRAFT_WILD_CARROTS_CONFIG = (
+            new BlockClusterFeatureConfig.Builder(
+                    new SimpleBlockStateProvider(ModBlocks.MINECRAFT_WILD_CARROTS.get().getDefaultState()),
+                    new SimpleBlockPlacer())).tries(CARROTS_PATCH_SIZE_MINECRAFT).xSpread(SPREAD_SIZE).zSpread(SPREAD_SIZE).build();
 
-    public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_POTATOES_CONFIG = Feature.FLOWER.withConfiguration((
-            new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.MINECRAFT_WILD_POTATOES.get().getDefaultState()),
-                    SimpleBlockPlacer.PLACER)).tries(POTATOES_PATCH_SIZE_MINECRAFT).zSpread(SPREAD_SIZE).xSpread(SPREAD_SIZE).build())
-            .withPlacement(Features.Placements.HEIGHTMAP_SPREAD_DOUBLE_PLACEMENT.square())
-            .withPlacement(Features.Placements.VEGETATION_PLACEMENT).count(POTATOES_FREQUENCY_MINECRAFT);
+    public static final BlockClusterFeatureConfig MINECRAFT_WILD_POTATOES_CONFIG = (
+            new BlockClusterFeatureConfig.Builder(
+                    new SimpleBlockStateProvider(ModBlocks.MINECRAFT_WILD_POTATOES.get().getDefaultState()),
+                    new SimpleBlockPlacer())).tries(POTATOES_PATCH_SIZE_MINECRAFT).xSpread(SPREAD_SIZE).zSpread(SPREAD_SIZE).build();
 
-    public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_BEETROOTS_CONFIG = Feature.FLOWER.withConfiguration((
-            new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.MINECRAFT_WILD_BEETROOTS.get().getDefaultState()),
-                    SimpleBlockPlacer.PLACER)).tries(BEETROOTS_PATCH_SIZE_MINECRAFT).zSpread(SPREAD_SIZE).xSpread(SPREAD_SIZE).build())
-            .withPlacement(Features.Placements.HEIGHTMAP_SPREAD_DOUBLE_PLACEMENT.square())
-            .withPlacement(Features.Placements.VEGETATION_PLACEMENT).count(BEETROOTS_FREQUENCY_MINECRAFT);
+    public static final BlockClusterFeatureConfig MINECRAFT_WILD_BEETROOTS_CONFIG = (
+            new BlockClusterFeatureConfig.Builder(
+                    new SimpleBlockStateProvider(ModBlocks.MINECRAFT_WILD_BEETROOTS.get().getDefaultState()),
+                    new SimpleBlockPlacer())).tries(BEETROOTS_PATCH_SIZE_MINECRAFT).xSpread(SPREAD_SIZE).zSpread(SPREAD_SIZE).build();
+
+    //----------PLACEMENT---CONFIGS----------------
+
+    public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_WHEAT_PATCH =
+            Feature.FLOWER.withConfiguration(MINECRAFT_WILD_WHEAT_CONFIG)
+                .withPlacement(Features.Placements.PATCH_PLACEMENT.square()).chance(WHEAT_FREQUENCY_MINECRAFT);
+
+    public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_CARROTS_PATCH =
+            Feature.FLOWER.withConfiguration(MINECRAFT_WILD_CARROTS_CONFIG)
+                    .withPlacement(Features.Placements.PATCH_PLACEMENT.square()).chance(CARROTS_FREQUENCY_MINECRAFT);
+
+    public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_POTATOES_PATCH =
+            Feature.FLOWER.withConfiguration(MINECRAFT_WILD_POTATOES_CONFIG)
+                    .withPlacement(Features.Placements.PATCH_PLACEMENT.square()).chance(POTATOES_FREQUENCY_MINECRAFT);
+
+    public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_BEETROOTS_PATCH =
+            Feature.FLOWER.withConfiguration(MINECRAFT_WILD_BEETROOTS_CONFIG)
+                    .withPlacement(Features.Placements.PATCH_PLACEMENT.square()).chance(BEETROOTS_FREQUENCY_MINECRAFT);
 }

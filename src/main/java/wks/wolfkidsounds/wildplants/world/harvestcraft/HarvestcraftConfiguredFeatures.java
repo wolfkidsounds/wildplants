@@ -5,7 +5,7 @@ import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.feature.*;
 import wks.wolfkidsounds.wildplants.block.ModBlocks;
 import wks.wolfkidsounds.wildplants.config.WildplantsConfig;
-import wks.wolfkidsounds.wildplants.config.features.HarvestcraftConfig;
+import wks.wolfkidsounds.wildplants.config.features.harvestcraft.HarvestcraftConfig;
 
 public class HarvestcraftConfiguredFeatures {
 
@@ -247,7 +247,18 @@ public class HarvestcraftConfiguredFeatures {
     public static Integer SPINACH_FREQUENCY_HARVESTCRAFT = HarvestcraftConfig.SPINACH_FREQUENCY_HARVESTCRAFT.get() * GLOBAL_FREQUENCY_HARVESTCRAFT;
     public static Integer SPINACH_PATCH_SIZE_HARVESTCRAFT = HarvestcraftConfig.SPINACH_PATCH_SIZE_HARVESTCRAFT.get() * GLOBAL_PATCH_SIZE_HARVESTCRAFT;
 
-    
+    //----------FEATURE---CONFIGS----------------
+
+    //public static final BlockClusterFeatureConfig IMMERSIVEENGINEERING_WILD_HEMP_CONFIG = (
+    //        new BlockClusterFeatureConfig.Builder(
+    //                new SimpleBlockStateProvider(ModBlocks.IMMERSIVEENGINEERING_WILD_HEMP.get().getDefaultState()),
+    //                new SimpleBlockPlacer())).tries(HEMP_PATCH_SIZE_IMMERSIVEENINEERING).xSpread(SPREAD_SIZE).zSpread(SPREAD_SIZE).build();
+
+    //----------PLACEMENT---CONFIGS----------------
+
+    //public static final ConfiguredFeature<?, ?> IMMERSIVEENGINEERING_WILD_HEMP_PATCH =
+    //        Feature.RANDOM_PATCH.withConfiguration(IMMERSIVEENGINEERING_WILD_HEMP_CONFIG)
+    //                .withPlacement(Features.Placements.VEGETATION_PLACEMENT.square()).chance(HEMP_FREQUENCY_IMMERSIVEENINEERING);
 
 
     public static final ConfiguredFeature<?, ?> HARVESTCRAFT_WILD_AGAVE_CONFIG = Feature.FLOWER.withConfiguration((

@@ -7,7 +7,7 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
-import wks.wolfkidsounds.wildplants.config.features.HarvestcraftConfig;
+import wks.wolfkidsounds.wildplants.config.features.harvestcraft.HarvestcraftConfig;
 
 import java.util.List;
 import java.util.Set;

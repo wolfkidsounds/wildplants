@@ -30,6 +30,7 @@ public final class WildplantsConfig {
                 .comment("How far apart the plants are at maximum (higher is more far) [Default: 3]")
                 .define("Spread", 3);
         BUILDER.pop();
+
         BUILDER.push("Compat");
         BUILDER.comment("A config file will be generated when the mod is loaded while the feature is enabled. \n" +
                 "If you disable a feature the config file and block registration/generation will be disabled");
@@ -37,6 +38,8 @@ public final class WildplantsConfig {
         CompatConfig.initImmersiveEngineering(BUILDER);
         CompatConfig.initHarvestcraft(BUILDER);
         CompatConfig.initVeggieway(BUILDER);
+        CompatConfig.initMysticalAgriculture(BUILDER);
+        CompatConfig.initIndustrialAgriculture(BUILDER);
         BUILDER.pop();
         BUILDER.pop();
 

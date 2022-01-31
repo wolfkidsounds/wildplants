@@ -7,7 +7,7 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
-import wks.wolfkidsounds.wildplants.config.features.MinecraftConfig;
+import wks.wolfkidsounds.wildplants.config.features.minecraft.MinecraftConfig;
 
 import java.util.List;
 import java.util.Set;
@@ -21,7 +21,7 @@ public class MinecraftWildplantsGeneration {
 
         if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.WHEAT_BIOME_TYPE_MINECRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base = event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> MinecraftConfiguredFeatures.MINECRAFT_WILD_WHEAT_CONFIG);
+            base.add(() -> MinecraftConfiguredFeatures.MINECRAFT_WILD_WHEAT_PATCH);
         }
     }
 
@@ -31,7 +31,7 @@ public class MinecraftWildplantsGeneration {
 
         if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.CARROTS_BIOME_TYPE_MINECRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base = event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> MinecraftConfiguredFeatures.MINECRAFT_WILD_CARROTS_CONFIG);
+            base.add(() -> MinecraftConfiguredFeatures.MINECRAFT_WILD_CARROTS_PATCH);
         }
     }
 
@@ -42,7 +42,7 @@ public class MinecraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.POTATOES_BIOME_TYPE_MINECRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> MinecraftConfiguredFeatures.MINECRAFT_WILD_POTATOES_CONFIG);
+            base.add(() -> MinecraftConfiguredFeatures.MINECRAFT_WILD_POTATOES_PATCH);
         }
     }
 
@@ -53,7 +53,7 @@ public class MinecraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(MinecraftConfig.BEETROOTS_BIOME_TYPE_MINECRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> MinecraftConfiguredFeatures.MINECRAFT_WILD_BEETROOTS_CONFIG);
+            base.add(() -> MinecraftConfiguredFeatures.MINECRAFT_WILD_BEETROOTS_PATCH);
         }
     }
 }

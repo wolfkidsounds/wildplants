@@ -111,6 +111,14 @@ public class ModRenderers {
             RenderTypeLookup.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_QUINOA.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_SOYBEAN.get(), RenderType.getCutout());
         }
+
+        if (CompatConfig.LOADED_MYSTICALAGRICULTURE && CompatConfig.ENABLE_MYSTICALAGRICULTURE.get()) {
+
+        }
+
+        if (CompatConfig.LOADED_INDUSTRIALAGRICULTURE && CompatConfig.ENABLE_INDUSTRIALAGRICULTURE.get()) {
+
+        }
     }
 
 

@@ -5,10 +5,10 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import wks.wolfkidsounds.wildplants.Wildplants;
 import wks.wolfkidsounds.wildplants.config.CompatConfig;
-import wks.wolfkidsounds.wildplants.config.features.HarvestcraftConfig;
-import wks.wolfkidsounds.wildplants.config.features.ImmersiveEngineeringConfig;
-import wks.wolfkidsounds.wildplants.config.features.MinecraftConfig;
-import wks.wolfkidsounds.wildplants.config.features.VeggiewayConfig;
+import wks.wolfkidsounds.wildplants.config.features.harvestcraft.HarvestcraftConfig;
+import wks.wolfkidsounds.wildplants.config.features.immersiveengineering.ImmersiveEngineeringConfig;
+import wks.wolfkidsounds.wildplants.config.features.minecraft.MinecraftConfig;
+import wks.wolfkidsounds.wildplants.config.features.veggieway.VeggiewayConfig;
 import wks.wolfkidsounds.wildplants.world.harvestcraft.HarvestcraftWildplantsGeneration;
 import wks.wolfkidsounds.wildplants.world.immersiveengineering.ImmersiveEngineeringWildplantsGeneration;
 import wks.wolfkidsounds.wildplants.world.minecraft.MinecraftWildplantsGeneration;
@@ -118,6 +118,14 @@ public class ModWorldEvents {
             if (VeggiewayConfig.LENTIL_ENABLED_VEGGIEWAY.get()) { VeggiewayWildplantsGeneration.generateWildLentil(event); }
             if (VeggiewayConfig.QUINOA_ENABLED_VEGGIEWAY.get()) { VeggiewayWildplantsGeneration.generateWildQuinoa(event); }
             if (VeggiewayConfig.SOYBEAN_ENABLED_VEGGIEWAY.get()) { VeggiewayWildplantsGeneration.generateWildSoybean(event); }
+        }
+
+        if (CompatConfig.LOADED_MYSTICALAGRICULTURE && CompatConfig.ENABLE_MYSTICALAGRICULTURE.get()) {
+
+        }
+
+        if (CompatConfig.LOADED_INDUSTRIALAGRICULTURE && CompatConfig.ENABLE_INDUSTRIALAGRICULTURE.get()) {
+
         }
     }
 }

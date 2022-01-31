@@ -1,9 +1,11 @@
-package wks.wolfkidsounds.wildplants.config.features;
+package wks.wolfkidsounds.wildplants.config.features.harvestcraft;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import wks.wolfkidsounds.wildplants.Wildplants;
 
 public class HarvestcraftConfig {
+    public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
+    public static final ForgeConfigSpec SPEC;
 
     //HARVESTCRAFT
     public static ForgeConfigSpec.BooleanValue AGAVE_ENABLED_HARVESTCRAFT;
@@ -396,8 +398,17 @@ public class HarvestcraftConfig {
     public static ForgeConfigSpec.ConfigValue<Integer> SPINACH_PATCH_SIZE_HARVESTCRAFT;
     public static ForgeConfigSpec.ConfigValue<String> SPINACH_BIOME_TYPE_HARVESTCRAFT;
 
-    public static void init(ForgeConfigSpec.Builder BUILDER) {
+    static {
         Wildplants.LOGGER.debug("init-harvestcraft-feature-config");
+        BUILDER.comment(
+                "Valid Biome Types:\n" +
+                        "Temperature: [HOT, COLD] \n" +
+                        "Vegetation: [SPARSE, DENSE] \n" +
+                        "Humidity: [WET, DRY] \n" +
+                        "Tree Types: [SAVANNA, CONIFEROUS, JUNGLE] \n" +
+                        "Attributes: [SPOOKY, DEAD, LUSH, MUSHROOM, MAGICAL, RARE, PLATEAU, MODIFIED, OCEAN, RIVER, WATER] \n" +
+                        "Generic Types: [MESA, FOREST, PLAINS, MOUNTAIN, HILLS, SWAMP, SANDY, SNOWY, WASTELAND, BEACH, VOID] \n" +
+                        "Use: [OVERWORLD] to generate in all biomes");
 
         BUILDER.push("WILD AGAVE");
         AGAVE_ENABLED_HARVESTCRAFT = BUILDER
@@ -1490,5 +1501,7 @@ public class HarvestcraftConfig {
                 .comment("Default [1]")
                 .define("Patch Size:", 1);
         BUILDER.pop();
+
+        SPEC = BUILDER.build();
     }
 }

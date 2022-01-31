@@ -7,7 +7,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -15,7 +14,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import wks.wolfkidsounds.wildplants.block.ModBlocks;
 import wks.wolfkidsounds.wildplants.config.WildplantsConfig;
-import wks.wolfkidsounds.wildplants.config.features.WildplantsFeaturesConfig;
+import wks.wolfkidsounds.wildplants.config.features.harvestcraft.HarvestcraftConfig;
+import wks.wolfkidsounds.wildplants.config.features.immersiveengineering.ImmersiveEngineeringConfig;
+import wks.wolfkidsounds.wildplants.config.features.minecraft.MinecraftConfig;
+import wks.wolfkidsounds.wildplants.config.features.veggieway.VeggiewayConfig;
 import wks.wolfkidsounds.wildplants.items.ModItems;
 import wks.wolfkidsounds.wildplants.render.ModRenderers;
 import wks.wolfkidsounds.wildplants.utils.FileUtils;
@@ -38,7 +40,10 @@ public class Wildplants {
 
         FileUtils.createFolders();
         ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, WildplantsConfig.SPEC, "wildplants/wildplants-common.toml");
-        ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.CLIENT, WildplantsFeaturesConfig.SPEC, "wildplants/settings-common.toml");
+        ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, MinecraftConfig.SPEC, "wildplants/features/minecraft-common.toml");
+        ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, ImmersiveEngineeringConfig.SPEC, "wildplants/features/immersiveengineering-common.toml");
+        ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, HarvestcraftConfig.SPEC, "wildplants/features/harvestcraft2-common.toml");
+        ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, VeggiewayConfig.SPEC, "wildplants/features/veggieway-common.toml");
 
         ModBlocks.register(eventBus);
         ModItems.register(eventBus);
