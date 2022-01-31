@@ -4,7 +4,7 @@ This mod adds wild plants (crops) similar to the farmers delight or croptopia wo
 
 **Current Feature Sets**
 
-- Global Patch Size and Frequency Control
+- Global Patch Size, Plant Spread and Frequency Control
 - Turn on/off features individually
 - Biome Category, Patch Size and Frequency can be controlled for each plant individually
 - Drops can be configured using datapacks (simple loot tables)
@@ -14,12 +14,14 @@ This mod adds wild plants (crops) similar to the farmers delight or croptopia wo
 
 - [x] Minecraft Crops
 - [x] Immersive Engineering Hemp
+- [x] The Veggie Way
   
 ---
 
 *1.17.1*
 
 - [x] Minecraft Crops
+- [x] The Veggie Way
 
 ---
 
@@ -28,6 +30,7 @@ This mod adds wild plants (crops) similar to the farmers delight or croptopia wo
 - [x] Minecraft Crops
 - [x] Pams Harvestcraft 2 Crops
 - [x] Immersive Engineering Hemp
+- [x] The Veggie Way
 
 ---
 
@@ -36,6 +39,9 @@ This mod adds wild plants (crops) similar to the farmers delight or croptopia wo
 
 - Fix Log Spamming...
 - Compat: The Veggie Way
+- Compat: Mystical Agriculture
+- Compat: Industrial Agriculture
+- Fabric Port
 
 
 **Know Issues**
