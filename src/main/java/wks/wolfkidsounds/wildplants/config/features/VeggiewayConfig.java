@@ -26,6 +26,11 @@ public class VeggiewayConfig {
     public static ForgeConfigSpec.ConfigValue<Integer> SOYBEAN_PATCH_SIZE_VEGGIEWAY;
     public static ForgeConfigSpec.BooleanValue SOYBEAN_ENABLED_VEGGIEWAY;
 
+    public static ForgeConfigSpec.ConfigValue<String> COTTON_BIOME_TYPE_VEGGIEWAY;
+    public static ForgeConfigSpec.ConfigValue<Integer> COTTON_FREQUENCY_VEGGIEWAY;
+    public static ForgeConfigSpec.ConfigValue<Integer> COTTON_PATCH_SIZE_VEGGIEWAY;
+    public static ForgeConfigSpec.BooleanValue COTTON_ENABLED_VEGGIEWAY;
+
     //--------------------------------------------------------------
 
     public static void init(ForgeConfigSpec.Builder BUILDER) {
@@ -83,6 +88,20 @@ public class VeggiewayConfig {
                 .comment("Default [1]")
                 .define("Frequency:", 1);
         SOYBEAN_PATCH_SIZE_VEGGIEWAY = BUILDER
+                .comment("Default [1]")
+                .define("Patch Size:", 1);
+        BUILDER.pop();
+
+        BUILDER.push("WILD COTTON");
+        COTTON_ENABLED_VEGGIEWAY = BUILDER
+                .define("Enabled:", true);
+        COTTON_BIOME_TYPE_VEGGIEWAY = BUILDER
+                .comment("Default: [DRY]")
+                .define("Biome Type:", "DRY");
+        COTTON_FREQUENCY_VEGGIEWAY = BUILDER
+                .comment("Default [1]")
+                .define("Frequency:", 1);
+        COTTON_PATCH_SIZE_VEGGIEWAY = BUILDER
                 .comment("Default [1]")
                 .define("Patch Size:", 1);
         BUILDER.pop();

@@ -15,6 +15,7 @@ public class VeggiewayPlacedFeatures {
     public static Integer LENTIL_FREQUENCY_VEGGIEWAY = VeggiewayConfig.LENTIL_FREQUENCY_VEGGIEWAY.get() * FREQUENCY_GLOBAL;
     public static Integer QUINOA_FREQUENCY_VEGGIEWAY = VeggiewayConfig.QUINOA_FREQUENCY_VEGGIEWAY.get() * FREQUENCY_GLOBAL;
     public static Integer SOYBEAN_FREQUENCY_VEGGIEWAY = VeggiewayConfig.SOYBEAN_FREQUENCY_VEGGIEWAY.get() * FREQUENCY_GLOBAL;
+    public static Integer COTTON_FREQUENCY_VEGGIEWAY = VeggiewayConfig.COTTON_FREQUENCY_VEGGIEWAY.get() * FREQUENCY_GLOBAL;
 
     //----------------------------------------------------------------------
 
@@ -32,6 +33,10 @@ public class VeggiewayPlacedFeatures {
 
     public static final PlacedFeature VEGGIEWAY_WILD_SOYBEAN_PLACED = PlacementUtils.register("veggieway_wild_soybean_placed",
             VeggiewayConfiguredFeatures.VEGGIEWAY_WILD_SOYBEAN_CONFIG.placed(CountPlacement.of(SOYBEAN_FREQUENCY_VEGGIEWAY),
+                    InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+    public static final PlacedFeature VEGGIEWAY_WILD_COTTON_PLACED = PlacementUtils.register("veggieway_wild_cotton_placed",
+            VeggiewayConfiguredFeatures.VEGGIEWAY_WILD_COTTON_CONFIG.placed(CountPlacement.of(COTTON_FREQUENCY_VEGGIEWAY),
                     InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 
 }

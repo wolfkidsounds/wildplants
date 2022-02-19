@@ -35,6 +35,7 @@ public class ModWorldEvents {
             if (VeggiewayConfig.LENTIL_ENABLED_VEGGIEWAY.get()) { VeggiewayWildplantsGeneration.generateWildLentil(event); }
             if (VeggiewayConfig.QUINOA_ENABLED_VEGGIEWAY.get()) { VeggiewayWildplantsGeneration.generateWildQuinoa(event); }
             if (VeggiewayConfig.SOYBEAN_ENABLED_VEGGIEWAY.get()) { VeggiewayWildplantsGeneration.generateWildSoybean(event); }
+            if (VeggiewayConfig.COTTON_ENABLED_VEGGIEWAY.get()) { VeggiewayWildplantsGeneration.generateWildCotton(event); }
         }
     }
 }

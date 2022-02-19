@@ -17,6 +17,7 @@ public class VeggiewayConfiguredFeatures {
     public static Integer LENTIL_PATCH_SIZE_VEGGIEWAY = VeggiewayConfig.LENTIL_PATCH_SIZE_VEGGIEWAY.get() * PATCH_SIZE_GLOBAL;
     public static Integer QUINOA_PATCH_SIZE_VEGGIEWAY = VeggiewayConfig.QUINOA_PATCH_SIZE_VEGGIEWAY.get() * PATCH_SIZE_GLOBAL;
     public static Integer SOYBEAN_PATCH_SIZE_VEGGIEWAY = VeggiewayConfig.SOYBEAN_PATCH_SIZE_VEGGIEWAY.get() * PATCH_SIZE_GLOBAL;
+    public static Integer COTTON_PATCH_SIZE_VEGGIEWAY = VeggiewayConfig.COTTON_PATCH_SIZE_VEGGIEWAY.get() * PATCH_SIZE_GLOBAL;
     
     //----------------------------------------------------------------------
 
@@ -43,4 +44,10 @@ public class VeggiewayConfiguredFeatures {
                     new RandomPatchConfiguration(SOYBEAN_PATCH_SIZE_VEGGIEWAY,SPREAD_SIZE,SPREAD_SIZE,
                             () -> Feature.SIMPLE_BLOCK.configured(
                                     new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.VEGGIEWAY_WILD_SOYBEAN.get()))).onlyWhenEmpty())));
+
+    public static final ConfiguredFeature<?, ?> VEGGIEWAY_WILD_COTTON_CONFIG = FeatureUtils.register("veggieway_wild_cotton_config",
+            Feature.FLOWER.configured(
+                    new RandomPatchConfiguration(COTTON_PATCH_SIZE_VEGGIEWAY,SPREAD_SIZE,SPREAD_SIZE,
+                            () -> Feature.SIMPLE_BLOCK.configured(
+                                    new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.VEGGIEWAY_WILD_COTTON.get()))).onlyWhenEmpty())));
 }

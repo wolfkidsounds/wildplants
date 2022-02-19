@@ -54,4 +54,14 @@ public class VeggiewayWildplantsGeneration {
             base.add(() -> VeggiewayPlacedFeatures.VEGGIEWAY_WILD_SOYBEAN_PLACED);
         }
     }
+
+    public static void generateWildCotton(final BiomeLoadingEvent event) {
+        ResourceKey<Biome> key = ResourceKey.create(Registry.BIOME_REGISTRY, event.getName());
+        Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
+
+        if(types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.COTTON_BIOME_TYPE_VEGGIEWAY.get()))) {
+            List<Supplier<PlacedFeature>> base = event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
+            base.add(() -> VeggiewayPlacedFeatures.VEGGIEWAY_WILD_COTTON_PLACED);
+        }
+    }
 }

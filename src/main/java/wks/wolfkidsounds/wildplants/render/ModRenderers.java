@@ -27,6 +27,7 @@ public class ModRenderers {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_LENTIL.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_QUINOA.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_SOYBEAN.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_COTTON.get(), RenderType.cutout());
         }
     }
 

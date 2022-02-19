@@ -47,6 +47,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> VEGGIEWAY_WILD_SOYBEAN = registerVeggiewayBlock("veggieway_wild_soybean",
             () -> new FlowerBlock(MobEffects.HEAL, 2, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_COTTON = registerVeggiewayBlock("veggieway_wild_cotton",
+            () -> new FlowerBlock(MobEffects.HEAL, 2, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
     //------------------------------------------------------------------------------------------------------------------------------
 
     private static <T extends Block>RegistryObject<T> registerMinecraftBlock(String name, Supplier<T> block) {
