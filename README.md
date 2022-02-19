@@ -8,29 +8,28 @@ This mod adds wild plants (crops) similar to the farmers delight or croptopia wo
 - Turn on/off features individually
 - Biome Category, Patch Size and Frequency can be controlled for each plant individually
 - Drops can be configured using datapacks (simple loot tables)
-- Textures can be configured using resourcepacks
 
 *1.18.1*
 
 - [x] Minecraft Crops
-- [x] Immersive Engineering Hemp
-- [x] The Veggie Way
+- [x] [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
+- [x] [The Veggie Way](https://www.curseforge.com/minecraft/mc-mods/the-veggie-way)
   
 ---
 
 *1.17.1*
 
 - [x] Minecraft Crops
-- [x] The Veggie Way
+- [x] [The Veggie Way](https://www.curseforge.com/minecraft/mc-mods/the-veggie-way)
 
 ---
 
 *1.16.5*
 
 - [x] Minecraft Crops
-- [x] Pams Harvestcraft 2 Crops
-- [x] Immersive Engineering Hemp
-- [x] The Veggie Way
+- [x] [Pam's Harvestcraft 2](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops)
+- [x] [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
+- [x] [The Veggie Way](https://www.curseforge.com/minecraft/mc-mods/the-veggie-way)
 
 ---
 
@@ -38,9 +37,7 @@ This mod adds wild plants (crops) similar to the farmers delight or croptopia wo
 **Planned Features**
 
 - Fix Log Spamming...
-- Compat: The Veggie Way
 - Compat: Mystical Agriculture
-- Compat: Industrial Agriculture
 - Fabric Port
 
 
@@ -66,7 +63,7 @@ Also check out my other projects:
 - [WOLFPACK 5](https://www.curseforge.com/minecraft/modpacks/wolfpack-5)
 - [WOLFPACK 6](https://www.curseforge.com/minecraft/modpacks/wolfpack-6)
 - [Woods Of The Past](https://www.curseforge.com/minecraft/modpacks/woods-of-the-past)
-- [WKS - Widlplants 2](https://www.curseforge.com/minecraft/mc-mods/wks-wildplants)
+- [WKS - Wildplants 2](https://www.curseforge.com/minecraft/mc-mods/wks-wildplants)
 
 
 [Support on Discord](https://discord.gg/gHcHGuDY)
