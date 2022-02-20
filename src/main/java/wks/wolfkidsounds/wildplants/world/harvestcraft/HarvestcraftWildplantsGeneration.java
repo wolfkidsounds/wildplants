@@ -22,7 +22,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.AGAVE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_AGAVE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_AGAVE_PATCH);
         }
     }
 
@@ -33,7 +33,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.AMARANTH_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_AMARANTH_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_AMARANTH_PATCH);
         }
     }
 
@@ -44,7 +44,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ARROWROOT_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ARROWROOT_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ARROWROOT_PATCH);
         }
     }
 
@@ -55,7 +55,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ARTICHOKE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ARTICHOKE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ARTICHOKE_PATCH);
         }
     }
 
@@ -66,7 +66,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ASPARAGUS_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ASPARAGUS_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ASPARAGUS_PATCH);
         }
     }
 
@@ -77,7 +77,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BARLEY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BARLEY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BARLEY_PATCH);
         }
     }
 
@@ -88,7 +88,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BEAN_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BEAN_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BEAN_PATCH);
         }
     }
 
@@ -99,7 +99,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BELLPEPPER_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BELLPEPPER_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BELLPEPPER_PATCH);
         }
     }
 
@@ -110,7 +110,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BLACKBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BLACKBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BLACKBERRY_PATCH);
         }
     }
 
@@ -121,7 +121,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BLUEBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BLUEBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BLUEBERRY_PATCH);
         }
     }
 
@@ -132,7 +132,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BROCCOLI_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BROCCOLI_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BROCCOLI_PATCH);
         }
     }
 
@@ -143,7 +143,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.BRUSSELSPROUT_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BRUSSELSPROUT_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_BRUSSELSPROUT_PATCH);
         }
     }
 
@@ -154,7 +154,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CABBAGE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CABBAGE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CABBAGE_PATCH);
         }
     }
 
@@ -165,7 +165,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CACTUSFRUIT_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CACTUSFRUIT_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CACTUSFRUIT_PATCH);
         }
     }
 
@@ -176,7 +176,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CANDLEBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CANDLEBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CANDLEBERRY_PATCH);
         }
     }
 
@@ -187,7 +187,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CANTALOUPE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CANTALOUPE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CANTALOUPE_PATCH);
         }
     }
 
@@ -198,7 +198,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CASSAVA_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CASSAVA_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CASSAVA_PATCH);
         }
     }
 
@@ -209,7 +209,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CAULIFLOWER_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CAULIFLOWER_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CAULIFLOWER_PATCH);
         }
     }
 
@@ -220,7 +220,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CELERY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CELERY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CELERY_PATCH);
         }
     }
 
@@ -231,7 +231,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CHICKPEA_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CHICKPEA_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CHICKPEA_PATCH);
         }
     }
 
@@ -242,7 +242,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CHILIPEPPER_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CHILIPEPPER_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CHILIPEPPER_PATCH);
         }
     }
 
@@ -253,7 +253,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.COFFEEBEAN_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_COFFEEBEAN_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_COFFEEBEAN_PATCH);
         }
     }
 
@@ -264,7 +264,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CORN_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CORN_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CORN_PATCH);
         }
     }
 
@@ -275,7 +275,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.COTTON_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_COTTON_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_COTTON_PATCH);
         }
     }
 
@@ -286,7 +286,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CRANBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CRANBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CRANBERRY_PATCH);
         }
     }
 
@@ -297,7 +297,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.CUCUMBER_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CUCUMBER_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_CUCUMBER_PATCH);
         }
     }
 
@@ -308,7 +308,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.EGGPLANT_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_EGGPLANT_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_EGGPLANT_PATCH);
         }
     }
 
@@ -319,7 +319,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ELDERBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ELDERBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ELDERBERRY_PATCH);
         }
     }
 
@@ -330,7 +330,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.FLAX_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_FLAX_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_FLAX_PATCH);
         }
     }
 
@@ -341,7 +341,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.GARLIC_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_GARLIC_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_GARLIC_PATCH);
         }
     }
 
@@ -352,7 +352,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.GINGER_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_GINGER_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_GINGER_PATCH);
         }
     }
 
@@ -363,7 +363,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.GRAPE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_GRAPE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_GRAPE_PATCH);
         }
     }
 
@@ -374,7 +374,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.GREENGRAPE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_GREENGRAPE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_GREENGRAPE_PATCH);
         }
     }
 
@@ -385,7 +385,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.HUCKLEBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_HUCKLEBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_HUCKLEBERRY_PATCH);
         }
     }
 
@@ -396,7 +396,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.JICAMA_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_JICAMA_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_JICAMA_PATCH);
         }
     }
 
@@ -407,7 +407,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.JUNIPERBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_JUNIPERBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_JUNIPERBERRY_PATCH);
         }
     }
 
@@ -418,7 +418,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.JUTE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_JUTE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_JUTE_PATCH);
         }
     }
 
@@ -429,7 +429,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.KALE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_KALE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_KALE_PATCH);
         }
     }
 
@@ -440,7 +440,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.KENAF_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_KENAF_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_KENAF_PATCH);
         }
     }
 
@@ -451,7 +451,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.KIWI_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_KIWI_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_KIWI_PATCH);
         }
     }
 
@@ -462,7 +462,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.KOHLRABI_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_KOHLRABI_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_KOHLRABI_PATCH);
         }
     }
 
@@ -473,7 +473,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.LEEK_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_LEEK_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_LEEK_PATCH);
         }
     }
 
@@ -484,7 +484,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.LENTIL_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_LENTIL_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_LENTIL_PATCH);
         }
     }
 
@@ -495,7 +495,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.LETTUCE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_LETTUCE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_LETTUCE_PATCH);
         }
     }
 
@@ -506,7 +506,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.MILLET_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_MILLET_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_MILLET_PATCH);
         }
     }
 
@@ -517,7 +517,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.MULBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_MULBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_MULBERRY_PATCH);
         }
     }
 
@@ -528,7 +528,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.MUSTARDSEEDS_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_MUSTARDSEEDS_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_MUSTARDSEEDS_PATCH);
         }
     }
 
@@ -539,7 +539,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.OATS_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_OATS_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_OATS_PATCH);
         }
     }
 
@@ -550,7 +550,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.OKRA_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_OKRA_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_OKRA_PATCH);
         }
     }
 
@@ -561,7 +561,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ONION_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ONION_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ONION_PATCH);
         }
     }
 
@@ -572,7 +572,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.PARSNIP_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_PARSNIP_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_PARSNIP_PATCH);
         }
     }
 
@@ -583,7 +583,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.PEANUT_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_PEANUT_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_PEANUT_PATCH);
         }
     }
 
@@ -594,7 +594,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.PEAS_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_PEAS_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_PEAS_PATCH);
         }
     }
 
@@ -605,7 +605,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.PINEAPPLE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_PINEAPPLE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_PINEAPPLE_PATCH);
         }
     }
 
@@ -616,7 +616,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.QUINOA_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_QUINOA_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_QUINOA_PATCH);
         }
     }
 
@@ -627,7 +627,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RADISH_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RADISH_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RADISH_PATCH);
         }
     }
 
@@ -638,7 +638,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RASPBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RASPBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RASPBERRY_PATCH);
         }
     }
 
@@ -649,7 +649,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RHUBARB_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RHUBARB_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RHUBARB_PATCH);
         }
     }
 
@@ -660,7 +660,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RICE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RICE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RICE_PATCH);
         }
     }
 
@@ -671,7 +671,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RUTABAGA_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RUTABAGA_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RUTABAGA_PATCH);
         }
     }
 
@@ -682,7 +682,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.RYE_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RYE_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_RYE_PATCH);
         }
     }
 
@@ -693,7 +693,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SCALLION_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SCALLION_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SCALLION_PATCH);
         }
     }
 
@@ -704,7 +704,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SESAMESEEDS_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SESAMESEEDS_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SESAMESEEDS_PATCH);
         }
     }
 
@@ -715,7 +715,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SISAL_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SISAL_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SISAL_PATCH);
         }
     }
 
@@ -726,7 +726,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SOYBEAN_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SOYBEAN_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SOYBEAN_PATCH);
         }
     }
 
@@ -737,7 +737,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SPINACH_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SPINACH_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SPINACH_PATCH);
         }
     }
 
@@ -748,7 +748,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SPICELEAF_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SPICELEAF_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SPICELEAF_PATCH);
         }
     }
 
@@ -759,7 +759,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.STRAWBERRY_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_STRAWBERRY_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_STRAWBERRY_PATCH);
         }
     }
 
@@ -770,7 +770,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.SWEETPOTATO_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SWEETPOTATO_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_SWEETPOTATO_PATCH);
         }
     }
 
@@ -781,7 +781,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TARO_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TARO_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TARO_PATCH);
         }
     }
 
@@ -792,7 +792,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TEALEAF_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TEALEAF_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TEALEAF_PATCH);
         }
     }
 
@@ -803,7 +803,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TOMATILLO_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TOMATILLO_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TOMATILLO_PATCH);
         }
     }
 
@@ -814,7 +814,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TOMATO_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TOMATO_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TOMATO_PATCH);
         }
     }
 
@@ -825,7 +825,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.TURNIP_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TURNIP_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_TURNIP_PATCH);
         }
     }
 
@@ -836,7 +836,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.WATERCHESTNUT_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_WATERCHESTNUT_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_WATERCHESTNUT_PATCH);
         }
     }
 
@@ -847,7 +847,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.WHITEMUSHROOM_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_WHITEMUSHROOM_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_WHITEMUSHROOM_PATCH);
         }
     }
 
@@ -858,7 +858,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.WINTERSQUASH_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_WINTERSQUASH_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_WINTERSQUASH_PATCH);
         }
     }
 
@@ -869,7 +869,7 @@ public class HarvestcraftWildplantsGeneration {
         if(types.contains(BiomeDictionary.Type.getType(HarvestcraftConfig.ZUCCHINI_BIOME_TYPE_HARVESTCRAFT.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ZUCCHINI_CONFIG);
+            base.add(() -> HarvestcraftConfiguredFeatures.HARVESTCRAFT_WILD_ZUCCHINI_PATCH);
         }
     }
 }

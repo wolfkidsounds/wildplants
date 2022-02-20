@@ -17,7 +17,7 @@ public final class WildplantsConfig {
         Wildplants.LOGGER.debug("init-configuration");
 
         BUILDER.push("General");
-        DEBUG = BUILDER.define("DEBUG", true);
+        DEBUG = BUILDER.define("DEBUG", false);
         BUILDER.push("Global_Modifier");
         //GLOBAL_CHANCE = BUILDER.comment("Global rarity modifier (higher is less) [Default: 10]").define("Rarity", 10);
         GLOBAL_FREQUENCY = BUILDER
@@ -38,8 +38,6 @@ public final class WildplantsConfig {
         CompatConfig.initImmersiveEngineering(BUILDER);
         CompatConfig.initHarvestcraft(BUILDER);
         CompatConfig.initVeggieway(BUILDER);
-        CompatConfig.initMysticalAgriculture(BUILDER);
-        CompatConfig.initIndustrialAgriculture(BUILDER);
         BUILDER.pop();
         BUILDER.pop();
 

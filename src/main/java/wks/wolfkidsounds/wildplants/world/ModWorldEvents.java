@@ -1,22 +1,17 @@
 package wks.wolfkidsounds.wildplants.world;
 
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import wks.wolfkidsounds.wildplants.Wildplants;
-import wks.wolfkidsounds.wildplants.block.ModBlocks;
 import wks.wolfkidsounds.wildplants.config.CompatConfig;
 import wks.wolfkidsounds.wildplants.config.features.harvestcraft.HarvestcraftConfig;
 import wks.wolfkidsounds.wildplants.config.features.immersiveengineering.ImmersiveEngineeringConfig;
 import wks.wolfkidsounds.wildplants.config.features.minecraft.MinecraftConfig;
-import wks.wolfkidsounds.wildplants.config.features.mysticalagriculture.MysticalAgricultureConfig;
 import wks.wolfkidsounds.wildplants.config.features.veggieway.VeggiewayConfig;
 import wks.wolfkidsounds.wildplants.world.harvestcraft.HarvestcraftWildplantsGeneration;
 import wks.wolfkidsounds.wildplants.world.immersiveengineering.ImmersiveEngineeringWildplantsGeneration;
 import wks.wolfkidsounds.wildplants.world.minecraft.MinecraftWildplantsGeneration;
-import wks.wolfkidsounds.wildplants.world.mysticalagriculture.MysticalAgricultureWildplantsGeneration;
 import wks.wolfkidsounds.wildplants.world.veggieway.VeggiewayWildplantsGeneration;
 
 
@@ -124,26 +119,5 @@ public class ModWorldEvents {
             if (VeggiewayConfig.QUINOA_ENABLED_VEGGIEWAY.get()) {VeggiewayWildplantsGeneration.generateWildQuinoa(event);}
             if (VeggiewayConfig.SOYBEAN_ENABLED_VEGGIEWAY.get()) {VeggiewayWildplantsGeneration.generateWildSoybean(event);}
         }
-
-        //ELEMENTAL
-        /*
-        if (CompatConfig.LOADED_MYSTICALAGRICULTURE && CompatConfig.ENABLE_MYSTICALAGRICULTURE.get() && MysticalAgricultureConfig.ENABLE_MYSTICALAGRICULTURE_ELEMENTAL.get()) {
-            if (MysticalAgricultureConfig.AIR_ENABLED_MYSTICALAGRICULTURE.get()) {
-                MysticalAgricultureWildplantsGeneration.generateWildAir(event);
-            }
-
-            if (MysticalAgricultureConfig.EARTH_ENABLED_MYSTICALAGRICULTURE.get()) {
-                MysticalAgricultureWildplantsGeneration.generateWildEarth(event);
-            }
-
-            if (MysticalAgricultureConfig.WATER_ENABLED_MYSTICALAGRICULTURE.get()) {
-                MysticalAgricultureWildplantsGeneration.generateWildWater(event);
-            }
-
-            if (MysticalAgricultureConfig.FIRE_ENABLED_MYSTICALAGRICULTURE.get()) {
-                MysticalAgricultureWildplantsGeneration.generateWildFire(event);
-            }
-        }
-         */
     }
 }
