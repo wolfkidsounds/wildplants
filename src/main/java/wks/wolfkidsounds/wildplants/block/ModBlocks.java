@@ -318,6 +318,114 @@ public class ModBlocks {
 
     //----------------------------------------------------------------------------------------------
 
+    //SIMPLE_FARMING
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_CUMIN = registerSimpleFarmingBlock("simplefarming_wild_cumin",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_QUINOA = registerSimpleFarmingBlock("simplefarming_wild_quinoa",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_SUNFLOWER = registerSimpleFarmingBlock("simplefarming_wild_sunflower",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_CANTALOUPE = registerSimpleFarmingBlock("simplefarming_wild_cantaloupe",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_HONEYDEW = registerSimpleFarmingBlock("simplefarming_wild_honeydew",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_SQUASH = registerSimpleFarmingBlock("simplefarming_wild_squash",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_BARLEY = registerSimpleFarmingBlock("simplefarming_wild_barley",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_BROCCOLI = registerSimpleFarmingBlock("simplefarming_wild_broccoli",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_CASSAVA = registerSimpleFarmingBlock("simplefarming_wild_cassava",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_CORN = registerSimpleFarmingBlock("simplefarming_wild_corn",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_COTTON = registerSimpleFarmingBlock("simplefarming_wild_cotton",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_CUCUMBER = registerSimpleFarmingBlock("simplefarming_wild_cucumber",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_EGGPLANT = registerSimpleFarmingBlock("simplefarming_wild_eggplant",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_GINGER = registerSimpleFarmingBlock("simplefarming_wild_ginger",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_GRAPE = registerSimpleFarmingBlock("simplefarming_wild_grape",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_KENAF = registerSimpleFarmingBlock("simplefarming_wild_kenaf",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_LETTUCE = registerSimpleFarmingBlock("simplefarming_wild_lettuce",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_OAT = registerSimpleFarmingBlock("simplefarming_wild_oat",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_ONION = registerSimpleFarmingBlock("simplefarming_wild_onion",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_PEA = registerSimpleFarmingBlock("simplefarming_wild_pea",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_PEANUT = registerSimpleFarmingBlock("simplefarming_wild_peanut",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_PEPPER = registerSimpleFarmingBlock("simplefarming_wild_pepper",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_RADISH = registerSimpleFarmingBlock("simplefarming_wild_radish",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_RICE = registerSimpleFarmingBlock("simplefarming_wild_rice",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_RYE = registerSimpleFarmingBlock("simplefarming_wild_rye",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_SORGHUM = registerSimpleFarmingBlock("simplefarming_wild_sorghum",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_SOYBEAN = registerSimpleFarmingBlock("simplefarming_wild_soybean",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_SPINACH = registerSimpleFarmingBlock("simplefarming_wild_spinach",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_SWEETPOTATO = registerSimpleFarmingBlock("simplefarming_wild_sweetpotato",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_TOMATO = registerSimpleFarmingBlock("simplefarming_wild_tomato",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_TURNIP = registerSimpleFarmingBlock("simplefarming_wild_turnip",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_YAM = registerSimpleFarmingBlock("simplefarming_wild_yam",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> SIMPLEFARMING_WILD_ZUCCHINI = registerSimpleFarmingBlock("simplefarming_wild_zucchini",
+            () -> new FlowerBlock(Effects.INSTANT_HEALTH, 2, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    private static <T extends Block>RegistryObject<T> registerSimpleFarmingBlock(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        if (CompatConfig.ENABLE_SIMPLEFARMING.get() && CompatConfig.LOADED_SIMPLEFARMING) {registerBlockItem(name, toReturn);}
+        return toReturn;
+    }
+
+    //----------------------------------------------------------------------------------------------
+
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties().group(Wildplants.ITEM_GROUP)));

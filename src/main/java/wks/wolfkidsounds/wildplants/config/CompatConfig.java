@@ -11,12 +11,12 @@ public class CompatConfig {
     public static ForgeConfigSpec.BooleanValue ENABLE_IMMERSIVEENGINEERING;
     public static ForgeConfigSpec.BooleanValue ENABLE_HARVESTCRAFT;
     public static ForgeConfigSpec.BooleanValue ENABLE_VEGGIEWAY;
-    public static ForgeConfigSpec.BooleanValue ENABLE_MYSTICALAGRICULTURE;
-    public static ForgeConfigSpec.BooleanValue ENABLE_INDUSTRIALAGRICULTURE;
+    public static ForgeConfigSpec.BooleanValue ENABLE_SIMPLEFARMING;
 
     public static Boolean LOADED_IMMERSIVEENGINEERING = ModList.get().isLoaded("immersiveengineering");
     public static Boolean LOADED_HARVESTCRAFT = ModList.get().isLoaded("pamhc2crops");
     public static Boolean LOADED_VEGGIEWAY = ModList.get().isLoaded("veggie_way");
+    public static Boolean LOADED_SIMPLEFARMING = ModList.get().isLoaded("simplefarming");
 
     public static void initMinecraft(ForgeConfigSpec.Builder BUILDER) {
         Wildplants.LOGGER.debug("init-compat-minecraft-configuration");
@@ -40,5 +40,11 @@ public class CompatConfig {
         Wildplants.LOGGER.debug("init-compat-veggieway-configuration");
         ENABLE_VEGGIEWAY = BUILDER
                 .define("Veggie_Way", true);
+    }
+
+    public static void initSimpleFarming(ForgeConfigSpec.Builder BUILDER) {
+        Wildplants.LOGGER.debug("init-compat-simplefarming-configuration");
+        ENABLE_SIMPLEFARMING = BUILDER
+                .define("Simple_Farming", true);
     }
 }

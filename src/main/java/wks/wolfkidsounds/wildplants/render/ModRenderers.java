@@ -109,8 +109,41 @@ public class ModRenderers {
             RenderTypeLookup.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_QUINOA.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_SOYBEAN.get(), RenderType.getCutout());
         }
+
+        if (CompatConfig.LOADED_SIMPLEFARMING && CompatConfig.ENABLE_SIMPLEFARMING.get()) {
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_CUMIN.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_QUINOA.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_SUNFLOWER.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_CANTALOUPE.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_HONEYDEW.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_SQUASH.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_BARLEY.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_BROCCOLI.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_CASSAVA.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_CORN.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_COTTON.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_CUCUMBER.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_EGGPLANT.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_GINGER.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_GRAPE.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_KENAF.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_LETTUCE.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_OAT.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_ONION.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_PEA.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_PEANUT.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_PEPPER.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_RADISH.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_RICE.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_RYE.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_SORGHUM.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_SOYBEAN.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_SPINACH.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_SWEETPOTATO.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_TOMATO.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_TURNIP.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_YAM.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_ZUCCHINI.get(), RenderType.getCutout());
+        }
     }
-
-
-
 }

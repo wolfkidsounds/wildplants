@@ -38,6 +38,7 @@ public final class WildplantsConfig {
         CompatConfig.initImmersiveEngineering(BUILDER);
         CompatConfig.initHarvestcraft(BUILDER);
         CompatConfig.initVeggieway(BUILDER);
+        CompatConfig.initSimpleFarming(BUILDER);
         BUILDER.pop();
         BUILDER.pop();
 

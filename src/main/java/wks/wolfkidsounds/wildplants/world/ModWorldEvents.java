@@ -8,10 +8,12 @@ import wks.wolfkidsounds.wildplants.config.CompatConfig;
 import wks.wolfkidsounds.wildplants.config.features.harvestcraft.HarvestcraftConfig;
 import wks.wolfkidsounds.wildplants.config.features.immersiveengineering.ImmersiveEngineeringConfig;
 import wks.wolfkidsounds.wildplants.config.features.minecraft.MinecraftConfig;
+import wks.wolfkidsounds.wildplants.config.features.simplefarming.SimpleFarmingConfig;
 import wks.wolfkidsounds.wildplants.config.features.veggieway.VeggiewayConfig;
 import wks.wolfkidsounds.wildplants.world.harvestcraft.HarvestcraftWildplantsGeneration;
 import wks.wolfkidsounds.wildplants.world.immersiveengineering.ImmersiveEngineeringWildplantsGeneration;
 import wks.wolfkidsounds.wildplants.world.minecraft.MinecraftWildplantsGeneration;
+import wks.wolfkidsounds.wildplants.world.simplefarming.SimpleFarmingWildplantsGeneration;
 import wks.wolfkidsounds.wildplants.world.veggieway.VeggiewayWildplantsGeneration;
 
 
@@ -118,6 +120,42 @@ public class ModWorldEvents {
             if (VeggiewayConfig.LENTIL_ENABLED_VEGGIEWAY.get()) {VeggiewayWildplantsGeneration.generateWildLentil(event);}
             if (VeggiewayConfig.QUINOA_ENABLED_VEGGIEWAY.get()) {VeggiewayWildplantsGeneration.generateWildQuinoa(event);}
             if (VeggiewayConfig.SOYBEAN_ENABLED_VEGGIEWAY.get()) {VeggiewayWildplantsGeneration.generateWildSoybean(event);}
+        }
+
+        if (CompatConfig.LOADED_HARVESTCRAFT && CompatConfig.ENABLE_HARVESTCRAFT.get()) {
+            if (SimpleFarmingConfig.CUMIN_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildCumin(event); }
+            if (SimpleFarmingConfig.QUINOA_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildQuinoa(event); }
+            if (SimpleFarmingConfig.SUNFLOWER_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildSunflower(event); }
+            if (SimpleFarmingConfig.CANTALOUPE_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildCantaloupe(event); }
+            if (SimpleFarmingConfig.HONEYDEW_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildHoneydew(event); }
+            if (SimpleFarmingConfig.SQUASH_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildSquash(event); }
+            if (SimpleFarmingConfig.BARLEY_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildBarley(event); }
+            if (SimpleFarmingConfig.BROCCOLI_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildBroccoli(event); }
+            if (SimpleFarmingConfig.CASSAVA_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildCassava(event); }
+            if (SimpleFarmingConfig.CORN_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildCorn(event); }
+            if (SimpleFarmingConfig.COTTON_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildCotton(event); }
+            if (SimpleFarmingConfig.CUCUMBER_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildCucumber(event); }
+            if (SimpleFarmingConfig.EGGPLANT_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildEggplant(event); }
+            if (SimpleFarmingConfig.GINGER_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildGinger(event); }
+            if (SimpleFarmingConfig.GRAPE_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildGrape(event); }
+            if (SimpleFarmingConfig.KENAF_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildKenaf(event); }
+            if (SimpleFarmingConfig.LETTUCE_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildLettuce(event); }
+            if (SimpleFarmingConfig.OAT_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildOat(event); }
+            if (SimpleFarmingConfig.ONION_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildOnion(event); }
+            if (SimpleFarmingConfig.PEA_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildPea(event); }
+            if (SimpleFarmingConfig.PEANUT_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildPeanut(event); }
+            if (SimpleFarmingConfig.PEPPER_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildPepper(event); }
+            if (SimpleFarmingConfig.RADISH_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildRadish(event); }
+            if (SimpleFarmingConfig.RICE_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildRice(event); }
+            if (SimpleFarmingConfig.RYE_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildRye(event); }
+            if (SimpleFarmingConfig.SORGHUM_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildSorghum(event); }
+            if (SimpleFarmingConfig.SOYBEAN_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildSoybean(event); }
+            if (SimpleFarmingConfig.SPINACH_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildSpinach(event); }
+            if (SimpleFarmingConfig.SWEETPOTATO_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildSweetpotato(event); }
+            if (SimpleFarmingConfig.TOMATO_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildTomato(event); }
+            if (SimpleFarmingConfig.TURNIP_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildTurnip(event); }
+            if (SimpleFarmingConfig.YAM_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildYam(event); }
+            if (SimpleFarmingConfig.ZUCCHINI_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildZucchini(event); }
         }
     }
 }
