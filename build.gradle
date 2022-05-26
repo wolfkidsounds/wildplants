@@ -12,7 +12,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 
 group = 'wks.wolfkidsounds'
-version = '1.16.5_2.5.1_forge'
+version = '1.16.5_2.5.2_forge'
 
 java {
     archivesBaseName = 'wildplants'
