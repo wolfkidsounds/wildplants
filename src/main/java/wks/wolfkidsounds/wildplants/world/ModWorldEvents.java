@@ -122,7 +122,7 @@ public class ModWorldEvents {
             if (VeggiewayConfig.SOYBEAN_ENABLED_VEGGIEWAY.get()) {VeggiewayWildplantsGeneration.generateWildSoybean(event);}
         }
 
-        if (CompatConfig.LOADED_HARVESTCRAFT && CompatConfig.ENABLE_HARVESTCRAFT.get()) {
+        if (CompatConfig.LOADED_SIMPLEFARMING && CompatConfig.ENABLE_SIMPLEFARMING.get()) {
             if (SimpleFarmingConfig.CUMIN_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildCumin(event); }
             if (SimpleFarmingConfig.QUINOA_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildQuinoa(event); }
             if (SimpleFarmingConfig.SUNFLOWER_ENABLED_SIMPLEFARMING.get()) { SimpleFarmingWildplantsGeneration.generateWildSunflower(event); }
