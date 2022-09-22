@@ -4,7 +4,7 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="wildplants"
-version="1.18.1_2.4.1_forge"
+version="1.18.2_2.5.1_forge"
 displayName="Wildplants"
 credits="WOLFKIDSOUNDS"
 displayURL="https://wolfkidsounds.com"
@@ -16,6 +16,6 @@ This mod adds wild plants (crops) similar to the farmers delight or croptopia wo
 [[dependencies.wildplants]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.18.1]"
+versionRange="[1.18.2]"
 ordering="NONE"
 side="BOTH"

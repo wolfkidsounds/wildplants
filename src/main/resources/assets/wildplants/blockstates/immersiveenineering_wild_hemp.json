@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/immersiveenineering_wild_hemp"
+      "model": "immersiveengineering:block/hemp/bottom3"
     }
   }
 }

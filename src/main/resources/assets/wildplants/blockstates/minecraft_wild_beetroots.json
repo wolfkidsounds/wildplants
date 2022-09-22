@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/minecraft_wild_beetroots"
+      "model": "minecraft:block/beetroots_stage3"
     }
   }
 }

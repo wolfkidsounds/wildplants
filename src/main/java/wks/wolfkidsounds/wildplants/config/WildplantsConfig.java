@@ -33,6 +33,7 @@ public final class WildplantsConfig {
         CompatConfig.initMinecraft(BUILDER);
         CompatConfig.initVeggieway(BUILDER);
         CompatConfig.initImmersiveEngineering(BUILDER);
+        CompatConfig.initHarvestcraft(BUILDER);
         BUILDER.pop();
         BUILDER.pop();
 

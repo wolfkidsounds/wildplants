@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/minecraft_wild_wheat"
+      "model": "minecraft:block/wheat_stage7"
     }
   }
 }

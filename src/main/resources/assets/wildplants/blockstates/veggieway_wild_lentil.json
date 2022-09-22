@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wildplants:block/veggieway_wild_lentil"
+      "model": "veggie_way:block/lentil_plant_stage_7"
     }
   }
 }

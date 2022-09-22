@@ -1,5 +1,6 @@
 package wks.wolfkidsounds.wildplants.world.veggieway;
 
+import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.biome.Biome;
@@ -20,8 +21,9 @@ public class VeggiewayWildplantsGeneration {
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
         if(types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.CORN_BIOME_TYPE_VEGGIEWAY.get()))) {
-            List<Supplier<PlacedFeature>> base = event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
-            base.add(() -> VeggiewayPlacedFeatures.VEGGIEWAY_WILD_CORN_PLACED);
+            List<Holder<PlacedFeature>> base =
+                event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
+            base.add(VeggiewayPlacedFeatures.VEGGIEWAY_WILD_CORN_PLACED);
         }
     }
 
@@ -30,8 +32,9 @@ public class VeggiewayWildplantsGeneration {
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
         if(types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.LENTIL_BIOME_TYPE_VEGGIEWAY.get()))) {
-            List<Supplier<PlacedFeature>> base = event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
-            base.add(() -> VeggiewayPlacedFeatures.VEGGIEWAY_WILD_LENTIL_PLACED);
+            List<Holder<PlacedFeature>> base =
+                event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
+            base.add(VeggiewayPlacedFeatures.VEGGIEWAY_WILD_LENTIL_PLACED);
         }
     }
 
@@ -40,8 +43,9 @@ public class VeggiewayWildplantsGeneration {
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
         if(types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.QUINOA_BIOME_TYPE_VEGGIEWAY.get()))) {
-            List<Supplier<PlacedFeature>> base = event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
-            base.add(() -> VeggiewayPlacedFeatures.VEGGIEWAY_WILD_QUINOA_PLACED);
+            List<Holder<PlacedFeature>> base =
+                event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
+            base.add(VeggiewayPlacedFeatures.VEGGIEWAY_WILD_QUINOA_PLACED);
         }
     }
 
@@ -50,8 +54,9 @@ public class VeggiewayWildplantsGeneration {
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
         if(types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.SOYBEAN_BIOME_TYPE_VEGGIEWAY.get()))) {
-            List<Supplier<PlacedFeature>> base = event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
-            base.add(() -> VeggiewayPlacedFeatures.VEGGIEWAY_WILD_SOYBEAN_PLACED);
+            List<Holder<PlacedFeature>> base =
+                event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
+            base.add(VeggiewayPlacedFeatures.VEGGIEWAY_WILD_SOYBEAN_PLACED);
         }
     }
 
@@ -60,8 +65,9 @@ public class VeggiewayWildplantsGeneration {
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
         if(types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.COTTON_BIOME_TYPE_VEGGIEWAY.get()))) {
-            List<Supplier<PlacedFeature>> base = event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
-            base.add(() -> VeggiewayPlacedFeatures.VEGGIEWAY_WILD_COTTON_PLACED);
+            List<Holder<PlacedFeature>> base =
+                event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
+            base.add(VeggiewayPlacedFeatures.VEGGIEWAY_WILD_COTTON_PLACED);
         }
     }
 }
