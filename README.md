@@ -1,38 +1,47 @@
-# Wildplants 2
+# Wildplants 3
 
 This mod adds wild plants (crops) similar to the farmers delight or croptopia world generation.
 
-**Current Feature Sets**
+**V3 - Feature Sets**
 
-- Global Patch Size, Plant Spread and Frequency Control
+- Global Frequency
+- Global Patch Spread
 - Turn on/off features individually
-- Biome Category, Patch Size and Frequency can be controlled for each plant individually
+- Chance can be controlled for each plant individually
 - Drops can be configured using datapacks (simple loot tables)
+- Textures are applied automatically from resourcepacks
 
-*1.19.2*
+*1.20.X*
 
 - [ ] Minecraft Crops
 - [ ] [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
 - [ ] [The Veggie Way](https://www.curseforge.com/minecraft/mc-mods/the-veggie-way)
 - [ ] [Pam's Harvestcraft 2](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops)
 
-*1.18.2*
+*1.19.X*
+
+- [ ] Minecraft Crops
+- [ ] [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
+- [ ] [The Veggie Way](https://www.curseforge.com/minecraft/mc-mods/the-veggie-way)
+- [ ] [Pam's Harvestcraft 2](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops)
+
+*1.18.X*
 
 - [x] Minecraft Crops
-- [x] [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
-- [x] [The Veggie Way](https://www.curseforge.com/minecraft/mc-mods/the-veggie-way)
-- [ ] [Pam's Harvestcraft 2](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops)
+- [] [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering) (check v2)
+- [] [The Veggie Way](https://www.curseforge.com/minecraft/mc-mods/the-veggie-way) (check v2)
+- [] [Pam's Harvestcraft 2](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops) (check v2)
   
 ---
 
-*1.17.1*
+*1.17.X*
 
 - [x] Minecraft Crops
 - [x] [The Veggie Way](https://www.curseforge.com/minecraft/mc-mods/the-veggie-way)
 
 ---
 
-*1.16.5*
+*1.16.X*
 
 - [x] Minecraft Crops
 - [x] [Pam's Harvestcraft 2](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops)
