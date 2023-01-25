@@ -19,7 +19,7 @@ public class ImmersiveEngineeringWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(ImmersiveEngineeringConfig.HEMP_BIOME_TYPE_IMMERSIVEENINEERING.get()))) {
+        if (types.contains(BiomeDictionary.Type.getType(ImmersiveEngineeringConfig.HEMP_BIOME_TYPE_IMMERSIVEENINEERING.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base = event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
             base.add(() -> ImmersiveEngineeringConfiguredFeatures.IMMERSIVEENGINEERING_WILD_HEMP_PATCH);
         }

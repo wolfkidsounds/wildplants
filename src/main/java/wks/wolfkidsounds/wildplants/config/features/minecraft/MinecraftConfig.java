@@ -54,47 +54,47 @@ public class MinecraftConfig {
                 .define("Patch Size:", 1);
         BUILDER.pop();
 
-            BUILDER.push("MINECRAFT_WILD CARROTS");
-            CARROTS_ENABLED_MINECRAFT = BUILDER
-                    .define("Enabled:", true);
-            CARROTS_BIOME_TYPE_MINECRAFT = BUILDER
-                    .comment("Default: [PLAINS]")
-                    .define("Biome Type:", "PLAINS");
-            CARROTS_FREQUENCY_MINECRAFT = BUILDER
-                    .comment("Default [1]")
-                    .define("Frequency: ", 1);
-            CARROTS_PATCH_SIZE_MINECRAFT = BUILDER
-                    .comment("Default [1]")
-                    .define("Patch Size: ", 1);
-            BUILDER.pop();
+        BUILDER.push("MINECRAFT_WILD CARROTS");
+        CARROTS_ENABLED_MINECRAFT = BUILDER
+                .define("Enabled:", true);
+        CARROTS_BIOME_TYPE_MINECRAFT = BUILDER
+                .comment("Default: [PLAINS]")
+                .define("Biome Type:", "PLAINS");
+        CARROTS_FREQUENCY_MINECRAFT = BUILDER
+                .comment("Default [1]")
+                .define("Frequency: ", 1);
+        CARROTS_PATCH_SIZE_MINECRAFT = BUILDER
+                .comment("Default [1]")
+                .define("Patch Size: ", 1);
+        BUILDER.pop();
 
-            BUILDER.push("MINECRAFT_WILD POTATOES");
-            POTATOES_ENABLED_MINECRAFT = BUILDER
-                    .define("Enabled:", true);
-            POTATOES_BIOME_TYPE_MINECRAFT = BUILDER
-                    .comment("Default: [PLAINS]")
-                    .define("Biome Type:", "PLAINS");
-            POTATOES_FREQUENCY_MINECRAFT = BUILDER
-                    .comment("Default [1]")
-                    .define("Frequency:", 1);
-            POTATOES_PATCH_SIZE_MINECRAFT = BUILDER
-                    .comment("Default [1]")
-                    .define("Patch Size:", 1);
-            BUILDER.pop();
+        BUILDER.push("MINECRAFT_WILD POTATOES");
+        POTATOES_ENABLED_MINECRAFT = BUILDER
+                .define("Enabled:", true);
+        POTATOES_BIOME_TYPE_MINECRAFT = BUILDER
+                .comment("Default: [PLAINS]")
+                .define("Biome Type:", "PLAINS");
+        POTATOES_FREQUENCY_MINECRAFT = BUILDER
+                .comment("Default [1]")
+                .define("Frequency:", 1);
+        POTATOES_PATCH_SIZE_MINECRAFT = BUILDER
+                .comment("Default [1]")
+                .define("Patch Size:", 1);
+        BUILDER.pop();
 
-            BUILDER.push("MINECRAFT_WILD BEETROOTS");
-            BEETROOTS_ENABLED_MINECRAFT = BUILDER
-                    .define("Enabled:", true);
-            BEETROOTS_BIOME_TYPE_MINECRAFT = BUILDER
-                    .comment("Default: [PLAINS]")
-                    .define("Biome Type:", "PLAINS");
-            BEETROOTS_FREQUENCY_MINECRAFT = BUILDER
-                    .comment("Default [1]")
-                    .define("Frequency:", 1);
-            BEETROOTS_PATCH_SIZE_MINECRAFT = BUILDER
-                    .comment("Default [1]")
-                    .define("Patch Size:", 1);
-            BUILDER.pop();
+        BUILDER.push("MINECRAFT_WILD BEETROOTS");
+        BEETROOTS_ENABLED_MINECRAFT = BUILDER
+                .define("Enabled:", true);
+        BEETROOTS_BIOME_TYPE_MINECRAFT = BUILDER
+                .comment("Default: [PLAINS]")
+                .define("Biome Type:", "PLAINS");
+        BEETROOTS_FREQUENCY_MINECRAFT = BUILDER
+                .comment("Default [1]")
+                .define("Frequency:", 1);
+        BEETROOTS_PATCH_SIZE_MINECRAFT = BUILDER
+                .comment("Default [1]")
+                .define("Patch Size:", 1);
+        BUILDER.pop();
 
         SPEC = BUILDER.build();
     }

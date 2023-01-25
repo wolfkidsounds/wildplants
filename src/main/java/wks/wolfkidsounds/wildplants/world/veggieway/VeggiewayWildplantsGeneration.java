@@ -19,7 +19,7 @@ public class VeggiewayWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.CORN_BIOME_TYPE_VEGGIEWAY.get()))) {
+        if (types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.CORN_BIOME_TYPE_VEGGIEWAY.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base = event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
             base.add(() -> VeggiewayConfiguredFeatures.VEGGIEWAY_WILD_CORN_PATCH);
         }
@@ -29,7 +29,7 @@ public class VeggiewayWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.LENTIL_BIOME_TYPE_VEGGIEWAY.get()))) {
+        if (types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.LENTIL_BIOME_TYPE_VEGGIEWAY.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base = event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
             base.add(() -> VeggiewayConfiguredFeatures.VEGGIEWAY_WILD_LENTIL_PATCH);
         }
@@ -39,7 +39,7 @@ public class VeggiewayWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.QUINOA_BIOME_TYPE_VEGGIEWAY.get()))) {
+        if (types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.QUINOA_BIOME_TYPE_VEGGIEWAY.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
             base.add(() -> VeggiewayConfiguredFeatures.VEGGIEWAY_WILD_QUINOA_PATCH);
@@ -50,7 +50,7 @@ public class VeggiewayWildplantsGeneration {
         RegistryKey<Biome> key = RegistryKey.getOrCreateKey(Registry.BIOME_KEY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.SOYBEAN_BIOME_TYPE_VEGGIEWAY.get()))) {
+        if (types.contains(BiomeDictionary.Type.getType(VeggiewayConfig.SOYBEAN_BIOME_TYPE_VEGGIEWAY.get()))) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
             base.add(() -> VeggiewayConfiguredFeatures.VEGGIEWAY_WILD_SOYBEAN_PATCH);

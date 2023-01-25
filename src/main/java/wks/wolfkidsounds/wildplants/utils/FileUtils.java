@@ -15,12 +15,22 @@ public class FileUtils {
         Path wildplantsConfigurationPath = Paths.get(FMLPaths.CONFIGDIR.get().toAbsolutePath().toString(), "wildplants");
         Path wildplantsSettingsConfigurationPath = Paths.get(FMLPaths.CONFIGDIR.get().toAbsolutePath().toString(), "wildplants/features");
 
-        try {Files.createDirectory(wildplantsConfigurationPath);}
-        catch (FileAlreadyExistsException event) { Wildplants.LOGGER.debug("Configuration directory already exists. nice."); }//do nothing
-        catch (IOException event) {Wildplants.LOGGER.error("The wildplants configuration directory could not be created", event);}
+        try {
+            Files.createDirectory(wildplantsConfigurationPath);
+        } catch (FileAlreadyExistsException event) {
+            Wildplants.LOGGER.debug("Configuration directory already exists. nice.");
+        }//do nothing
+        catch (IOException event) {
+            Wildplants.LOGGER.error("The wildplants configuration directory could not be created", event);
+        }
 
-        try {Files.createDirectory(wildplantsSettingsConfigurationPath);}
-        catch (FileAlreadyExistsException event) { Wildplants.LOGGER.debug("Settings configuration already exists. nice."); }//do nothing
-        catch (IOException event) {Wildplants.LOGGER.error("The wildplants settings configuration directory could not be created", event);}
+        try {
+            Files.createDirectory(wildplantsSettingsConfigurationPath);
+        } catch (FileAlreadyExistsException event) {
+            Wildplants.LOGGER.debug("Settings configuration already exists. nice.");
+        }//do nothing
+        catch (IOException event) {
+            Wildplants.LOGGER.error("The wildplants settings configuration directory could not be created", event);
+        }
     }
 }

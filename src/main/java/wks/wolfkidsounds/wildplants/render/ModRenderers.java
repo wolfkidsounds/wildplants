@@ -145,5 +145,18 @@ public class ModRenderers {
             RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_YAM.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.SIMPLEFARMING_WILD_ZUCCHINI.get(), RenderType.getCutout());
         }
+
+        if (CompatConfig.LOADED_ENHANCEDFARMING && CompatConfig.ENABLE_ENHANCEDFARMING.get()) {
+            RenderTypeLookup.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_MINT.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_TOMATO.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_CUCUMBER.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_AUBERGINE.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_GRAPE.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_PINEAPPLE.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_CORN.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_ONION.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_GARLIC.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_LETTUCE.get(), RenderType.getCutout());
+        }
     }
 }

@@ -2,7 +2,10 @@ package wks.wolfkidsounds.wildplants.world.harvestcraft;
 
 import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.Features;
 import wks.wolfkidsounds.wildplants.block.ModBlocks;
 import wks.wolfkidsounds.wildplants.config.WildplantsConfig;
 import wks.wolfkidsounds.wildplants.config.features.harvestcraft.HarvestcraftConfig;
@@ -1028,5 +1031,5 @@ public class HarvestcraftConfiguredFeatures {
 
     public static final ConfiguredFeature<?, ?> HARVESTCRAFT_WILD_ZUCCHINI_PATCH =
             Feature.FLOWER.withConfiguration(HARVESTCRAFT_WILD_ZUCCHINI)
-                            .withPlacement(Features.Placements.PATCH_PLACEMENT.square()).chance(ZUCCHINI_FREQUENCY_HARVESTCRAFT);
+                    .withPlacement(Features.Placements.PATCH_PLACEMENT.square()).chance(ZUCCHINI_FREQUENCY_HARVESTCRAFT);
 }

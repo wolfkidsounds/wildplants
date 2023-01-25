@@ -120,6 +120,17 @@
   "block.wildplants.simplefarming_wild_tomato" : "Wild Tomato",
   "block.wildplants.simplefarming_wild_turnip" : "Wild Turnip",
   "block.wildplants.simplefarming_wild_yam" : "Wild Yam",
-  "block.wildplants.simplefarming_wild_zucchini" : "Wild Zucchini"
+  "block.wildplants.simplefarming_wild_zucchini" : "Wild Zucchini",
+
+  "block.wildplants.enhancedfarming_wild_mint" : "Wild Mint",
+  "block.wildplants.enhancedfarming_wild_tomato" : "Wild Tomato",
+  "block.wildplants.enhancedfarming_wild_cucumber" : "Wild Cucumber",
+  "block.wildplants.enhancedfarming_wild_aubergine" : "Wild Aubergine",
+  "block.wildplants.enhancedfarming_wild_grape" : "Wild Grape",
+  "block.wildplants.enhancedfarming_wild_pineapple" : "Wild Pineapple",
+  "block.wildplants.enhancedfarming_wild_corn" : "Wild Corn",
+  "block.wildplants.enhancedfarming_wild_onion" : "Wild Onion",
+  "block.wildplants.enhancedfarming_wild_garlic" : "Wild Garlic",
+  "block.wildplants.enhancedfarming_wild_lettuce" : "Wild Lettuce"
   
 }

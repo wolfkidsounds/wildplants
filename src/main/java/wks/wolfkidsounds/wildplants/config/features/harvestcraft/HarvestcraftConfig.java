@@ -915,7 +915,7 @@ public class HarvestcraftConfig {
         BUILDER.pop();
 
         BUILDER.push("WILD JUTE");
-            JUTE_ENABLED_HARVESTCRAFT = BUILDER
+        JUTE_ENABLED_HARVESTCRAFT = BUILDER
                 .define("Enabled:", true);
         JUTE_BIOME_TYPE_HARVESTCRAFT = BUILDER
                 .comment("Default: [FOREST]")

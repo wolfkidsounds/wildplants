@@ -2,7 +2,10 @@ package wks.wolfkidsounds.wildplants.world.minecraft;
 
 import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.Features;
 import wks.wolfkidsounds.wildplants.block.ModBlocks;
 import wks.wolfkidsounds.wildplants.config.WildplantsConfig;
 import wks.wolfkidsounds.wildplants.config.features.minecraft.MinecraftConfig;
@@ -29,8 +32,8 @@ public class MinecraftConfiguredFeatures {
 
     public static final BlockClusterFeatureConfig MINECRAFT_WILD_WHEAT_CONFIG = (
             new BlockClusterFeatureConfig.Builder(
-                new SimpleBlockStateProvider(ModBlocks.MINECRAFT_WILD_WHEAT.get().getDefaultState()),
-                new SimpleBlockPlacer())).tries(WHEAT_PATCH_SIZE_MINECRAFT).xSpread(SPREAD_SIZE).zSpread(SPREAD_SIZE).build();
+                    new SimpleBlockStateProvider(ModBlocks.MINECRAFT_WILD_WHEAT.get().getDefaultState()),
+                    new SimpleBlockPlacer())).tries(WHEAT_PATCH_SIZE_MINECRAFT).xSpread(SPREAD_SIZE).zSpread(SPREAD_SIZE).build();
 
     public static final BlockClusterFeatureConfig MINECRAFT_WILD_CARROTS_CONFIG = (
             new BlockClusterFeatureConfig.Builder(
@@ -51,7 +54,7 @@ public class MinecraftConfiguredFeatures {
 
     public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_WHEAT_PATCH =
             Feature.FLOWER.withConfiguration(MINECRAFT_WILD_WHEAT_CONFIG)
-                .withPlacement(Features.Placements.PATCH_PLACEMENT.square()).chance(WHEAT_FREQUENCY_MINECRAFT);
+                    .withPlacement(Features.Placements.PATCH_PLACEMENT.square()).chance(WHEAT_FREQUENCY_MINECRAFT);
 
     public static final ConfiguredFeature<?, ?> MINECRAFT_WILD_CARROTS_PATCH =
             Feature.FLOWER.withConfiguration(MINECRAFT_WILD_CARROTS_CONFIG)

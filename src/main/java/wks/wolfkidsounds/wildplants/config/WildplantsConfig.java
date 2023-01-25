@@ -39,6 +39,7 @@ public final class WildplantsConfig {
         CompatConfig.initHarvestcraft(BUILDER);
         CompatConfig.initVeggieway(BUILDER);
         CompatConfig.initSimpleFarming(BUILDER);
+        CompatConfig.initEnhancedFarming(BUILDER);
         BUILDER.pop();
         BUILDER.pop();
 
