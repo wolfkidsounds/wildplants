@@ -1,14 +1,14 @@
 modLoader="javafml"
-loaderVersion="[39,)"
+loaderVersion="[40,)"
 license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="wildplants"
-version="1.18.2_3.1.1_forge"
+version="1.18.2_3.2.1_forge"
 displayName="Wildplants"
-credits="WOLFKIDSOUNDS"
+credits="wolfkidsounds"
 displayURL="https://wolfkidsounds.com"
-authors="WOLFKIDsounds"
+authors="wolfkidsounds"
 description='''
 This mod adds wild plants (crops) similar to the farmers delight or croptopia world generation.
 '''

@@ -30,6 +30,7 @@ public class BiomeTagFilter extends PlacementFilter {
     }
 
     @Override
+
     protected boolean shouldPlace(PlacementContext context, Random random, BlockPos pos) {
         Holder<Biome> biome = context.getLevel().getBiome(pos);
         return biome.is(biomeTag);

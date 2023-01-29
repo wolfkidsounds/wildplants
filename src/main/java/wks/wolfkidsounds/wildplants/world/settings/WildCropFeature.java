@@ -10,7 +10,8 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 import java.util.Random;
 
-public class WildCropFeature extends Feature<WildCropConfig> {
+public class WildCropFeature extends Feature<WildCropConfig>
+{
     public WildCropFeature(Codec<WildCropConfig> codec) {
         super(codec);
     }
@@ -43,6 +44,13 @@ public class WildCropFeature extends Feature<WildCropConfig> {
             int shorterXZ = xzSpread - 2;
             mutablePos.setWithOffset(origin, random.nextInt(shorterXZ) - random.nextInt(shorterXZ), random.nextInt(ySpread) - random.nextInt(ySpread), random.nextInt(shorterXZ) - random.nextInt(shorterXZ));
             if (config.primaryFeature().value().place(level, context.chunkGenerator(), random, mutablePos)) {
+                ++i;
+            }
+        }
+
+        for (int l = 0; l < tries; ++l) {
+            mutablePos.setWithOffset(origin, random.nextInt(xzSpread) - random.nextInt(xzSpread), random.nextInt(ySpread) - random.nextInt(ySpread), random.nextInt(xzSpread) - random.nextInt(xzSpread));
+            if (config.secondaryFeature().value().place(level, context.chunkGenerator(), random, mutablePos)) {
                 ++i;
             }
         }

@@ -7,7 +7,10 @@ import wks.wolfkidsounds.wildplants.world.WildCropGeneration;
 public class CommonSetup {
     public static void init(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            if (Configuration.ENABLE_MINECRAFT.get()) {WildCropGeneration.registerWildMinecraftCropGeneration();}
+            if (Configuration.ENABLE_MINECRAFT.get()) {
+                WildCropGeneration.registerWildMinecraftCropGeneration();
+                Wildplants.LOGGER.debug("setup-minecraft");
+            }
         });
     }
 }
