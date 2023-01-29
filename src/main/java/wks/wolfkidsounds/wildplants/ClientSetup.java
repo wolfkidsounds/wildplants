@@ -30,19 +30,5 @@ public class ClientSetup {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_SOYBEAN.get(),  RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_COTTON.get(),  RenderType.cutout());
         }
-
-        //ENHANCEDFARMING
-        if (Configuration.LOADED_ENHANCEDFARMING) {
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_MINT.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_TOMATO.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_CUCUMBER.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_AUBERGINE.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_GRAPE.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_PINEAPPLE.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_CORN.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_ONION.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_GARLIC.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ENHANCEDFARMING_WILD_LETTUCE.get(), RenderType.cutout());
-        }
     }
 }

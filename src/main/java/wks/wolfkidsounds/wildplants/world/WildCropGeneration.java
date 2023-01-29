@@ -60,27 +60,6 @@ public class WildCropGeneration {
     public static Holder<PlacedFeature> PATCH_WILD_VEGGIE_WAY_SOYBEAN;
     public static Holder<PlacedFeature> PATCH_WILD_VEGGIE_WAY_COTTON;
 
-    //ENHANCEDFARMING
-    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_ENHANCEDFARMING_MINT;
-    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_ENHANCEDFARMING_TOMATO;
-    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_ENHANCEDFARMING_CUCUMBER;
-    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_ENHANCEDFARMING_AUBERGINE;
-    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_ENHANCEDFARMING_GRAPE;
-    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_ENHANCEDFARMING_PINEAPPLE;
-    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_ENHANCEDFARMING_CORN;
-    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_ENHANCEDFARMING_ONION;
-    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_ENHANCEDFARMING_GARLIC;
-    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_ENHANCEDFARMING_LETTUCE;
-    public static Holder<PlacedFeature> PATCH_WILD_ENHANCEDFARMING_MINT;
-    public static Holder<PlacedFeature> PATCH_WILD_ENHANCEDFARMING_TOMATO;
-    public static Holder<PlacedFeature> PATCH_WILD_ENHANCEDFARMING_CUCUMBER;
-    public static Holder<PlacedFeature> PATCH_WILD_ENHANCEDFARMING_AUBERGINE;
-    public static Holder<PlacedFeature> PATCH_WILD_ENHANCEDFARMING_GRAPE;
-    public static Holder<PlacedFeature> PATCH_WILD_ENHANCEDFARMING_PINEAPPLE;
-    public static Holder<PlacedFeature> PATCH_WILD_ENHANCEDFARMING_CORN;
-    public static Holder<PlacedFeature> PATCH_WILD_ENHANCEDFARMING_ONION;
-    public static Holder<PlacedFeature> PATCH_WILD_ENHANCEDFARMING_GARLIC;
-    public static Holder<PlacedFeature> PATCH_WILD_ENHANCEDFARMING_LETTUCE;
 
 
     public static void registerWildMinecraftCropGeneration() {
@@ -144,34 +123,6 @@ public class WildCropGeneration {
         PATCH_WILD_VEGGIE_WAY_COTTON = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_veggie-way_wild_cotton"), FEATURE_PATCH_WILD_VEGGIE_WAY_COTTON, RarityFilter.onAverageOnceEvery(VeggieWayConfig.CHANCE_VEGGIEWAY_WILD_COTTON.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
         Wildplants.LOGGER.debug("register-veggie_way-gen");
 
-    }
-
-    public static void registerWildEnhancedFarmingCropGeneration() {
-        //CONFIGURE FEATURES
-        FEATURE_PATCH_WILD_ENHANCEDFARMING_MINT = register(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_MINT"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.ENHANCEDFARMING_WILD_MINT.get(), Blocks.GRASS, BlockPredicate.matchesTag(BlockTags.DIRT, BLOCK_BELOW)));
-        FEATURE_PATCH_WILD_ENHANCEDFARMING_TOMATO = register(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_TOMATO"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.ENHANCEDFARMING_WILD_TOMATO.get(), Blocks.DEAD_BUSH, BlockPredicate.matchesTag(BlockTags.SAND, BLOCK_BELOW)));
-        FEATURE_PATCH_WILD_ENHANCEDFARMING_CUCUMBER = register(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_CUCUMBER"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.ENHANCEDFARMING_WILD_CUCUMBER.get(), Blocks.GRASS, BlockPredicate.matchesTag(BlockTags.DIRT, BLOCK_BELOW)));
-        FEATURE_PATCH_WILD_ENHANCEDFARMING_AUBERGINE = register(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_AUBERGINE"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.ENHANCEDFARMING_WILD_AUBERGINE.get(), Blocks.DEAD_BUSH, BlockPredicate.matchesTag(BlockTags.SAND, BLOCK_BELOW)));
-        FEATURE_PATCH_WILD_ENHANCEDFARMING_GRAPE = register(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_GRAPE"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.ENHANCEDFARMING_WILD_GRAPE.get(), Blocks.DIRT, BlockPredicate.matchesTag(BlockTags.DIRT, BLOCK_BELOW)));
-        FEATURE_PATCH_WILD_ENHANCEDFARMING_PINEAPPLE = register(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_PINEAPPLE"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.ENHANCEDFARMING_WILD_PINEAPPLE.get(), Blocks.GRASS, BlockPredicate.matchesTag(BlockTags.DIRT, BLOCK_BELOW)));
-        FEATURE_PATCH_WILD_ENHANCEDFARMING_CORN = register(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_CORN"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.ENHANCEDFARMING_WILD_CORN.get(), Blocks.GRASS, BlockPredicate.matchesTag(BlockTags.DIRT, BLOCK_BELOW)));
-        FEATURE_PATCH_WILD_ENHANCEDFARMING_ONION = register(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_ONION"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.ENHANCEDFARMING_WILD_ONION.get(), Blocks.GRASS, BlockPredicate.matchesTag(BlockTags.DIRT, BLOCK_BELOW)));
-        FEATURE_PATCH_WILD_ENHANCEDFARMING_GARLIC = register(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_GARLIC"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.ENHANCEDFARMING_WILD_GARLIC.get(), Blocks.DEAD_BUSH, BlockPredicate.matchesTag(BlockTags.SAND, BLOCK_BELOW)));
-        FEATURE_PATCH_WILD_ENHANCEDFARMING_LETTUCE = register(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_LETTUCE"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.ENHANCEDFARMING_WILD_LETTUCE.get(), Blocks.GRASS, BlockPredicate.matchesTag(BlockTags.DIRT, BLOCK_BELOW)));
-
-        //CONFIGURE PATCH
-        PATCH_WILD_ENHANCEDFARMING_MINT = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_MINT"), FEATURE_PATCH_WILD_ENHANCEDFARMING_MINT, RarityFilter.onAverageOnceEvery(EnhancedFarmingConfig.CHANCE_ENHANCEDFARMING_WILD_MINT.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
-        PATCH_WILD_ENHANCEDFARMING_TOMATO = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_TOMATO"), FEATURE_PATCH_WILD_ENHANCEDFARMING_TOMATO, RarityFilter.onAverageOnceEvery(EnhancedFarmingConfig.CHANCE_ENHANCEDFARMING_WILD_TOMATO.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
-        PATCH_WILD_ENHANCEDFARMING_CUCUMBER = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_CUCUMBER"), FEATURE_PATCH_WILD_ENHANCEDFARMING_CUCUMBER, RarityFilter.onAverageOnceEvery(EnhancedFarmingConfig.CHANCE_ENHANCEDFARMING_WILD_CUCUMBER.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
-        PATCH_WILD_ENHANCEDFARMING_AUBERGINE = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_AUBERGINE"), FEATURE_PATCH_WILD_ENHANCEDFARMING_AUBERGINE, RarityFilter.onAverageOnceEvery(EnhancedFarmingConfig.CHANCE_ENHANCEDFARMING_WILD_AUBERGINE.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
-        PATCH_WILD_ENHANCEDFARMING_GRAPE = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_GRAPE"), FEATURE_PATCH_WILD_ENHANCEDFARMING_GRAPE, RarityFilter.onAverageOnceEvery(EnhancedFarmingConfig.CHANCE_ENHANCEDFARMING_WILD_GRAPE.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
-        PATCH_WILD_ENHANCEDFARMING_PINEAPPLE = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_PINEAPPLE"), FEATURE_PATCH_WILD_ENHANCEDFARMING_PINEAPPLE, RarityFilter.onAverageOnceEvery(EnhancedFarmingConfig.CHANCE_ENHANCEDFARMING_WILD_PINEAPPLE.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
-        PATCH_WILD_ENHANCEDFARMING_CORN = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_CORN"), FEATURE_PATCH_WILD_ENHANCEDFARMING_CORN, RarityFilter.onAverageOnceEvery(EnhancedFarmingConfig.CHANCE_ENHANCEDFARMING_WILD_CORN.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
-        PATCH_WILD_ENHANCEDFARMING_ONION = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_ONION"), FEATURE_PATCH_WILD_ENHANCEDFARMING_ONION, RarityFilter.onAverageOnceEvery(EnhancedFarmingConfig.CHANCE_ENHANCEDFARMING_WILD_ONION.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
-        PATCH_WILD_ENHANCEDFARMING_GARLIC = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_GARLIC"), FEATURE_PATCH_WILD_ENHANCEDFARMING_GARLIC, RarityFilter.onAverageOnceEvery(EnhancedFarmingConfig.CHANCE_ENHANCEDFARMING_WILD_GARLIC.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
-        PATCH_WILD_ENHANCEDFARMING_LETTUCE = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_enhancedfarming_wild_LETTUCE"), FEATURE_PATCH_WILD_ENHANCEDFARMING_LETTUCE, RarityFilter.onAverageOnceEvery(EnhancedFarmingConfig.CHANCE_ENHANCEDFARMING_WILD_LETTUCE.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
-
-        Wildplants.LOGGER.debug("register-enhancedfarming-gen");
     }
 
     //--------------------------------------------------------------------------

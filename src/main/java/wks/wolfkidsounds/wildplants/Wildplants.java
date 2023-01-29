@@ -43,7 +43,8 @@ public class Wildplants {
         ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, MinecraftConfig.SPEC, "wildplants/mods/minecraft.toml");
         ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, ImmersiveEngineeringConfig.SPEC, "wildplants/mods/immersiveengineering.toml");
         ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, VeggieWayConfig.SPEC, "wildplants/mods/veggieway.toml");
-        ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, EnhancedFarmingConfig.SPEC, "wildplants/mods/enhancedfarming.toml");
+        //ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, EnhancedFarmingConfig.SPEC, "wildplants/mods/enhancedfarming.toml");
+        //ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, HarvestcraftConfig.SPEC, "wildplants/mods/harvestcraft.toml");
         LOGGER.debug("register-config");
 
         //Registry

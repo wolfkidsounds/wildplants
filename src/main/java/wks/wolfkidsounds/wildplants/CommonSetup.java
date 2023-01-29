@@ -25,12 +25,6 @@ public class CommonSetup {
                 WildCropGeneration.registerWildVeggieWayCropGeneration();
                 Wildplants.LOGGER.debug("setup-veggie_way");
             }
-
-            //ENHANCEDFARMING
-            if (Configuration.ENABLE_ENHANCEDFARMING.get() && Configuration.LOADED_ENHANCEDFARMING) {
-                WildCropGeneration.registerWildEnhancedFarmingCropGeneration();
-                Wildplants.LOGGER.debug("setup-enhancedfarming");
-            }
         });
     }
 }

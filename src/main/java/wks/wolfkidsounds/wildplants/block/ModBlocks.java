@@ -5,8 +5,6 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -35,18 +33,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> VEGGIEWAY_WILD_SOYBEAN = registerVeggieWayBlock("veggieway_wild_soybean", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
     public static final RegistryObject<Block> VEGGIEWAY_WILD_COTTON = registerVeggieWayBlock("veggieway_wild_cotton", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
 
-    //ENHANCEDFARMING
-    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_MINT = registerEnhancedFarmingBlock("enhancedfarming_wild_mint", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
-    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_TOMATO = registerEnhancedFarmingBlock("enhancedfarming_wild_tomato", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
-    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_CUCUMBER = registerEnhancedFarmingBlock("enhancedfarming_wild_cucumber", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
-    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_AUBERGINE = registerEnhancedFarmingBlock("enhancedfarming_wild_aubergine", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
-    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_GRAPE = registerEnhancedFarmingBlock("enhancedfarming_wild_grape", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
-    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_PINEAPPLE = registerEnhancedFarmingBlock("enhancedfarming_wild_pineapple", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
-    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_CORN = registerEnhancedFarmingBlock("enhancedfarming_wild_corn", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
-    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_ONION = registerEnhancedFarmingBlock("enhancedfarming_wild_onion", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
-    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_GARLIC = registerEnhancedFarmingBlock("enhancedfarming_wild_garlic", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
-    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_LETTUCE = registerEnhancedFarmingBlock("enhancedfarming_wild_lettuce", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
-
     //----------------------------------------------------------------------------------------------
     private static <T extends Block> RegistryObject<T> registerMinecraftBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -71,15 +57,6 @@ public class ModBlocks {
         if (Configuration.LOADED_VEGGIE_WAY) {
             registerBlockItem(name, toReturn);
             Wildplants.LOGGER.debug("register-blocks-veggie_way");
-        }
-        return toReturn;
-    }
-
-    private static <T extends Block> RegistryObject<T> registerEnhancedFarmingBlock(String name, Supplier<T> block) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        if (Configuration.LOADED_ENHANCEDFARMING) {
-            registerBlockItem(name, toReturn);
-            Wildplants.LOGGER.debug("register-blocks-enhancedfarming");
         }
         return toReturn;
     }
