@@ -28,8 +28,8 @@ This mod adds wild plants (crops) similar to the farmers delight or croptopia wo
 *1.18.X*
 
 - [x] Minecraft Crops
-- [] [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering) (check v2)
-- [] [The Veggie Way](https://www.curseforge.com/minecraft/mc-mods/the-veggie-way) (check v2)
+- [x] [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
+- [x] [The Veggie Way](https://www.curseforge.com/minecraft/mc-mods/the-veggie-way)
 - [] [Pam's Harvestcraft 2](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops) (check v2)
   
 ---
@@ -48,6 +48,7 @@ This mod adds wild plants (crops) similar to the farmers delight or croptopia wo
 - [x] [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
 - [x] [The Veggie Way](https://www.curseforge.com/minecraft/mc-mods/the-veggie-way)
 - [x] [Simple Farming](https://www.curseforge.com/minecraft/mc-mods/simple-farming)
+- [x] [Enhanced Farming](https://www.curseforge.com/minecraft/mc-mods/enhanced-farming)
 
 ---
 
