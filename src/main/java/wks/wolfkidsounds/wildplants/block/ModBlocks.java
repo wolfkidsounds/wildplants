@@ -24,12 +24,24 @@ public class ModBlocks {
     public static final RegistryObject<Block> MINECRAFT_WILD_POTATOES = registerMinecraftBlock("minecraft_wild_potatoes", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
     public static final RegistryObject<Block> MINECRAFT_WILD_BEETROOTS = registerMinecraftBlock("minecraft_wild_beetroots", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
 
+    //IMMERSIVEENGINEERING
+    public static final RegistryObject<Block> IMMERSIVEENGINEERING_WILD_HEMP = registerImmersiveEngineeringBlock("immersiveenineering_wild_hemp", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+
     //----------------------------------------------------------------------------------------------
     private static <T extends Block> RegistryObject<T> registerMinecraftBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         if (Configuration.ENABLE_MINECRAFT.get()) {
             registerBlockItem(name, toReturn);
             Wildplants.LOGGER.debug("register-blocks-minecraft");
+        }
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<T> registerImmersiveEngineeringBlock(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        if (Configuration.ENABLE_IMMERSIVEENGINEERING.get()) {
+            registerBlockItem(name, toReturn);
+            Wildplants.LOGGER.debug("register-blocks-immersiveengineering");
         }
         return toReturn;
     }

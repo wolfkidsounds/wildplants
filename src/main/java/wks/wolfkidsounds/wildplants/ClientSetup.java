@@ -14,5 +14,9 @@ public class ClientSetup {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.MINECRAFT_WILD_POTATOES.get(),  RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.MINECRAFT_WILD_BEETROOTS.get(),  RenderType.cutout());
         }
+
+        if (Configuration.ENABLE_IMMERSIVEENGINEERING.get()) {
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.IMMERSIVEENGINEERING_WILD_HEMP.get(),  RenderType.cutout());
+        }
     }
 }

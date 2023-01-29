@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import wks.wolfkidsounds.wildplants.Wildplants;
 import wks.wolfkidsounds.wildplants.config.Configuration;
+import wks.wolfkidsounds.wildplants.config.ImmersiveEngineeringConfig;
 import wks.wolfkidsounds.wildplants.config.MinecraftConfig;
 import wks.wolfkidsounds.wildplants.world.WildCropGeneration;
 
@@ -19,7 +20,7 @@ public class CommonEvents {
         BiomeGenerationSettingsBuilder builder = event.getGeneration();
         Biome.ClimateSettings climate = event.getClimate();
 
-        //CLIMATE
+        //CLIMATE_MINECRAFT
         if (Configuration.ENABLE_MINECRAFT.get()) {
             //TEMPERATE
             if (climate.temperature >= 0.5F && climate.temperature <= 1.0F) {
@@ -45,5 +46,17 @@ public class CommonEvents {
             }
         }
         Wildplants.LOGGER.debug("register-minecraft-biome-config");
+
+        //CLIMATE_IMMERSIVEENGINEERING
+        if (Configuration.ENABLE_IMMERSIVEENGINEERING.get()) {
+            //TEMPERATE
+            if (climate.temperature >= 0.5F && climate.temperature <= 1.0F) {
+                //MINECRAFT
+                if (ImmersiveEngineeringConfig.GENERATE_IMMERSIVEENGINEERING_WILD_HEMP.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_IMMERSIVEENGINEERING_HEMP);
+                }
+            }
+        }
+        Wildplants.LOGGER.debug("register-immersiveengineering-biome-config");
     }
 }

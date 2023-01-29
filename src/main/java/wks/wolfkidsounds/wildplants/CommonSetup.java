@@ -11,6 +11,10 @@ public class CommonSetup {
                 WildCropGeneration.registerWildMinecraftCropGeneration();
                 Wildplants.LOGGER.debug("setup-minecraft");
             }
+            if (Configuration.ENABLE_IMMERSIVEENGINEERING.get()) {
+                WildCropGeneration.registerWildImmersiveEngineeringCropGeneration();
+                Wildplants.LOGGER.debug("setup-immersiveengineering");
+            }
         });
     }
 }
