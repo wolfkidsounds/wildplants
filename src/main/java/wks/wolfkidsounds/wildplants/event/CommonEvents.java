@@ -44,11 +44,12 @@ public class CommonEvents {
                     builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_MINECRAFT_BEETROOTS);
                 }
             }
+            Wildplants.LOGGER.debug("register-minecraft-biome-config");
         }
-        Wildplants.LOGGER.debug("register-minecraft-biome-config");
+
 
         //CLIMATE_IMMERSIVEENGINEERING
-        if (Configuration.ENABLE_IMMERSIVEENGINEERING.get()) {
+        if (Configuration.ENABLE_IMMERSIVEENGINEERING.get() && Configuration.LOADED_IMMERSIVEENGINEERING) {
             //TEMPERATE
             if (climate.temperature >= 0.5F && climate.temperature <= 1.0F) {
                 //MINECRAFT
@@ -56,7 +57,7 @@ public class CommonEvents {
                     builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_IMMERSIVEENGINEERING_HEMP);
                 }
             }
+            Wildplants.LOGGER.debug("register-immersiveengineering-biome-config");
         }
-        Wildplants.LOGGER.debug("register-immersiveengineering-biome-config");
     }
 }

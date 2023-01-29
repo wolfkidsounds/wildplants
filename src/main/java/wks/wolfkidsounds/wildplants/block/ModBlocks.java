@@ -39,7 +39,7 @@ public class ModBlocks {
 
     private static <T extends Block> RegistryObject<T> registerImmersiveEngineeringBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        if (Configuration.ENABLE_IMMERSIVEENGINEERING.get()) {
+        if (Configuration.ENABLE_IMMERSIVEENGINEERING.get() && Configuration.LOADED_IMMERSIVEENGINEERING) {
             registerBlockItem(name, toReturn);
             Wildplants.LOGGER.debug("register-blocks-immersiveengineering");
         }
