@@ -16,12 +16,14 @@ import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfigur
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.placement.*;
+import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.Tags;
 import wks.wolfkidsounds.wildplants.Wildplants;
 import wks.wolfkidsounds.wildplants.block.ModBlocks;
 import wks.wolfkidsounds.wildplants.config.Configuration;
 import wks.wolfkidsounds.wildplants.config.ImmersiveEngineeringConfig;
 import wks.wolfkidsounds.wildplants.config.MinecraftConfig;
+import wks.wolfkidsounds.wildplants.config.VeggieWayConfig;
 import wks.wolfkidsounds.wildplants.registry.ModBiomeFeatures;
 import wks.wolfkidsounds.wildplants.world.settings.BiomeTagFilter;
 import wks.wolfkidsounds.wildplants.world.settings.WildCropConfig;
@@ -49,6 +51,18 @@ public class WildCropGeneration {
     //IMMERSIVEENGINEERING
     public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_IMMERSIVEENGINEERING_HEMP;
     public static Holder<PlacedFeature> PATCH_WILD_IMMERSIVEENGINEERING_HEMP;
+
+    //VEGGIE_WAY
+    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_VEGGIE_WAY_CORN;
+    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_VEGGIE_WAY_LENTIL;
+    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_VEGGIE_WAY_QUINOA;
+    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_VEGGIE_WAY_SOYBEAN;
+    public static Holder<ConfiguredFeature<WildCropConfig, ?>> FEATURE_PATCH_WILD_VEGGIE_WAY_COTTON;
+    public static Holder<PlacedFeature> PATCH_WILD_VEGGIE_WAY_CORN;
+    public static Holder<PlacedFeature> PATCH_WILD_VEGGIE_WAY_LENTIL;
+    public static Holder<PlacedFeature> PATCH_WILD_VEGGIE_WAY_QUINOA;
+    public static Holder<PlacedFeature> PATCH_WILD_VEGGIE_WAY_SOYBEAN;
+    public static Holder<PlacedFeature> PATCH_WILD_VEGGIE_WAY_COTTON;
 
 
     public static void registerWildMinecraftCropGeneration() {
@@ -83,6 +97,34 @@ public class WildCropGeneration {
         //CONFIGURE PATCH
         PATCH_WILD_IMMERSIVEENGINEERING_HEMP = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_immersiveengineering_wild_hemp"), FEATURE_PATCH_WILD_IMMERSIVEENGINEERING_HEMP, RarityFilter.onAverageOnceEvery(ImmersiveEngineeringConfig.CHANCE_IMMERSIVEENGINEERING_WILD_HEMP.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
         Wildplants.LOGGER.debug("register-immersiveengineering-gen");
+
+    }
+
+    public static void registerWildVeggieWayCropGeneration() {
+
+        //CONFIGURE FEATURES
+        FEATURE_PATCH_WILD_VEGGIE_WAY_CORN = register(new ResourceLocation(Wildplants.MOD_ID, "patch_veggie-way_wild_corn"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.VEGGIEWAY_WILD_CORN.get(), Blocks.DEAD_BUSH, BlockPredicate.matchesTag(BlockTags.SAND, BLOCK_BELOW)));
+
+        FEATURE_PATCH_WILD_VEGGIE_WAY_LENTIL = register(new ResourceLocation(Wildplants.MOD_ID, "patch_veggie-way_wild_lentil"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.VEGGIEWAY_WILD_LENTIL.get(), Blocks.GRASS, BlockPredicate.matchesTag(BlockTags.DIRT, BLOCK_BELOW)));
+
+        FEATURE_PATCH_WILD_VEGGIE_WAY_QUINOA = register(new ResourceLocation(Wildplants.MOD_ID, "patch_veggie-way_wild_quinoa"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.VEGGIEWAY_WILD_QUINOA.get(), Blocks.GRASS, BlockPredicate.matchesTag(BlockTags.DIRT, BLOCK_BELOW)));
+
+        FEATURE_PATCH_WILD_VEGGIE_WAY_SOYBEAN = register(new ResourceLocation(Wildplants.MOD_ID, "patch_veggie-way_wild_soybean"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.VEGGIEWAY_WILD_SOYBEAN.get(), Blocks.DEAD_BUSH, BlockPredicate.matchesTag(BlockTags.SAND, BLOCK_BELOW)));
+
+        FEATURE_PATCH_WILD_VEGGIE_WAY_COTTON = register(new ResourceLocation(Wildplants.MOD_ID, "patch_veggie-way_wild_cotton"), ModBiomeFeatures.WILD_CROP.get(), wildCropConfig(ModBlocks.VEGGIEWAY_WILD_COTTON.get(), Blocks.DEAD_BUSH, BlockPredicate.matchesTag(BlockTags.SAND, BLOCK_BELOW)));
+
+
+        //CONFIGURE PATCH
+        PATCH_WILD_VEGGIE_WAY_CORN = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_veggie-way_wild_corn"), FEATURE_PATCH_WILD_VEGGIE_WAY_CORN, RarityFilter.onAverageOnceEvery(VeggieWayConfig.CHANCE_VEGGIEWAY_WILD_CORN.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
+
+        PATCH_WILD_VEGGIE_WAY_LENTIL = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_veggie-way_wild_lentil"), FEATURE_PATCH_WILD_VEGGIE_WAY_LENTIL, RarityFilter.onAverageOnceEvery(VeggieWayConfig.CHANCE_VEGGIEWAY_WILD_LENTIL.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
+
+        PATCH_WILD_VEGGIE_WAY_QUINOA = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_veggie-way_wild_quinoa"), FEATURE_PATCH_WILD_VEGGIE_WAY_QUINOA, RarityFilter.onAverageOnceEvery(VeggieWayConfig.CHANCE_VEGGIEWAY_WILD_QUINOA.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
+
+        PATCH_WILD_VEGGIE_WAY_SOYBEAN = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_veggie-way_wild_soybean"), FEATURE_PATCH_WILD_VEGGIE_WAY_SOYBEAN, RarityFilter.onAverageOnceEvery(VeggieWayConfig.CHANCE_VEGGIEWAY_WILD_SOYBEAN.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
+
+        PATCH_WILD_VEGGIE_WAY_COTTON = registerPlacement(new ResourceLocation(Wildplants.MOD_ID, "patch_veggie-way_wild_cotton"), FEATURE_PATCH_WILD_VEGGIE_WAY_COTTON, RarityFilter.onAverageOnceEvery(VeggieWayConfig.CHANCE_VEGGIEWAY_WILD_COTTON.get()), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome(), TAGGED_IS_OVERWORLD);
+        Wildplants.LOGGER.debug("register-veggie_way-gen");
 
     }
 

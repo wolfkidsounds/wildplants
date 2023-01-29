@@ -8,6 +8,8 @@ import wks.wolfkidsounds.wildplants.config.Configuration;
 
 public class ClientSetup {
     public static void init(final FMLClientSetupEvent event) {
+
+        //MINECRAFT
         if (Configuration.ENABLE_MINECRAFT.get()) {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.MINECRAFT_WILD_WHEAT.get(),  RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.MINECRAFT_WILD_CARROTS.get(),  RenderType.cutout());
@@ -15,8 +17,18 @@ public class ClientSetup {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.MINECRAFT_WILD_BEETROOTS.get(),  RenderType.cutout());
         }
 
+        //IMMERSIVEENGINEERING
         if (Configuration.ENABLE_IMMERSIVEENGINEERING.get() && Configuration.LOADED_IMMERSIVEENGINEERING) {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.IMMERSIVEENGINEERING_WILD_HEMP.get(),  RenderType.cutout());
+        }
+
+        //VEGGIE_WAY
+        if (Configuration.ENABLE_VEGGIE_WAY.get() && Configuration.LOADED_VEGGIE_WAY) {
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_CORN.get(),  RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_LENTIL.get(),  RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_QUINOA.get(),  RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_SOYBEAN.get(),  RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.VEGGIEWAY_WILD_COTTON.get(),  RenderType.cutout());
         }
     }
 }

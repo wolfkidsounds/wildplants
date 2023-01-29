@@ -13,7 +13,7 @@ public class ImmersiveEngineeringConfig {
     public static ForgeConfigSpec.BooleanValue GENERATE_IMMERSIVEENGINEERING_WILD_HEMP;
 
     static {
-        BUILDER.push("IMMERSIVEENGINEERING_WILD HEMP");
+        BUILDER.push("IMMERSIVEENGINEERING WILD HEMP");
         GENERATE_IMMERSIVEENGINEERING_WILD_HEMP = BUILDER
                 .define("Enabled:", true);
         CHANCE_IMMERSIVEENGINEERING_WILD_HEMP = BUILDER

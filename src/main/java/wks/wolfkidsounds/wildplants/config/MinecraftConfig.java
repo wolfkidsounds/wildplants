@@ -21,7 +21,7 @@ public class MinecraftConfig {
     public static ForgeConfigSpec.BooleanValue GENERATE_MINECRAFT_WILD_BEETROOTS;
 
     static {
-        BUILDER.push("MINECRAFT_WILD WHEAT");
+        BUILDER.push("MINECRAFT WILD WHEAT");
         GENERATE_MINECRAFT_WILD_WHEAT = BUILDER
                 .define("Enabled:", true);
         CHANCE_MINECRAFT_WILD_WHEAT = BUILDER
@@ -29,7 +29,7 @@ public class MinecraftConfig {
                 .defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
         BUILDER.pop();
 
-        BUILDER.push("MINECRAFT_WILD CARROTS");
+        BUILDER.push("MINECRAFT WILD CARROTS");
         GENERATE_MINECRAFT_WILD_CARROTS = BUILDER
                 .define("Enabled:", true);
         CHANCE_MINECRAFT_WILD_CARROTS = BUILDER
@@ -37,7 +37,7 @@ public class MinecraftConfig {
                 .defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
         BUILDER.pop();
 
-        BUILDER.push("MINECRAFT_WILD POTATOES");
+        BUILDER.push("MINECRAFT WILD POTATOES");
         GENERATE_MINECRAFT_WILD_POTATOES = BUILDER
                 .define("Enabled:", true);
         CHANCE_MINECRAFT_WILD_POTATOES = BUILDER
@@ -45,7 +45,7 @@ public class MinecraftConfig {
                 .defineInRange("Chance:", 64, 5, Integer.MAX_VALUE);
         BUILDER.pop();
 
-        BUILDER.push("MINECRAFT_WILD BEETROOTS");
+        BUILDER.push("MINECRAFT WILD BEETROOTS");
         GENERATE_MINECRAFT_WILD_BEETROOTS = BUILDER
                 .define("Enabled:", true);
         CHANCE_MINECRAFT_WILD_BEETROOTS = BUILDER

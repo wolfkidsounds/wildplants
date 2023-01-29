@@ -10,7 +10,7 @@ public class Configuration {
     public static final ForgeConfigSpec SPEC;
 
     public static Boolean LOADED_IMMERSIVEENGINEERING = ModList.get().isLoaded("immersiveengineering");
-    public static Boolean LOADED_VEGGIEWAY = ModList.get().isLoaded("veggie_way");
+    public static Boolean LOADED_VEGGIE_WAY = ModList.get().isLoaded("veggie_way");
     public static Boolean LOADED_HARVESTCRAFT = ModList.get().isLoaded("pamhc2crops");
     public static Boolean LOADED_ENHANCEDFARMING = ModList.get().isLoaded("enhancedfarming");
 
@@ -19,7 +19,7 @@ public class Configuration {
 
     public static ForgeConfigSpec.BooleanValue ENABLE_MINECRAFT;
     public static ForgeConfigSpec.BooleanValue ENABLE_IMMERSIVEENGINEERING;
-    public static ForgeConfigSpec.BooleanValue ENABLE_VEGGIEWAY;
+    public static ForgeConfigSpec.BooleanValue ENABLE_VEGGIE_WAY;
     public static ForgeConfigSpec.BooleanValue ENABLE_HARVESTCRAFT;
     public static ForgeConfigSpec.BooleanValue ENABLE_ENHANCEDFARMING;
 
@@ -40,7 +40,7 @@ public class Configuration {
                 .define("Minecraft", true);
         ENABLE_IMMERSIVEENGINEERING = BUILDER
                 .define("Immersive_Engineering", true);
-        ENABLE_VEGGIEWAY = BUILDER
+        ENABLE_VEGGIE_WAY = BUILDER
                 .define("Veggie_Way", true);
         ENABLE_HARVESTCRAFT = BUILDER
                 .define("Harvestcraft", true);

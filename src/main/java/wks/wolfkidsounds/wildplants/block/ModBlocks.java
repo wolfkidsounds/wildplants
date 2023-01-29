@@ -5,6 +5,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -27,6 +28,13 @@ public class ModBlocks {
     //IMMERSIVEENGINEERING
     public static final RegistryObject<Block> IMMERSIVEENGINEERING_WILD_HEMP = registerImmersiveEngineeringBlock("immersiveenineering_wild_hemp", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
 
+    //VEGGIE_WAY
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_CORN = registerVeggieWayBlock("veggieway_wild_corn", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_LENTIL = registerVeggieWayBlock("veggieway_wild_lentil", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_QUINOA = registerVeggieWayBlock("veggieway_wild_quinoa", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_SOYBEAN = registerVeggieWayBlock("veggieway_wild_soybean", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> VEGGIEWAY_WILD_COTTON = registerVeggieWayBlock("veggieway_wild_cotton", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+
     //----------------------------------------------------------------------------------------------
     private static <T extends Block> RegistryObject<T> registerMinecraftBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -40,6 +48,15 @@ public class ModBlocks {
     private static <T extends Block> RegistryObject<T> registerImmersiveEngineeringBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         if (Configuration.ENABLE_IMMERSIVEENGINEERING.get() && Configuration.LOADED_IMMERSIVEENGINEERING) {
+            registerBlockItem(name, toReturn);
+            Wildplants.LOGGER.debug("register-blocks-immersiveengineering");
+        }
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<T> registerVeggieWayBlock(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        if (Configuration.ENABLE_VEGGIE_WAY.get() && Configuration.LOADED_VEGGIE_WAY) {
             registerBlockItem(name, toReturn);
             Wildplants.LOGGER.debug("register-blocks-immersiveengineering");
         }
