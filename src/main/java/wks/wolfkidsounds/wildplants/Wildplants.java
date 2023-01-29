@@ -11,10 +11,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import wks.wolfkidsounds.wildplants.block.ModBlocks;
-import wks.wolfkidsounds.wildplants.config.Configuration;
-import wks.wolfkidsounds.wildplants.config.ImmersiveEngineeringConfig;
-import wks.wolfkidsounds.wildplants.config.MinecraftConfig;
-import wks.wolfkidsounds.wildplants.config.VeggieWayConfig;
+import wks.wolfkidsounds.wildplants.config.*;
 import wks.wolfkidsounds.wildplants.item.ModItems;
 import wks.wolfkidsounds.wildplants.registry.ModBiomeFeatures;
 import wks.wolfkidsounds.wildplants.registry.ModPlacementModifiers;
@@ -46,6 +43,7 @@ public class Wildplants {
         ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, MinecraftConfig.SPEC, "wildplants/mods/minecraft.toml");
         ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, ImmersiveEngineeringConfig.SPEC, "wildplants/mods/immersiveengineering.toml");
         ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, VeggieWayConfig.SPEC, "wildplants/mods/veggieway.toml");
+        ModLoadingContext.get().registerConfig(net.minecraftforge.fml.config.ModConfig.Type.COMMON, EnhancedFarmingConfig.SPEC, "wildplants/mods/enhancedfarming.toml");
         LOGGER.debug("register-config");
 
         //Registry

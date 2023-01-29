@@ -35,6 +35,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> VEGGIEWAY_WILD_SOYBEAN = registerVeggieWayBlock("veggieway_wild_soybean", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
     public static final RegistryObject<Block> VEGGIEWAY_WILD_COTTON = registerVeggieWayBlock("veggieway_wild_cotton", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
 
+    //ENHANCEDFARMING
+    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_MINT = registerEnhancedFarmingBlock("enhancedfarming_wild_mint", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_TOMATO = registerEnhancedFarmingBlock("enhancedfarming_wild_tomato", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_CUCUMBER = registerEnhancedFarmingBlock("enhancedfarming_wild_cucumber", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_AUBERGINE = registerEnhancedFarmingBlock("enhancedfarming_wild_aubergine", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_GRAPE = registerEnhancedFarmingBlock("enhancedfarming_wild_grape", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_PINEAPPLE = registerEnhancedFarmingBlock("enhancedfarming_wild_pineapple", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_CORN = registerEnhancedFarmingBlock("enhancedfarming_wild_corn", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_ONION = registerEnhancedFarmingBlock("enhancedfarming_wild_onion", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_GARLIC = registerEnhancedFarmingBlock("enhancedfarming_wild_garlic", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+    public static final RegistryObject<Block> ENHANCEDFARMING_WILD_LETTUCE = registerEnhancedFarmingBlock("enhancedfarming_wild_lettuce", () -> new WildCropBlock(MobEffects.GLOWING, 1, Block.Properties.copy(Blocks.TALL_GRASS)));
+
     //----------------------------------------------------------------------------------------------
     private static <T extends Block> RegistryObject<T> registerMinecraftBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -47,7 +59,7 @@ public class ModBlocks {
 
     private static <T extends Block> RegistryObject<T> registerImmersiveEngineeringBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        if (Configuration.ENABLE_IMMERSIVEENGINEERING.get() && Configuration.LOADED_IMMERSIVEENGINEERING) {
+        if (Configuration.LOADED_IMMERSIVEENGINEERING) {
             registerBlockItem(name, toReturn);
             Wildplants.LOGGER.debug("register-blocks-immersiveengineering");
         }
@@ -56,9 +68,18 @@ public class ModBlocks {
 
     private static <T extends Block> RegistryObject<T> registerVeggieWayBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        if (Configuration.ENABLE_VEGGIE_WAY.get() && Configuration.LOADED_VEGGIE_WAY) {
+        if (Configuration.LOADED_VEGGIE_WAY) {
             registerBlockItem(name, toReturn);
-            Wildplants.LOGGER.debug("register-blocks-immersiveengineering");
+            Wildplants.LOGGER.debug("register-blocks-veggie_way");
+        }
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<T> registerEnhancedFarmingBlock(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        if (Configuration.LOADED_ENHANCEDFARMING) {
+            registerBlockItem(name, toReturn);
+            Wildplants.LOGGER.debug("register-blocks-enhancedfarming");
         }
         return toReturn;
     }
@@ -68,10 +89,5 @@ public class ModBlocks {
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(Wildplants.CREATIVE_MODE_TAB)));
         Wildplants.LOGGER.debug("register-block-ttems");
-    }
-
-    public static void register(IEventBus eventBus) {
-        BLOCKS.register(eventBus);
-        Wildplants.LOGGER.debug("register-modblocks-moditems");
     }
 }

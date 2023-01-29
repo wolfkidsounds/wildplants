@@ -7,10 +7,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import wks.wolfkidsounds.wildplants.Wildplants;
-import wks.wolfkidsounds.wildplants.config.Configuration;
-import wks.wolfkidsounds.wildplants.config.ImmersiveEngineeringConfig;
-import wks.wolfkidsounds.wildplants.config.MinecraftConfig;
-import wks.wolfkidsounds.wildplants.config.VeggieWayConfig;
+import wks.wolfkidsounds.wildplants.config.*;
 import wks.wolfkidsounds.wildplants.world.WildCropGeneration;
 
 @Mod.EventBusSubscriber(modid = Wildplants.MOD_ID)
@@ -87,6 +84,63 @@ public class CommonEvents {
                 }
             }
             Wildplants.LOGGER.debug("register-minecraft-biome-config");
+        }
+
+        //CLIMATE_ENHANCEDFARMING
+        if (Configuration.ENABLE_ENHANCEDFARMING.get() && Configuration.LOADED_ENHANCEDFARMING) {
+            //TEMPERATE
+            if (climate.temperature >= 0.5F && climate.temperature <= 1.0F) {
+                //ENHANCEDFARMING
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_MINT.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_MINT);
+                }
+            }
+
+            //WARM
+            if (climate.temperature >= 1.5F && climate.temperature <= 2.5F && climate.downfall <= 0.0F) {
+                //ENHANCEDFARMING
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_TOMATO.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_TOMATO);
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_TOMATO.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_TOMATO);
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_CUCUMBER.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_CUCUMBER);
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_AUBERGINE.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_AUBERGINE);
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_GRAPE.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_GRAPE);
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_CORN.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_CORN);
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_ONION.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_ONION);
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_GARLIC.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_GARLIC);
+                }
+            }
+
+            //COLD
+            if (climate.temperature >= 0.2F && climate.temperature <= 0.3F) {
+                //ENHANCEDFARMING
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_LETTUCE.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_LETTUCE);
+                }
+            }
+
+            //TROPICAL
+            if (climate.temperature >= 0.8F && climate.downfall >= 0.9F) {
+                //ENHANCEDFARMING
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_PINEAPPLE.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_PINEAPPLE);
+                }
+            }
+            Wildplants.LOGGER.debug("register-enhancedfarming-biome-config");
         }
     }
 }

@@ -91,5 +91,16 @@
   "block.wildplants.harvestcraft_wild_waterchestnut": "Wild Waterchestnut",
   "block.wildplants.harvestcraft_wild_whitemushroom": "Wild White Mushroom",
   "block.wildplants.harvestcraft_wild_wintersquash": "Wild Wintersquash",
-  "block.wildplants.harvestcraft_wild_zucchini": "Wild Zucchini"
+  "block.wildplants.harvestcraft_wild_zucchini": "Wild Zucchini",
+
+  "block.wildplants.enhancedfarming_wild_mint" : "Wild Mint",
+  "block.wildplants.enhancedfarming_wild_tomato" : "Wild Tomato",
+  "block.wildplants.enhancedfarming_wild_cucumber" : "Wild Cucumber",
+  "block.wildplants.enhancedfarming_wild_aubergine" : "Wild Aubergine",
+  "block.wildplants.enhancedfarming_wild_grape" : "Wild Grape",
+  "block.wildplants.enhancedfarming_wild_pineapple" : "Wild Pineapple",
+  "block.wildplants.enhancedfarming_wild_corn" : "Wild Corn",
+  "block.wildplants.enhancedfarming_wild_onion" : "Wild Onion",
+  "block.wildplants.enhancedfarming_wild_garlic" : "Wild Garlic",
+  "block.wildplants.enhancedfarming_wild_lettuce" : "Wild Lettuce"
 }

@@ -1,6 +1,7 @@
 package wks.wolfkidsounds.wildplants.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
+import wks.wolfkidsounds.wildplants.Wildplants;
 
 public class VeggieWayConfig {
     public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
@@ -25,6 +26,7 @@ public class VeggieWayConfig {
     //--------------------------------------------------------------
 
     static {
+        Wildplants.LOGGER.debug("init-veggie_way-feature-config");
         BUILDER.push("VEGGIEWAY WILD CORN");
         GENERATE_VEGGIEWAY_WILD_CORN = BUILDER.define("Enabled:", true);
         CHANCE_VEGGIEWAY_WILD_CORN = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
