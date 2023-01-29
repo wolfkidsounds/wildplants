@@ -11,6 +11,8 @@ This mod adds wild plants (crops) similar to the farmers delight or croptopia wo
 - Drops can be configured using datapacks (simple loot tables)
 - Textures are applied automatically from resourcepacks
 
+**Please check the [WIKI](https://github.com/wolfkidsounds/wildplants/wiki/) for info about crop generation**
+
 *1.20.X*
 
 - [ ] Minecraft Crops
@@ -31,6 +33,7 @@ This mod adds wild plants (crops) similar to the farmers delight or croptopia wo
 - [x] [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
 - [x] [The Veggie Way](https://www.curseforge.com/minecraft/mc-mods/the-veggie-way)
 - [] [Pam's Harvestcraft 2](https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft-2-crops) (check v2)
+- [x] [Enhanced Farming](https://www.curseforge.com/minecraft/mc-mods/enhanced-farming)
   
 ---
 
