@@ -43,42 +43,42 @@ public class EnhancedFarmingConfig {
 
         BUILDER.push("ENHANCEDFARMING WILD MINT");
         GENERATE_ENHANCEDFARMING_WILD_MINT = BUILDER.define("Enabled:", true);
-        CHANCE_ENHANCEDFARMING_WILD_MINT = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
+        CHANCE_ENHANCEDFARMING_WILD_MINT = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 265, 0, Integer.MAX_VALUE);
         BUILDER.pop();
 
         BUILDER.push("ENHANCEDFARMING WILD TOMATO");
         GENERATE_ENHANCEDFARMING_WILD_TOMATO = BUILDER.define("Enabled:", true);
-        CHANCE_ENHANCEDFARMING_WILD_TOMATO = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
+        CHANCE_ENHANCEDFARMING_WILD_TOMATO = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 265, 0, Integer.MAX_VALUE);
         BUILDER.pop();
 
         BUILDER.push("ENHANCEDFARMING WILD CUCUMBER");
         GENERATE_ENHANCEDFARMING_WILD_CUCUMBER = BUILDER.define("Enabled:", true);
-        CHANCE_ENHANCEDFARMING_WILD_CUCUMBER = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
+        CHANCE_ENHANCEDFARMING_WILD_CUCUMBER = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 265, 0, Integer.MAX_VALUE);
         BUILDER.pop();
 
         BUILDER.push("ENHANCEDFARMING WILD AUBERGINE");
         GENERATE_ENHANCEDFARMING_WILD_AUBERGINE = BUILDER.define("Enabled:", true);
-        CHANCE_ENHANCEDFARMING_WILD_AUBERGINE = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
+        CHANCE_ENHANCEDFARMING_WILD_AUBERGINE = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 265, 0, Integer.MAX_VALUE);
         BUILDER.pop();
 
         BUILDER.push("ENHANCEDFARMING WILD GRAPE");
         GENERATE_ENHANCEDFARMING_WILD_GRAPE = BUILDER.define("Enabled:", true);
-        CHANCE_ENHANCEDFARMING_WILD_GRAPE = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
+        CHANCE_ENHANCEDFARMING_WILD_GRAPE = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 265, 0, Integer.MAX_VALUE);
         BUILDER.pop();
 
         BUILDER.push("ENHANCEDFARMING WILD PINEAPPLE");
         GENERATE_ENHANCEDFARMING_WILD_PINEAPPLE = BUILDER.define("Enabled:", true);
-        CHANCE_ENHANCEDFARMING_WILD_PINEAPPLE = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
+        CHANCE_ENHANCEDFARMING_WILD_PINEAPPLE = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 265, 0, Integer.MAX_VALUE);
         BUILDER.pop();
 
         BUILDER.push("ENHANCEDFARMING WILD CORN");
         GENERATE_ENHANCEDFARMING_WILD_CORN = BUILDER.define("Enabled:", true);
-        CHANCE_ENHANCEDFARMING_WILD_CORN = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
+        CHANCE_ENHANCEDFARMING_WILD_CORN = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 265, 0, Integer.MAX_VALUE);
         BUILDER.pop();
 
         BUILDER.push("ENHANCEDFARMING WILD ONION");
         GENERATE_ENHANCEDFARMING_WILD_ONION = BUILDER.define("Enabled:", true);
-        CHANCE_ENHANCEDFARMING_WILD_ONION = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
+        CHANCE_ENHANCEDFARMING_WILD_ONION = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 265, 0, Integer.MAX_VALUE);
         BUILDER.pop();
 
         BUILDER.push("ENHANCEDFARMING WILD GARLIC");
@@ -88,7 +88,7 @@ public class EnhancedFarmingConfig {
 
         BUILDER.push("ENHANCEDFARMING WILD LETTUCE");
         GENERATE_ENHANCEDFARMING_WILD_LETTUCE = BUILDER.define("Enabled:", true);
-        CHANCE_ENHANCEDFARMING_WILD_LETTUCE = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
+        CHANCE_ENHANCEDFARMING_WILD_LETTUCE = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 265, 0, Integer.MAX_VALUE);
         BUILDER.pop();
 
 

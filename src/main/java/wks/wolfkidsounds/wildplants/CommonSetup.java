@@ -31,6 +31,12 @@ public class CommonSetup {
                 WildCropGeneration.registerWildEnhancedFarmingCropGeneration();
                 //Wildplants.LOGGER.debug("setup-enhancedfarming");
             }
+
+            //HARVESTCRAFT
+            if (Configuration.ENABLE_HARVESTCRAFT.get() && Configuration.LOADED_HARVESTCRAFT) {
+                WildCropGeneration.registerWildHarvestcraftCropGeneration();
+                //Wildplants.LOGGER.debug("setup-enhancedfarming");
+            }
         });
     }
 }

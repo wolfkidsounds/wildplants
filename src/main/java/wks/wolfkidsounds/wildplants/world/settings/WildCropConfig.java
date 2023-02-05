@@ -15,7 +15,7 @@ public record WildCropConfig(int tries, int xzSpread, int ySpread, Holder<Placed
 {
     public static final Codec<WildCropConfig> CODEC = RecordCodecBuilder.create((config) -> config.group(
             ExtraCodecs.POSITIVE_INT.fieldOf("tries").orElse(64).forGetter(WildCropConfig::tries),
-            ExtraCodecs.NON_NEGATIVE_INT.fieldOf("xz_spread").orElse(4).forGetter(WildCropConfig::xzSpread),
+            ExtraCodecs.NON_NEGATIVE_INT.fieldOf("xz_spread").orElse(3).forGetter(WildCropConfig::xzSpread),
             ExtraCodecs.NON_NEGATIVE_INT.fieldOf("y_spread").orElse(3).forGetter(WildCropConfig::ySpread),
             PlacedFeature.CODEC.fieldOf("primary_feature").forGetter(WildCropConfig::primaryFeature),
             PlacedFeature.CODEC.fieldOf("secondary_feature").forGetter(WildCropConfig::secondaryFeature),

@@ -17,7 +17,7 @@ public class ImmersiveEngineeringConfig {
         Wildplants.LOGGER.debug("init-immersiveengineering-feature-config");
         BUILDER.push("IMMERSIVEENGINEERING WILD HEMP");
         GENERATE_IMMERSIVEENGINEERING_WILD_HEMP = BUILDER.define("Enabled:", true);
-        CHANCE_IMMERSIVEENGINEERING_WILD_HEMP = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 64, 0, Integer.MAX_VALUE);
+        CHANCE_IMMERSIVEENGINEERING_WILD_HEMP = BUILDER.comment("SMALLER=MORE - Default [64]").defineInRange("Chance:", 265, 0, Integer.MAX_VALUE);
         BUILDER.pop();
 
         SPEC = BUILDER.build();
