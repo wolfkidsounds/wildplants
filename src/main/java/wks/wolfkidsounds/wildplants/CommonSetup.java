@@ -11,19 +11,25 @@ public class CommonSetup {
             //MINECRAFT
             if (Configuration.ENABLE_MINECRAFT.get()) {
                 WildCropGeneration.registerWildMinecraftCropGeneration();
-                Wildplants.LOGGER.debug("setup-minecraft");
+                //Wildplants.LOGGER.debug("setup-minecraft");
             }
 
             //IMMERSIVENGINEERING
             if (Configuration.ENABLE_IMMERSIVEENGINEERING.get() && Configuration.LOADED_IMMERSIVEENGINEERING) {
                 WildCropGeneration.registerWildImmersiveEngineeringCropGeneration();
-                Wildplants.LOGGER.debug("setup-immersiveengineering");
+                //Wildplants.LOGGER.debug("setup-immersiveengineering");
             }
 
             //VEGGIE_WAY
             if (Configuration.ENABLE_VEGGIE_WAY.get() && Configuration.LOADED_VEGGIE_WAY) {
                 WildCropGeneration.registerWildVeggieWayCropGeneration();
-                Wildplants.LOGGER.debug("setup-veggie_way");
+                //Wildplants.LOGGER.debug("setup-veggie_way");
+            }
+
+            //ENHANCEDFARMING
+            if (Configuration.ENABLE_ENHANCEDFARMING.get() && Configuration.LOADED_ENHANCEDFARMING) {
+                WildCropGeneration.registerWildEnhancedFarmingCropGeneration();
+                //Wildplants.LOGGER.debug("setup-enhancedfarming");
             }
         });
     }

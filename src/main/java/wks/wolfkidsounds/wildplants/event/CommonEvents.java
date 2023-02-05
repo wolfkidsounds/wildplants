@@ -18,15 +18,14 @@ public class CommonEvents {
         BiomeGenerationSettingsBuilder builder = event.getGeneration();
         Biome.ClimateSettings climate = event.getClimate();
 
-        boolean temperate = climate.temperature >= 0.5F && climate.temperature <= 0.7F && climate.downfall >= 0.3F && climate.downfall <= 0.9F;
-        boolean temperate_cool = climate.temperature >= 0.1F && climate.temperature <= 0.5F && climate.downfall >= 0.3F && climate.downfall <= 0.9F;
-        boolean temperate_warm = climate.temperature >= 0.7F && climate.temperature <= 0.9F && climate.downfall >= 0.3F && climate.downfall <= 0.9F;
-        boolean tropical = climate.temperature >= 0.8F && climate.temperature <= 1.0F && climate.downfall >= 0.8F && climate.downfall <= 1.0F;
-        boolean cold = climate.temperature >= -0.5F && climate.temperature <= 0.5F && climate.downfall >= 0.3F && climate.downfall <= 0.9F;
-        boolean mushroom = event.getCategory().equals(Biome.BiomeCategory.MUSHROOM);
+        boolean cold = climate.temperature >= 0.0F && climate.temperature <= 0.3F;
+        boolean temperate = climate.temperature >= 0.3F && climate.temperature <= 0.6F;
+        boolean warm = climate.temperature >= 0.6F && climate.temperature <= 0.9F;
+        boolean tropical = climate.temperature >= 0.6F && climate.temperature <= 1.0F && climate.downfall >= 0.8F;
         boolean arid = climate.temperature >= 1.0F && climate.downfall <= 0.1F;
+        boolean mushroom = event.getCategory().equals(Biome.BiomeCategory.MUSHROOM);
         boolean sandy = event.getCategory().equals(Biome.BiomeCategory.DESERT) || event.getCategory().equals(Biome.BiomeCategory.BEACH);
-        boolean nothere = event.getCategory().equals(Biome.BiomeCategory.UNDERGROUND);
+
 
         //CLIMATE CHECKER
         if (mushroom) {
@@ -43,14 +42,14 @@ public class CommonEvents {
             //Wildplants.LOGGER.debug(temperate);
         }
 
-        if (temperate_warm) {
-            Wildplants.LOGGER.debug("Found Biomes: TEMPERATE_WARM");
-            //Wildplants.LOGGER.debug(temperate_warm);
+        if (warm) {
+            Wildplants.LOGGER.debug("Found Biomes: WARM");
+            //Wildplants.LOGGER.debug(warm);
         }
 
-        if (temperate_cool) {
-            Wildplants.LOGGER.debug("Found Biomes: TEMPERATE_COOL");
-            //Wildplants.LOGGER.debug(temperate_cool);
+        if (cold) {
+            Wildplants.LOGGER.debug("Found Biomes: COLD");
+            //Wildplants.LOGGER.debug(cold);
         }
 
         if (arid) {
@@ -58,19 +57,10 @@ public class CommonEvents {
             //Wildplants.LOGGER.debug(arid);
         }
 
-        if (cold) {
-            Wildplants.LOGGER.debug("Found Biomes: COLD");
-            //Wildplants.LOGGER.debug(tropical);
-        }
 
         if (tropical) {
             Wildplants.LOGGER.debug("Found Biomes: TROPICAL");
             //Wildplants.LOGGER.debug(tropical);
-        }
-
-        if (nothere) {
-            Wildplants.LOGGER.debug("Found Biomes: CAVES");
-            Wildplants.LOGGER.debug("Dismissing Underground Biomes");
         }
 
         //----------------------------------------------------------
@@ -79,7 +69,8 @@ public class CommonEvents {
         if (Configuration.ENABLE_MINECRAFT.get()) {
             Wildplants.LOGGER.debug("LOADED:MINECRAFT");
             //TEMPERATE NORM
-            if (!nothere && temperate) {
+
+            if (temperate) {
                 if (MinecraftConfig.GENERATE_MINECRAFT_WILD_WHEAT.get()) {
                     builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_MINECRAFT_WHEAT);
                 }
@@ -92,7 +83,7 @@ public class CommonEvents {
             }
 
             //SANDY
-            if (!nothere && sandy) {
+            if (sandy) {
                 if (MinecraftConfig.GENERATE_MINECRAFT_WILD_BEETROOTS.get()) {
                     builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_MINECRAFT_BEETROOTS);
                 }
@@ -104,7 +95,7 @@ public class CommonEvents {
         if (Configuration.ENABLE_IMMERSIVEENGINEERING.get() && Configuration.LOADED_IMMERSIVEENGINEERING) {
             Wildplants.LOGGER.debug("LOADED:IMMERSIVEENGINEERING");
             //TEMPERATE NORM
-            if (!nothere && temperate) {
+            if (temperate) {
                 if (ImmersiveEngineeringConfig.GENERATE_IMMERSIVEENGINEERING_WILD_HEMP.get()) {
                     builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_IMMERSIVEENGINEERING_HEMP);
                 }
@@ -116,7 +107,7 @@ public class CommonEvents {
         if (Configuration.ENABLE_VEGGIE_WAY.get() && Configuration.LOADED_VEGGIE_WAY) {
             Wildplants.LOGGER.debug("LOADED:VEGGIEWAY");
             //TEMPERATE NORM
-            if (!nothere && temperate) {
+            if (temperate) {
                 if (VeggieWayConfig.GENERATE_VEGGIEWAY_WILD_LENTIL.get()) {
                     builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_VEGGIE_WAY_LENTIL);
                 }
@@ -126,7 +117,7 @@ public class CommonEvents {
             }
 
             //TEMPERATE WARM
-            if (!nothere && temperate_warm) {
+            if (warm) {
                 if (VeggieWayConfig.GENERATE_VEGGIEWAY_WILD_CORN.get()) {
                     builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_VEGGIE_WAY_CORN);
                 }
@@ -138,6 +129,64 @@ public class CommonEvents {
                 }
             }
             Wildplants.LOGGER.debug("register-veggie_way-biome-config");
+        }
+
+        //CLIMATE_ENHANCEDFARMING
+        if (Configuration.ENABLE_ENHANCEDFARMING.get() && Configuration.LOADED_ENHANCEDFARMING) {
+            Wildplants.LOGGER.debug("FOUND:EnhancedFarming");
+            //TEMPERATE
+            if (temperate) {
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_MINT.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_MINT);
+                    Wildplants.LOGGER.debug("PLANT:ENHANCEDFARMING:TEMPERATE:MINT");
+                }
+            }
+
+            if (warm) {
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_TOMATO.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_TOMATO);
+                    Wildplants.LOGGER.debug("PLANT:ENHANCEDFARMING:WARM:TOMATO");
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_CUCUMBER.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_CUCUMBER);
+                    Wildplants.LOGGER.debug("PLANT:ENHANCEDFARMING:WARM:CUCUMBER");
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_AUBERGINE.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_AUBERGINE);
+                    Wildplants.LOGGER.debug("PLANT:ENHANCEDFARMING:WARM:AUBERGINE");
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_GRAPE.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_GRAPE);
+                    Wildplants.LOGGER.debug("PLANT:ENHANCEDFARMING:WARM:GRAPE");
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_CORN.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_CORN);
+                    Wildplants.LOGGER.debug("PLANT:ENHANCEDFARMING:WARM:CORN");
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_ONION.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_ONION);
+                    Wildplants.LOGGER.debug("PLANT:ENHANCEDFARMING:WARM:ONION");
+                }
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_GARLIC.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_GARLIC);
+                    Wildplants.LOGGER.debug("PLANT:ENHANCEDFARMING:WARM:GARLIC");
+                }
+            }
+
+            if (tropical) {
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_PINEAPPLE.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_PINEAPPLE);
+                    Wildplants.LOGGER.debug("PLANT:ENHANCEDFARMING:TROPICAL:PINEAPPLE");
+                }
+            }
+
+            if (cold) {
+                if (EnhancedFarmingConfig.GENERATE_ENHANCEDFARMING_WILD_LETTUCE.get()) {
+                    builder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, WildCropGeneration.PATCH_WILD_ENHANCEDFARMING_LETTUCE);
+                    Wildplants.LOGGER.debug("PLANT:ENHANCEDFARMING:COLD:LETTUCE");
+                }
+            }
+            Wildplants.LOGGER.debug("register-enhancedfarming-biome-config");
         }
     }
 }

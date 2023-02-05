@@ -19,7 +19,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 
-version = '1.18.2_3.2.5_forge'
+version = '1.18.2_3.2.6_forge'
 group = 'wks.wolfkidsounds' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'wildplants'
 

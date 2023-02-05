@@ -7,6 +7,6 @@ import wks.wolfkidsounds.wildplants.Wildplants;
 public class WildCropBlock extends FlowerBlock {
     public WildCropBlock(MobEffect suspiciousStewEffect, int effectDuration, Properties properties) {
         super(suspiciousStewEffect, effectDuration, properties);
-        Wildplants.LOGGER.debug("configure-cropblock");
+        //Wildplants.LOGGER.debug("configure-cropblock");
     }
 }
